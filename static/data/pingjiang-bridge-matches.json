@@ -1,0 +1,156 @@
+{
+  "checked_at": "2026-10-18",
+  "source": {
+    "title": "平江河上的老桥——苏州老桥记④",
+    "publisher": "苏州市地方志编纂委员会办公室",
+    "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201811/93f014f81a794a7292a8b29a427149d0.shtml"
+  },
+  "policy": "古图坐标按用户提供的高清平江图桥形中心人工核读；现代点为示意位置。逐点图面联动，不是地理测绘配准。",
+  "ancient_coordinate_space": {
+    "width": 12540,
+    "height": 18448,
+    "orientation": "north-up",
+    "asset": "/pingjiang-atlas/static/media/pingjiang-user-original.jpg",
+    "method": "原图已北朝上，不旋转、不反色；以左上角为原点，桥形中心为锚点。",
+    "provenance": "用户提供原文件，41933034字节；图底印有 NATIONAL LIBRARY OF AUSTRALIA。馆藏条目与复用条件尚未核验。",
+    "inspection": "tests/new-map-river.png；tests/new-map-bridges.png"
+  },
+  "bridges": [
+    {
+      "id": "H01",
+      "name": "保吉利桥",
+      "ancient_name": "打急路桥",
+      "area": "白塔东路跨平江河处",
+      "position": [
+        "north",
+        780,
+        500
+      ],
+      "locator": "95保吉利桥",
+      "ancient_position": {
+        "x": 9695,
+        "y": 6370
+      },
+      "status": "新底图桥形已人工核读；名称对应参照地方志"
+    },
+    {
+      "id": "H02",
+      "name": "胡厢使桥",
+      "ancient_name": "胡厢使桥",
+      "area": "曹胡徐巷东端；俗称胡相思桥",
+      "position": [
+        "north",
+        780,
+        700
+      ],
+      "locator": "94胡厢使桥",
+      "ancient_position": {
+        "x": 9710,
+        "y": 6998
+      },
+      "status": "新底图桥形已人工核读；名称对应参照地方志"
+    },
+    {
+      "id": "H03",
+      "name": "唐家桥",
+      "ancient_name": "唐家桥",
+      "area": "胡厢使桥东侧，跨支河",
+      "position": [
+        "north",
+        820,
+        712
+      ],
+      "locator": "93唐家桥",
+      "ancient_position": {
+        "x": 9792,
+        "y": 7087
+      },
+      "status": "新底图桥形已人工核读；名称对应参照地方志"
+    },
+    {
+      "id": "H04",
+      "name": "通利桥",
+      "ancient_name": "通利桥",
+      "area": "菉葭巷东端",
+      "position": [
+        "north",
+        780,
+        875
+      ],
+      "locator": "92通利桥",
+      "ancient_position": {
+        "x": 9704,
+        "y": 7198
+      },
+      "status": "新底图桥形已人工核读；名称对应参照地方志"
+    },
+    {
+      "id": "H05",
+      "name": "朱马交桥",
+      "ancient_name": "朱马交桥",
+      "area": "通利桥东侧，跨大柳枝河",
+      "position": [
+        "north",
+        820,
+        895
+      ],
+      "locator": "91朱马交桥",
+      "ancient_position": {
+        "x": 9802,
+        "y": 7308
+      },
+      "status": "新底图桥形已人工核读；名称对应参照地方志"
+    },
+    {
+      "id": "H06",
+      "name": "众安桥",
+      "ancient_name": "众安桥",
+      "area": "悬桥巷东端；又称大新桥",
+      "position": [
+        "south",
+        607,
+        170
+      ],
+      "locator": "89众安桥",
+      "ancient_position": {
+        "x": 9705,
+        "y": 7398
+      },
+      "status": "新底图桥形已人工核读；名称对应参照地方志"
+    },
+    {
+      "id": "H07",
+      "name": "苏军桥（青石桥）",
+      "ancient_name": "苏军桥",
+      "area": "南石子街与卫道观前之间",
+      "position": [
+        "south",
+        607,
+        386
+      ],
+      "locator": "88苏军桥",
+      "ancient_position": {
+        "x": 9716,
+        "y": 7730
+      },
+      "status": "新底图桥形已人工核读；名称对应参照地方志"
+    },
+    {
+      "id": "H08",
+      "name": "积庆桥",
+      "ancient_name": "积庆桥",
+      "area": "大儒巷东端；曾称胜利桥",
+      "position": [
+        "south",
+        607,
+        490
+      ],
+      "locator": "87积庆桥",
+      "ancient_position": {
+        "x": 9722,
+        "y": 7995
+      },
+      "status": "新底图桥形已人工核读；名称对应参照地方志"
+    }
+  ]
+}

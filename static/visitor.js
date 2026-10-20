@@ -1,0 +1,1 @@
+/* Static map demo: no AI drawer or server requests. */

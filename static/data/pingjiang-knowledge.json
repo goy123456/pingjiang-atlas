@@ -1,0 +1,1543 @@
+{
+  "schema_version": 1,
+  "title": "平江图官方资料知识库",
+  "checked_at": "2026-09-29",
+  "policy": {
+    "scope": "官方机构原始资料优先；官方转载单独标识。只摘编所需事实，不复制全文。",
+    "publication": "只有verified_excerpt事实可进入正式点位介绍或检索；索引线索不可当作已读原文。",
+    "questions": "learning_question为项目设计问题，不是文献原文或史实。",
+    "current_status": "所有营业、开放、票价、演出与设施现状均未核验。"
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "title": "苏州市博物馆名录",
+      "publisher": "苏州市文化广电和旅游局",
+      "published_at": null,
+      "url": "https://wglj.suzhou.gov.cn/szwhgdhlyj/bwg/list_tt.shtml",
+      "type": "official_registry",
+      "access": "page_read",
+      "checked_at": "2026-09-23",
+      "original_source": "苏州市文化广电和旅游局"
+    },
+    {
+      "id": "S02",
+      "title": "读懂苏州 从这里开始丨苏州城建博物馆5月18日即将开馆！",
+      "publisher": "苏州市住房和城乡建设局",
+      "published_at": "2022-04-27",
+      "url": "https://zfcjj.suzhou.gov.cn/szszjj/gzdt/202204/f9f5ade3ba704b2a9d27298f5f83aab3.shtml",
+      "type": "department_article",
+      "access": "page_read",
+      "checked_at": "2026-09-23",
+      "original_source": "苏州市住房和城乡建设局"
+    },
+    {
+      "id": "S03",
+      "title": "耦园",
+      "publisher": "苏州市园林和绿化管理局",
+      "published_at": "2017-05-11",
+      "url": "https://ylj.suzhou.gov.cn/szsylj/ylwh/201705/ba9ce64b6fd3452588e129f368c4f7ac.shtml",
+      "type": "department_interpretation",
+      "access": "page_read",
+      "checked_at": "2026-09-23",
+      "original_source": "苏州市园林和绿化管理局"
+    },
+    {
+      "id": "S04",
+      "title": "拙政园",
+      "publisher": "苏州市园林和绿化管理局",
+      "published_at": "2020-03-16",
+      "url": "https://ylj.suzhou.gov.cn/szsylj/sjyc/201905/c1df393edc8745abb20e8a9bd5525782.shtml",
+      "type": "department_introduction",
+      "access": "page_read",
+      "checked_at": "2026-09-23",
+      "original_source": "苏州市园林和绿化管理局"
+    },
+    {
+      "id": "S05",
+      "title": "全龄友好 无界融通 ——东园 “无界公园”打造初见成效",
+      "publisher": "苏州市园林和绿化管理局",
+      "published_at": "2024-11-18",
+      "url": "https://ylj.suzhou.gov.cn/szsylj/gzdt3/202411/9dbb2b31ad254a4bbeb7e2d528ded462.shtml",
+      "type": "department_article",
+      "access": "page_read",
+      "checked_at": "2026-09-23",
+      "original_source": "拙政园管理处（园林博物馆）"
+    },
+    {
+      "id": "S06",
+      "title": "平江河上的老桥——苏州老桥记④",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2018-11-27",
+      "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201811/93f014f81a794a7292a8b29a427149d0.shtml",
+      "type": "local_history",
+      "access": "page_read",
+      "checked_at": "2026-09-23",
+      "original_source": "苏州市地方志编纂委员会办公室"
+    },
+    {
+      "id": "S07",
+      "title": "平江路上古桥趣闻知多少",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2009-12-10",
+      "url": "https://dfzb.suzhou.gov.cn/dfzb/fzxh/200912/172b306a013345eda47bec40af6fd85b.shtml",
+      "type": "local_history",
+      "access": "page_read",
+      "checked_at": "2026-09-23",
+      "original_source": "苏州市地方志编纂委员会办公室"
+    },
+    {
+      "id": "S08",
+      "title": "苏州市控制保护建筑名录",
+      "publisher": "苏州市文化广电和旅游局",
+      "published_at": null,
+      "url": "https://wglj.suzhou.gov.cn/szwhgdhlyj/kzbf/list_tt.shtml",
+      "type": "official_registry",
+      "access": "search_index_only",
+      "checked_at": "2026-09-23",
+      "original_source": "苏州市文化广电和旅游局"
+    },
+    {
+      "id": "S09",
+      "title": "平江路历史保护区的名宅古居拾趣",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2009-12-14",
+      "url": "https://dfzb.suzhou.gov.cn/dfzb/fzxh/200912/fcaa7c53291743898d7c6d94edf59584.shtml",
+      "type": "local_history",
+      "access": "page_read",
+      "checked_at": "2026-10-07",
+      "original_source": "苏州市地方志编纂委员会办公室",
+      "access_note": "2026-10-07已成功读取地方志正文；采用顾颉刚、唐纳故居小节，旧文所述存续情况不代表当前现状。",
+      "last_attempt": "2026-10-07 HTTPS正文读取成功"
+    },
+    {
+      "id": "S10",
+      "title": "苏州状元博物馆焕新开放",
+      "publisher": "苏州市人民政府",
+      "published_at": "2024-07-07",
+      "url": "https://www.suzhou.gov.cn/szsrmzf/szyw/202407/27be3c8df66f4d50b884ab43b41710f5.shtml",
+      "type": "official_portal_reprint",
+      "access": "page_read",
+      "checked_at": "2026-09-29",
+      "original_source": "苏州日报",
+      "access_note": "2026-09-23经http://www.suzhou.gov.cn同路径重试，返回https正文；不能据此确定此前失败原因。",
+      "alternate_url": "http://www.suzhou.gov.cn/szsrmzf/szyw/202407/27be3c8df66f4d50b884ab43b41710f5.shtml"
+    },
+    {
+      "id": "S11",
+      "title": "一张蓝图绘到底 千年古城又焕新",
+      "publisher": "苏州市人民政府",
+      "published_at": "2026-07-05",
+      "url": "https://www.suzhou.gov.cn/szsrmzf/szyw/202607/bfb6df1a8a404c34a62ad9dd44656adf.shtml",
+      "type": "official_portal_reprint",
+      "access": "page_read",
+      "checked_at": "2026-09-23",
+      "original_source": "苏州日报",
+      "access_note": "2026-09-23经http://www.suzhou.gov.cn同路径重试，返回https正文；不能据此确定此前失败原因。",
+      "alternate_url": "http://www.suzhou.gov.cn/szsrmzf/szyw/202607/bfb6df1a8a404c34a62ad9dd44656adf.shtml"
+    },
+    {
+      "id": "S12",
+      "title": "惠荫园",
+      "publisher": "苏州市园林和绿化管理局",
+      "published_at": "2025-10-17",
+      "url": "https://ylj.suzhou.gov.cn/szsylj/ylml/201902/e022c009d8034aea83afe47e36ae0876.shtml",
+      "type": "department_introduction",
+      "access": "page_read",
+      "checked_at": "2026-09-23",
+      "original_source": "苏州市园林和绿化管理局"
+    },
+    {
+      "id": "S13",
+      "title": "市政府关于公布《苏州园林目录》（一）的通知",
+      "publisher": "苏州市人民政府",
+      "published_at": "2015-08-12",
+      "url": "https://www.suzhou.gov.cn/szsrmzf/zfwj/201508/M6FUI6TUJ8GHG2JA0TGTLRYA1VTYYLVT.shtml",
+      "type": "official_registry",
+      "access": "page_read",
+      "checked_at": "2026-09-23",
+      "original_source": "苏州市人民政府"
+    },
+    {
+      "id": "S14",
+      "title": "推开时光之门！苏州校园晒宝之“安徽会馆”",
+      "publisher": "苏州市教育局",
+      "published_at": "2025-07-28",
+      "url": "https://jyj.suzhou.gov.cn/szjyj/jyyw/202507/16af67e8064f49cd9df27fd88a725262.shtml",
+      "type": "department_introduction",
+      "access": "page_read",
+      "checked_at": "2026-09-23",
+      "original_source": "苏州市教育局"
+    },
+    {
+      "id": "S15",
+      "title": "全晋会馆",
+      "publisher": "苏州市园林和绿化管理局",
+      "published_at": "2025-10-22",
+      "url": "https://ylj.suzhou.gov.cn/szsylj/ylml/201912/023ecb40b7d04222bb762d52331e5777.shtml",
+      "type": "department_introduction",
+      "original_source": "苏州市园林和绿化管理局",
+      "access": "page_read",
+      "checked_at": "2026-09-23"
+    },
+    {
+      "id": "S16",
+      "title": "中国苏州评弹博物馆推出“星月·评弹”暑期夜开放系列活动",
+      "publisher": "苏州市文化广电和旅游局",
+      "published_at": "2023-08-02",
+      "url": "https://wglj.suzhou.gov.cn/szwhgdhlyj/gzdt/202308/48e3956b305a45cd84e21d1500780a00.shtml",
+      "type": "museum_activity_report",
+      "original_source": "苏州戏曲博物馆",
+      "access": "page_read",
+      "checked_at": "2026-09-23"
+    },
+    {
+      "id": "S17",
+      "title": "品位街巷 | 一条并不起眼，却藏龙卧虎，名家辈出的小巷",
+      "publisher": "苏州市地方志编纂委员会办公室（市方志馆）",
+      "published_at": "2024-12-18",
+      "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202412/7b6b7ecf19c145f6a22fcf1b8eef33bf.shtml",
+      "type": "official_reviewed_contribution",
+      "original_source": "原创作者投稿；市地方志办秘书处审核、发布",
+      "access": "page_read",
+      "checked_at": "2026-09-29"
+    },
+    {
+      "id": "S18",
+      "title": "牵手“伙伴”， 让古建老宅“活”在当下",
+      "publisher": "苏州市姑苏区人民政府",
+      "published_at": "2024-06-05",
+      "url": "https://www.gusu.gov.cn/gsq/zwyw/202406/d74285bba36c437ab0133a9bcc5a517d.shtml",
+      "type": "official_portal_reprint",
+      "original_source": "新华日报（白雪、王晓映、刘春）；页面来源标注姑苏区委宣传部",
+      "access": "page_read",
+      "checked_at": "2026-09-29"
+    },
+    {
+      "id": "S19",
+      "title": "苏博建筑",
+      "publisher": "苏州博物馆",
+      "published_at": null,
+      "url": "https://dx.szmuseum.com/views/NewsDetails.aspx?guid=349a54de-f3f5-41bc-b86d-7c3488d3c0d6",
+      "type": "museum_introduction",
+      "original_source": "苏州博物馆",
+      "access": "page_read",
+      "checked_at": "2026-09-24"
+    },
+    {
+      "id": "S20",
+      "title": "郭绍虞",
+      "publisher": "复旦大学图书馆",
+      "published_at": null,
+      "updated_at": "2023-11-23",
+      "url": "https://library.fudan.edu.cn/e6/bc/c42727a517820/page.htm",
+      "type": "university_library_profile",
+      "original_source": "复旦大学图书馆",
+      "access": "page_read",
+      "checked_at": "2026-09-24"
+    },
+    {
+      "id": "S21",
+      "title": "姑苏区两处控保建筑启动修缮",
+      "publisher": "苏州市姑苏区人民政府",
+      "published_at": "2023-11-11",
+      "url": "https://www.gusu.gov.cn/gsq/zwyw/202311/bce83dee7d134f8d97be7f3db7278cca.shtml",
+      "type": "official_portal_reprint",
+      "original_source": "苏州日报（胡毓菁、潘心洁）；页面来源标注姑苏区委宣传部",
+      "access": "page_read",
+      "checked_at": "2026-09-24"
+    },
+    {
+      "id": "S22",
+      "title": "控制保护建筑",
+      "publisher": "苏州市文化广电和旅游局",
+      "published_at": "2023-01-17",
+      "url": "https://wglj.suzhou.gov.cn/szwhgdhlyj/kzbf/201906/b9dbc20857554bf39e14c1145db9d5f9.shtml",
+      "type": "official_registry",
+      "original_source": "苏州市文化广电和旅游局",
+      "access": "page_read",
+      "checked_at": "2026-09-24"
+    },
+    {
+      "id": "S23",
+      "title": "叶至善的两封信",
+      "publisher": "中国民主促进会中央委员会网站",
+      "published_at": "2023-10-30",
+      "url": "https://www.mj.org.cn/hszl/mrys/202310/t20231030_281223.htm",
+      "type": "official_portal_reprint",
+      "original_source": "文汇报；张香还，文中引述叶至善书信",
+      "access": "page_read",
+      "checked_at": "2026-09-24"
+    },
+    {
+      "id": "S24",
+      "title": "说古道今|走近历史深处，寻访你所不知道的义庄",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2024-05-29",
+      "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202405/4dedac83796e451ca21c8d631c8e712e.shtml",
+      "type": "official_reviewed_contribution",
+      "original_source": "作者投稿；市地方志办业务指导处审核",
+      "access": "page_read",
+      "checked_at": "2026-09-24"
+    },
+    {
+      "id": "S25",
+      "title": "关于进一步发挥苏州城建博物馆功能推进住建行业新时代文明实践工作的通知",
+      "publisher": "苏州市住房和城乡建设局",
+      "published_at": "2024-04-02",
+      "url": "https://zfcjj.suzhou.gov.cn/szszjj/tzgg/202404/88f019f4f20941878a221b9f68d2bb17.shtml",
+      "type": "department_notice",
+      "original_source": "苏州市住房和城乡建设局；苏建函教〔2024〕112号",
+      "access": "page_read",
+      "checked_at": "2026-09-24"
+    },
+    {
+      "id": "S26",
+      "title": "卫道观前3号（卫道观前潘宅）修缮工程",
+      "publisher": "苏州市财政局政府采购网",
+      "published_at": "2021-02-22",
+      "url": "https://czju.suzhou.gov.cn/zfcg/html/project/853b0e496d8e4d5ab8295ef02c56c889.shtml",
+      "type": "official_procurement",
+      "original_source": "苏州市住房和城乡建设局采购；成交公告",
+      "access": "page_read",
+      "checked_at": "2026-09-24"
+    },
+    {
+      "id": "S27",
+      "title": "耦园",
+      "publisher": "苏州市园林和绿化管理局",
+      "published_at": "2025-09-15",
+      "url": "https://ylj.suzhou.gov.cn/szsylj/sjyc/202509/b6e90b58ee1947fe9282ad5d7ecdae08.shtml",
+      "type": "department_introduction",
+      "original_source": "苏州市园林和绿化管理局",
+      "access": "page_read",
+      "checked_at": "2026-09-24"
+    },
+    {
+      "id": "S28",
+      "title": "关于印发《关于做好“博物馆里的大思政课”工作的实施方案》的通知",
+      "publisher": "苏州市人民政府门户网站",
+      "published_at": null,
+      "url": "https://www.suzhou.gov.cn/szsrmzf/bmwj/202502/69c1ccce20a84cb3a31eeb8252780966.shtml",
+      "type": "department_notice",
+      "original_source": "苏州市教育局等；附件1第21、23项；印发2025-02-12",
+      "access": "page_read",
+      "checked_at": "2026-09-24"
+    },
+    {
+      "id": "S29",
+      "title": "Pan Residence",
+      "publisher": "苏州市人民政府英文网",
+      "published_at": "2021-08-27",
+      "url": "https://english.suzhou.gov.cn/szsenglish/szgzbs/201611/a76840f4a55f4b90b406c7e69a66815a.shtml",
+      "type": "official_portal_introduction",
+      "original_source": "政府英文网介绍；原作者未署名",
+      "access": "page_read",
+      "checked_at": "2026-09-28"
+    },
+    {
+      "id": "S30",
+      "title": "苏州税务：税收赋能古城千年文脉基因传承",
+      "publisher": "国家税务总局江苏省税务局",
+      "published_at": "2024-03-01",
+      "url": "https://jiangsu.chinatax.gov.cn/art/2024/3/1/art_8678_451866.html",
+      "type": "official_portal_reprint",
+      "original_source": "光明网；朱铃、黄司璇",
+      "access": "page_read",
+      "checked_at": "2026-09-28"
+    },
+    {
+      "id": "S31",
+      "title": "2009年提案正文（关于昆曲博物馆扩建；页面未显示题名）",
+      "publisher": "江苏省政协",
+      "published_at": "2009-04-01",
+      "url": "https://www.jszx.gov.cn/wylz/zxta/2009ta/202205/t20220525_60577.html",
+      "type": "official_proposal",
+      "original_source": "本站原创；提案背景陈述，不是项目实施或验收记录",
+      "access": "page_read",
+      "checked_at": "2026-09-28"
+    },
+    {
+      "id": "S32",
+      "title": "ZZ240823-01洪钧故居（局部）项目推介",
+      "publisher": "苏州市公共资源交易中心",
+      "published_at": "2024-08-23",
+      "url": "https://ggzy.suzhou.gov.cn/jyxx/003038/003038001/003038001001/20240823/62391e19-f3e5-4177-8659-4b84eee1a2d7.html",
+      "type": "official_project_introduction",
+      "access": "page_read",
+      "checked_at": "2026-09-29",
+      "original_source": "苏州姑苏古建保护发展有限公司项目资料",
+      "reading_scope": "已读项目介绍文字表格；附图未逐图核验，不据附图新增事实。"
+    },
+    {
+      "id": "S33",
+      "title": "北半园",
+      "publisher": "苏州市园林和绿化管理局",
+      "published_at": "2025-10-20",
+      "url": "https://ylj.suzhou.gov.cn/szsylj/ylml/201903/64821f9615634c89863258c5d064892a.shtml",
+      "type": "department_introduction",
+      "access": "page_read",
+      "checked_at": "2026-10-07",
+      "original_source": "苏州市园林和绿化管理局"
+    },
+    {
+      "id": "S34",
+      "title": "江苏不可移动文物集中连片保护，成为全国首批试点之一",
+      "publisher": "新华报业网",
+      "published_at": "2024-12-26",
+      "url": "https://www.xhby.net/content/s676d47e3e4b03da919f56eac.html",
+      "type": "state_media_interview",
+      "access": "page_read",
+      "checked_at": "2026-10-07",
+      "original_source": "新华日报·交汇点记者杨民仆；引述姑苏古建保护发展有限公司负责人",
+      "reading_scope": "补充证据：媒体采访，不是主管部门测绘或竣工文件。"
+    },
+    {
+      "id": "S35",
+      "title": "狮子林",
+      "publisher": "苏州市园林和绿化管理局",
+      "published_at": "2025-10-22",
+      "url": "https://ylj.suzhou.gov.cn/szsylj/ylml/201904/afb382ddaa0e427cab8d525b35f2674a.shtml",
+      "type": "official_article",
+      "access": "page_read",
+      "checked_at": "2026-10-08",
+      "original_source": "苏州市园林和绿化管理局"
+    },
+    {
+      "id": "S36",
+      "title": "留园",
+      "publisher": "苏州市园林和绿化管理局",
+      "published_at": "2024-04-02",
+      "url": "https://ylj.suzhou.gov.cn/szsylj/sjyc/201905/b7c0f2058c75498c9ecbacf234e25b08.shtml?eqid=f65d0865002680c3000000066455b1c6",
+      "type": "official_article",
+      "access": "page_read",
+      "checked_at": "2026-10-08",
+      "original_source": "苏州市园林和绿化管理局"
+    },
+    {
+      "id": "S37",
+      "title": "山塘街——一席浮动的盛宴",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2008-11-28",
+      "url": "https://dfzb.suzhou.gov.cn/dfzb/fzxh/200811/48d114921d704be1a89ebbc002582b1e.shtml",
+      "type": "official_article",
+      "access": "page_read",
+      "checked_at": "2026-10-08",
+      "original_source": "苏州市地方志编纂委员会办公室"
+    },
+    {
+      "id": "S38",
+      "title": "繁华商圈 越夜越时尚",
+      "publisher": "苏州市文化广电和旅游局",
+      "published_at": "2020-08-05",
+      "url": "https://www.suzhou.gov.cn/gsbdbwlyjc/ygou/202008/94234b8d2109402b9d17222712494b7a.shtml",
+      "type": "official_article",
+      "access": "page_read",
+      "checked_at": "2026-10-08",
+      "original_source": "苏州市文化广电和旅游局"
+    },
+    {
+      "id": "S39",
+      "title": "美食街区之观前街商圈",
+      "publisher": "苏州市文化广电和旅游局",
+      "published_at": "2020-08-21",
+      "url": "https://www.suzhou.gov.cn/gsbdbwlyjc/yshi/202008/ad1ed821053446ea9d55bc1dfe3c82be.shtml",
+      "type": "official_article",
+      "access": "page_read",
+      "checked_at": "2026-10-08",
+      "original_source": "苏州市文化广电和旅游局"
+    },
+    {
+      "id": "S40",
+      "title": "环湖执勤，赋能5A景区市容秩序持续提升",
+      "publisher": "苏州工业园区综合行政执法局（城市管理局）",
+      "published_at": "2026-08-24",
+      "url": "https://www.sipac.gov.cn/szzhxzzfj/gzdt/202608/2f089baa3b274861bbac28112040c421.shtml",
+      "type": "official_article",
+      "access": "page_read",
+      "checked_at": "2026-10-08",
+      "original_source": "苏州工业园区综合行政执法局（城市管理局）"
+    },
+    {
+      "id": "S41",
+      "title": "品位街巷｜走进大儒巷，沉浸在厚重的古意中",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2024-04-07",
+      "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202404/746a537a76444b7a86aab7eeef9001a6.shtml",
+      "type": "official_article",
+      "access": "page_read",
+      "checked_at": "2026-10-08",
+      "original_source": "苏州市地方志编纂委员会办公室"
+    },
+    {
+      "id": "S42",
+      "title": "平江古巷",
+      "publisher": "苏州市文化广电和旅游局",
+      "published_at": "2021-10-29",
+      "url": "https://www.suzhou.gov.cn/szwgjyhsj/yhsjjbgk/202110/59af752df49b4b9d8ad3efe119e9b713.shtml",
+      "type": "official_article",
+      "access": "page_read",
+      "checked_at": "2026-10-08",
+      "original_source": "苏州市文化广电和旅游局"
+    },
+    {
+      "id": "S43",
+      "title": "苏州诱惑——到苏州100个必看之地（三）",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2015-06-08",
+      "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201506/9f6c3833968b4e2481403e4275eefa43.shtml",
+      "type": "official_article",
+      "access": "page_read",
+      "checked_at": "2026-10-08",
+      "original_source": "苏州市地方志编纂委员会办公室"
+    }
+  ],
+  "entries": [
+    {
+      "id": "C01",
+      "name": "中国昆曲博物馆",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "文旅局名录将苏州戏曲博物馆（中国昆曲博物馆）列在中张家巷14号。",
+          "source_id": "S01",
+          "locator": "市级第5项"
+        },
+        {
+          "text": "馆址全晋会馆又称山西会馆，由旅居苏州的晋商于1879年集资兴建；中国昆曲博物馆于2003年在此开放。",
+          "source_id": "S15",
+          "locator": "正文首段：会馆沿革"
+        },
+        {
+          "text": "古戏台由舞台、后台和两侧厢楼组成。园林局介绍特别指出台顶螺旋藻井的装饰与扩音作用。",
+          "source_id": "S15",
+          "locator": "正文第二段：古戏台"
+        }
+      ],
+      "limits": "藻井声学作用为来源文章的介绍，不等于实测结论；插画不能当作文物细部证据。未核验当前演出与开放安排。",
+      "learning_question": "抬头看戏台顶部：它的形状可能怎样影响看戏、听戏的体验？"
+    },
+    {
+      "id": "C02",
+      "name": "中国苏州评弹博物馆",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "文旅局名录列示中国苏州评弹博物馆，地址为中张家巷3号。",
+          "source_id": "S01",
+          "locator": "市级第6项"
+        },
+        {
+          "text": "博物馆兼具收藏、展览、研究与教育功能，并非只有演出。",
+          "source_id": "S16",
+          "locator": "正文末段：机构功能"
+        },
+        {
+          "text": "2023年暑期活动把欣赏、讲解与动手学习结合，并以《珍珠塔》不同流派唱腔的音频作赏析材料。",
+          "source_id": "S16",
+          "locator": "正文第二、三段：活动内容"
+        },
+        {
+          "text": "2025年政府文件附件记载，中国苏州评弹博物馆于2004年获得文化部立项批准；不能将立项年份直接作为原宅建造年份。",
+          "source_id": "S28",
+          "locator": "附件1第23项：苏州戏曲博物馆"
+        },
+        {
+          "text": "税务局转载报道明确中张家巷3号沈宅后来成为评弹博物馆。",
+          "source_id": "S30",
+          "locator": "正文第2段"
+        },
+        {
+          "text": "省政协2009年提案背景记述评弹馆于2004年6月修复改建开放，原址为清末民初沈宅；该日期采用提案记述口径。",
+          "source_id": "S31",
+          "locator": "提案正文开头"
+        }
+      ],
+      "limits": "活动证据对应2023年，不代表现在仍有相同演出、收费或夜间开放。尚未收录获授权音频，不能声称已提供听辨练习。",
+      "learning_question": "如果同一个故事有不同唱法，你最想比较声音、节奏，还是人物表达？"
+    },
+    {
+      "id": "C03",
+      "name": "苏州状元博物馆",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "文旅局名录列示苏州状元博物馆，地址为临顿路钮家巷3号。",
+          "source_id": "S01",
+          "locator": "市级第15项"
+        },
+        {
+          "text": "2024年官方转载报道介绍，博物馆前身是潘世恩故居，展陈围绕状元与苏州、科举之路和贵潘家族展开，并记载馆藏御赐潘世恩的福字匾。",
+          "source_id": "S10",
+          "locator": "正文第二段；展陈信息对应2024年报道"
+        },
+        {
+          "text": "位于钮家巷3号；馆舍为潘世恩故居。",
+          "source_id": "S10",
+          "locator": "正文第1—2段"
+        },
+        {
+          "text": "旧宅改作状元文化专题馆；2024年7月6日完成一轮提升后重新开放。",
+          "source_id": "S10",
+          "locator": "正文第1段"
+        },
+        {
+          "text": "2024年报道列出轿厅、鸳鸯厅、纱帽厅和后厅四个展厅。",
+          "source_id": "S10",
+          "locator": "正文第2段"
+        },
+        {
+          "text": "展陈分别从苏州城市、科举经历和潘氏家族讲述状元文化。",
+          "source_id": "S10",
+          "locator": "正文第2段：三个主题"
+        }
+      ],
+      "limits": "仅支持所列摘要；不代表当前开放、营业或演出安排。；2024年特展与互动设备不能视为当前仍开放；尚未核实当前预约与票价。；原图另注“凤池园”，本批未取得足够正文说明这一别名关系。；尚缺完整营建沿革及各厅历史功能的独立介绍。",
+      "learning_question": null,
+      "checked_at": "2026-09-29"
+    },
+    {
+      "id": "C04",
+      "name": "礼耕堂",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "2022年住建局介绍：城建博物馆利用卫道观前潘宅改建，其中城市会客厅保留正厅礼耕堂的建筑格局。",
+          "source_id": "S02",
+          "locator": "正文：博物馆基底与城市会客厅段"
+        },
+        {
+          "text": "2024年住建局通知把潘宅营建技艺、保护修缮与家风传承列为讲解内容，并提出木作、拓印等体验课程。",
+          "source_id": "S25",
+          "locator": "重点任务第1、3、4项"
+        },
+        {
+          "text": "2021年政府采购成交公告将修缮对象列为卫道观前3号礼耕堂，涉及木构、砖细门楼、方砖铺地和天井等。",
+          "source_id": "S26",
+          "locator": "2021-02-22成交公告第四项"
+        },
+        {
+          "text": "政府英文网介绍，潘宅由徽商Pan Linzhao（潘麟兆）在清乾隆时期建造；文中将1787年明确关联到所述三座砖雕门楼，不据此断定全宅同年建成。",
+          "source_id": "S29",
+          "locator": "正文第2—3段"
+        }
+      ],
+      "limits": "仅支持所列摘要；不代表当前开放、营业或演出安排。",
+      "learning_question": "旧宅变成博物馆，哪些空间值得保留？"
+    },
+    {
+      "id": "C07",
+      "name": "郭绍虞故居",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "地方志文章将大新桥巷13号标为郭绍虞故居。",
+          "source_id": "S06",
+          "locator": "101通济桥段"
+        },
+        {
+          "text": "复旦大学图书馆介绍郭绍虞曾任复旦中文系主任、《辞海》副主编，研究涉及中国文学批评史与语法修辞。",
+          "source_id": "S20",
+          "locator": "简介段"
+        },
+        {
+          "text": "图书馆陈列著作目录包括1934年版《中国文学批评史》和《宋诗话辑佚》等，呈现其文学研究与古籍整理工作。",
+          "source_id": "S20",
+          "locator": "陈列著作第6、7项"
+        },
+        {
+          "text": "2024年采访记述故居呈曲尺形：东路五进，中部设大厅，西侧两座楼厅错列。",
+          "source_id": "S34",
+          "locator": "“甄选了231处建筑进行保护修缮”小节，郭绍虞故居段"
+        },
+        {
+          "text": "项目解读：人物著作可引出“文学创作”与“文学批评”的区别，不将学术成果归因于这处故居。",
+          "source_id": "S20",
+          "locator": "简介及陈列著作第6、7项；项目解读"
+        }
+      ],
+      "limits": "大学人物资料不证明著作写于此宅。建筑布局暂采用媒体对项目负责人的采访，待主管部门图纸复核。；2024年报道中的修缮方案不等于完工；准确门牌范围、现状和开放情况待核。",
+      "learning_question": "读一首诗，与研究人们为什么认为它好，有什么不同？",
+      "checked_at": "2026-10-07"
+    },
+    {
+      "id": "C08",
+      "name": "唐纳故居",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "地方志文章将胡厢使巷的“马家墙门”记为唐纳故居。",
+          "source_id": "S06",
+          "locator": "94胡厢使桥段"
+        },
+        {
+          "text": "2023年官方转载报道将唐纳故居列入当年直管公房文控保修缮计划。",
+          "source_id": "S21",
+          "locator": "正文第三段：列入修缮计划的建筑"
+        },
+        {
+          "text": "地方志记为胡厢使巷40号，又称马家墙门。",
+          "source_id": "S09",
+          "locator": "“隐而不显”的唐纳故居"
+        },
+        {
+          "text": "地方志介绍唐纳原姓马，曾向上海报刊撰写影剧评论。",
+          "source_id": "S09",
+          "locator": "“隐而不显”的唐纳故居"
+        },
+        {
+          "text": "旧宅原有三路五进及后园；2009年文称大部分已改建，仅局部原建筑留存。",
+          "source_id": "S09",
+          "locator": "“隐而不显”的唐纳故居"
+        },
+        {
+          "text": "项目解读：修缮计划可作为讨论老宅保存的材料，但不能据此宣称已修复开放。",
+          "source_id": "S21",
+          "locator": "正文第三段；项目解读"
+        }
+      ],
+      "limits": "历史三路五进不等于现存完整格局；2009年存续描述和2023年修缮计划均不能证明当前状态。；当前修缮验收、使用与开放情况待核。",
+      "learning_question": "一处老宅既承载历史记忆，又可能涉及日常居住，修缮时应考虑什么？",
+      "candidate_sources": [
+        {
+          "source_id": "S09",
+          "locator": "“隐而不显”的唐纳故居段；原页未读"
+        }
+      ],
+      "checked_at": "2026-10-07"
+    },
+    {
+      "id": "U01",
+      "name": "苏州博物馆",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "文旅局名录列示苏州博物馆本馆地址为东北街204号；地图这里对应本馆，而不是西馆。",
+          "source_id": "S01",
+          "locator": "市级第1项"
+        },
+        {
+          "text": "贝聿铭设计的苏州博物馆本馆于2006年10月6日开放。",
+          "source_id": "S28",
+          "locator": "附件1第21项：苏州博物馆"
+        },
+        {
+          "text": "深灰色花岗石与白墙呼应传统色调；玻璃天窗和钢结构引入自然光。主庭院以片石假山及白墙形成山水画般的景观。",
+          "source_id": "S19",
+          "locator": "“中国黑”坡顶、自然光与“山水意趣”"
+        }
+      ],
+      "limits": "这里指东北街本馆建筑，不是西馆。建筑介绍不代表当前展览、预约或开放安排；没有据此取得图片使用许可。",
+      "learning_question": "哪些细节让这座现代建筑仍然显得很“苏州”？"
+    },
+    {
+      "id": "U02",
+      "name": "拙政园",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "园林部门介绍将拙政园视为江南私家园林代表，并记载其于1997年列入世界文化遗产。",
+          "source_id": "S04",
+          "locator": "正文首段"
+        },
+        {
+          "text": "始建于1509年，王献臣归乡后建园，园名取意于潘岳《闲居赋》。园分东、中、西三部，中部以水面组织景观，建筑沿池错落布置。",
+          "source_id": "S04",
+          "locator": "正文第2—3段"
+        }
+      ],
+      "limits": "仅支持所列摘要；不代表当前开放、营业或演出安排。",
+      "learning_question": "临水建筑为什么不排成整齐的一条直线？",
+      "collection": "classical_garden"
+    },
+    {
+      "id": "U03",
+      "name": "耦园",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "园林部门从夫妇共同归隐的理想解释园名“耦”。文中将听橹楼关联听船声，将织帘老屋关联读书生活。",
+          "source_id": "S03",
+          "locator": "门额简析段"
+        },
+        {
+          "text": "园林部门介绍其前身为涉园，后来归沈秉成；住宅居中，东西各置花园，园外三面临河。",
+          "source_id": "S03",
+          "locator": "门额简析后的按语"
+        },
+        {
+          "text": "2025年园林局介绍记载，沈秉成于1874年购入涉园旧址，聘顾沄参与设计；东园、中宅、西园构成对偶格局，东园黄石假山与西园湖石相映。",
+          "source_id": "S27",
+          "locator": "正文第2—3段"
+        }
+      ],
+      "limits": "仅支持所列摘要；不代表当前开放、营业或演出安排。",
+      "learning_question": "如果只能选一个声音留在园中，你会选什么？为什么？",
+      "collection": "classical_garden"
+    },
+    {
+      "id": "U04",
+      "name": "东园",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "2024年园林部门记录东园改造：以减少物理边界、改善入口和休憩设施，促进公园与城市生活相连。",
+          "source_id": "S05",
+          "locator": "正文第1—3段"
+        }
+      ],
+      "limits": "东园是城市公园，不能与耦园的东花园混淆。改造介绍对应2024年，不代表当前设施或活动安排。",
+      "learning_question": "公园与街区之间，围墙多一点还是少一点更好？",
+      "collection": "urban_park"
+    },
+    {
+      "id": "U05",
+      "name": "半园",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "地方志在保吉利桥条目中记载半园位于白塔东路60号，以“知足不求全”解释园名。",
+          "source_id": "S06",
+          "locator": "95保吉利桥：半园知识小链接"
+        },
+        {
+          "text": "2015年政府园林目录将白塔东路60号的园林登记为北半园；与仓米巷的南半园是不同地点。",
+          "source_id": "S13",
+          "locator": "附件第22项、第30项"
+        },
+        {
+          "text": "地方志介绍园内以水池组织景物，半亭、半廊、半桥等呼应园名。",
+          "source_id": "S06",
+          "locator": "95保吉利桥：半园知识小链接"
+        },
+        {
+          "text": "2015年政府目录登记为北半园，与仓米巷南半园区分。",
+          "source_id": "S13",
+          "locator": "附件第22项、第30项"
+        },
+        {
+          "text": "园林局记载北半园建于咸丰六年，由陆解眉营建；1992年曾全面整修。",
+          "source_id": "S33",
+          "locator": "正文开头及1992年整修段"
+        },
+        {
+          "text": "地方志以“知足不求全”解释园名，“半”也是理解园林意趣的线索。",
+          "source_id": "S06",
+          "locator": "95保吉利桥：半园知识小链接"
+        }
+      ],
+      "limits": "仅支持所列摘要；不代表当前开放、营业或演出安排。",
+      "learning_question": "园名里的“半”，为什么未必是一种缺憾？",
+      "aliases": [
+        "北半园"
+      ],
+      "collection": "classical_garden",
+      "checked_at": "2026-10-07"
+    },
+    {
+      "id": "C05",
+      "name": "顾颉刚故居",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "地方志文章将历史学家顾颉刚与悬桥巷顾家花园联系起来，并记载他与叶圣陶的同窗交往。",
+          "source_id": "S17",
+          "locator": "正文末部：顾颉刚与叶圣陶"
+        },
+        {
+          "text": "2024年官方转载报道明确顾家花园4号属于顾颉刚故居，描述了正房、厢房和天井组成的院落。",
+          "source_id": "S18",
+          "locator": "活化利用段：顾家花园4号"
+        },
+        {
+          "text": "顾家花园4号是顾颉刚故居的一部分，不等于全部故居。",
+          "source_id": "S18",
+          "locator": "正文“古建牵手伙伴”小节：顾家花园4号段"
+        },
+        {
+          "text": "方志文章记载，顾颉刚与同巷叶圣陶曾同窗并组织诗社。",
+          "source_id": "S17",
+          "locator": "正文末部：顾颉刚与叶圣陶段"
+        },
+        {
+          "text": "2024年报道中的4号小院包含三间正房、两间厢房和天井。",
+          "source_id": "S18",
+          "locator": "顾家花园4号段"
+        },
+        {
+          "text": "报道记录意向承租者希望展示顾颉刚手稿；这是活化意向，不是已建展馆。",
+          "source_id": "S18",
+          "locator": "顾家花园4号段：承租者意向"
+        },
+        {
+          "text": "2009年地方志将故居地址记为顾家花园4号、7号。",
+          "source_id": "S09",
+          "locator": "“简雅古朴”顾颉刚故居"
+        },
+        {
+          "text": "旧文记载南部祖宅属清代早期，东路第五进于1931年翻建。",
+          "source_id": "S09",
+          "locator": "“简雅古朴”顾颉刚故居"
+        },
+        {
+          "text": "2009年记述南部两路四进、北部三间带两厢平房；属当时记载。",
+          "source_id": "S09",
+          "locator": "“简雅古朴”顾颉刚故居"
+        }
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "S09",
+          "locator": "顾家花园段"
+        }
+      ],
+      "limits": "2009年正文已读；其中各进与南北分部的关系需建筑图纸复核，不合成为当前完整平面。；2024年展示意向不等于已开放；内部参观和修缮现状待核。",
+      "learning_question": "故居除了纪念一个人，还能帮助我们了解怎样的读书与交往生活？",
+      "checked_at": "2026-10-07"
+    },
+    {
+      "id": "C06",
+      "name": "洪钧状元府",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "地方志文章将悬桥巷27号桂荫堂认作洪钧故居，并记载洪钧为1868年状元。",
+          "source_id": "S17",
+          "locator": "桂荫堂与洪钧生平段"
+        },
+        {
+          "text": "文章记载旧宅后门临河，过去设有通往菉葭巷的廊桥，体现宅院与河巷的联系。",
+          "source_id": "S17",
+          "locator": "桂荫堂段：后门与廊桥"
+        },
+        {
+          "text": "悬桥巷27号为洪钧故居西路；项目介绍使用旧名桂荫堂。原图“鸿钧”异文保留。",
+          "source_id": "S32",
+          "locator": "基本概况：坐落位置；特色亮点"
+        },
+        {
+          "text": "洪钧于1868年中状元，后曾出使欧洲；故居为出仕后营建。",
+          "source_id": "S32",
+          "locator": "特色亮点"
+        },
+        {
+          "text": "2024年局部项目介绍记载一路四进，末进为二层楼厅；只适用于该项目范围。",
+          "source_id": "S32",
+          "locator": "建筑情况；标题“局部”"
+        },
+        {
+          "text": "方志文章描述旧宅后门临河，曾有廊桥连接菉葭巷。",
+          "source_id": "S17",
+          "locator": "桂荫堂段：后门与廊桥"
+        }
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "S09",
+          "locator": "桂荫堂洪钧故居段"
+        }
+      ],
+      "limits": "原图转录“鸿钧”保留不改；本介绍采用官方正文“洪钧”。历史廊桥不等于现在可通行；未核实开放情况。；不将局部一路四进与全宅历史格局混为一谈，整宅范围仍待图纸核对。；项目推介的商业用途只是方向，不代表已营业或允许参观。；西支家巷的洪钧祖宅不得与此悬桥巷新宅合并。；该来源附效果图、平面图等图片，本批仅核读文字表格，尚未逐图核验。",
+      "learning_question": "宅院后门通向河道，可能给居住生活带来什么便利？",
+      "aliases": [
+        "洪钧故居",
+        "桂荫堂"
+      ],
+      "checked_at": "2026-09-29"
+    },
+    {
+      "id": "C09",
+      "name": "《平江图》碑亭",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "2026年官方转载报道说明：平江路南端碑亭展示的是宋代《平江图》的复刻图，可从中观察古城街巷布局。",
+          "source_id": "S11",
+          "locator": "正文第一部分首段"
+        }
+      ],
+      "limits": "这里是复刻图，不是宋代原碑所在地；不据报道推断当前开放情况。",
+      "learning_question": null
+    },
+    {
+      "id": "U22",
+      "name": "徐宅",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "文旅局控保名录列示徐宅，时代为清，地址为大柳枝巷13号、丁香巷28号后门。",
+          "source_id": "S22",
+          "locator": "姑苏区第82项"
+        }
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "S08",
+          "locator": "名录第82项"
+        }
+      ],
+      "limits": "基础身份摘编，尚缺建筑格局、历史沿革与文化介绍。按原图名称和街巷作目录对应，不表示现场门牌、坐标或开放情况已核验。",
+      "learning_question": null
+    },
+    {
+      "id": "U23",
+      "name": "清慎堂王宅",
+      "status": "pending_source_or_identity",
+      "facts": [],
+      "candidate_sources": [
+        {
+          "source_id": "S22",
+          "locator": "姑苏区第81项"
+        }
+      ],
+      "limits": "官方名录正文已读取；原图小字或异名对应仍待核，暂不落图、不纳入正式点位检索。仅支持名称、时代与地址，不能扩写人物故事或建筑格局。",
+      "learning_question": null,
+      "background_facts": [
+        {
+          "text": "文旅局控保名录列示清慎堂王宅，时代为清，地址为大柳枝巷9号。",
+          "source_id": "S22",
+          "locator": "姑苏区第81项"
+        }
+      ]
+    },
+    {
+      "id": "U25",
+      "name": "笃佑堂袁宅（候选对应）",
+      "status": "pending_source_or_identity",
+      "facts": [],
+      "candidate_sources": [
+        {
+          "source_id": "S22",
+          "locator": "姑苏区第83项"
+        }
+      ],
+      "limits": "官方名录正文已读取；原图小字或异名对应仍待核，暂不落图、不纳入正式点位检索。仅支持名称、时代与地址，不能扩写人物故事或建筑格局。",
+      "learning_question": null,
+      "background_facts": [
+        {
+          "text": "文旅局控保名录列示笃佑堂袁宅，时代为清，地址为大新桥巷28号。",
+          "source_id": "S22",
+          "locator": "姑苏区第83项"
+        }
+      ]
+    },
+    {
+      "id": "U28",
+      "name": "惠荫园",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "园林局介绍其始建于明代，早期名洽隐山房，清同治年间改设安徽会馆并重修。2006年列为江苏省文物保护单位。",
+          "source_id": "S12",
+          "locator": "正文"
+        },
+        {
+          "text": "园中小林屋水假山由周时臣仿太湖西山林屋洞构思，是理解园林叠山的一个切入点。",
+          "source_id": "S12",
+          "locator": "正文：小林屋"
+        },
+        {
+          "text": "2025年教育局文章介绍，安徽会馆用作苏州市第一初级中学校校史馆，惠荫园空间还承载艺术教育活动。",
+          "source_id": "S14",
+          "locator": "校史馆、惠荫书院两节"
+        }
+      ],
+      "limits": "位于校园相关空间。2025年文章的预约办法和局部维修状态不等于当前开放承诺；未经确认不要建议直接入校。地址门牌在不同名录中有差异，暂不用于导航。",
+      "learning_question": "一座旧园成为校园的一部分，怎样兼顾学习使用与遗产保护？",
+      "collection": "classical_garden"
+    },
+    {
+      "id": "U18",
+      "name": "叶圣陶出生地",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "地方志文章记载叶圣陶出生于悬桥巷。",
+          "source_id": "S17",
+          "locator": "正文名人概述段"
+        },
+        {
+          "text": "民进网站转载文章引述叶至善书信：其家曾租住悬桥巷潘氏祠堂后园，但具体是哪座祠堂已记不确切。",
+          "source_id": "S23",
+          "locator": "第二封信：悬桥巷租住处"
+        }
+      ],
+      "limits": "核验到街巷层级与历史租住背景，未确认今天的门牌、原建筑存续或可参观入口。书信中的“我”是叶至善，不是叶圣陶；不能把叶至善的出生地点套给父亲。地图标记仅沿用原图近似位置。",
+      "learning_question": "老房子不在了，我们还可以用什么材料理解一个人的童年生活？"
+    },
+    {
+      "id": "U19",
+      "name": "潘氏松麟义庄（候选对应）",
+      "status": "pending_source_or_identity",
+      "facts": [],
+      "background_facts": [
+        {
+          "text": "文旅局名录将潘氏松麟义庄列为清代建筑，地址记为悬桥巷46号。",
+          "source_id": "S22",
+          "locator": "姑苏区第63项"
+        },
+        {
+          "text": "地方志文章记载义庄创设于1832年，向潘氏宗族成员提供救济，并重视子弟教育。",
+          "source_id": "S17",
+          "locator": "潘氏松麟义庄段"
+        }
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "S22",
+          "locator": "姑苏区第63项"
+        },
+        {
+          "source_id": "S17",
+          "locator": "潘氏松麟义庄段"
+        }
+      ],
+      "limits": "以下是该名称对应建筑的资料，尚未确认原图小字就是此处。保留U19暂不落图；不得与旁边潘宅、潘祖荫故居混同。名录门牌不是实地导航核验，不提供开放承诺。",
+      "learning_question": null
+    },
+    {
+      "id": "U20",
+      "name": "钱伯煊故居（候选对应）",
+      "status": "pending_source_or_identity",
+      "facts": [],
+      "background_facts": [
+        {
+          "text": "地方志文章将悬桥巷23、25号钱宅认作钱伯煊故居。",
+          "source_id": "S17",
+          "locator": "钱宅段"
+        },
+        {
+          "text": "2024年官方转载报道介绍该宅兼有居住、问诊功能；修缮团队经专家论证，将两处通风角楼识别为药材存放、晾晒空间并予以保留。",
+          "source_id": "S18",
+          "locator": "钱伯煊故居修缮段"
+        }
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "S17",
+          "locator": "钱宅段"
+        },
+        {
+          "source_id": "S18",
+          "locator": "钱伯煊故居修缮段"
+        }
+      ],
+      "limits": "正文史实已读取，但原图小字与标记位置仍待高清核对。背景资料不作为已确认的U20点位事实参与检索；不推断当前用途和开放安排。",
+      "learning_question": null
+    },
+    {
+      "id": "U09",
+      "name": "周宅",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "文旅局控保名录列示周宅，时代为清，地址为曹胡徐巷17—23号。",
+          "source_id": "S22",
+          "locator": "姑苏区第77项"
+        }
+      ],
+      "learning_question": null,
+      "limits": "基础身份摘编，尚缺建筑格局、历史沿革与文化介绍。按原图名称和街巷作目录对应，不表示现场门牌、坐标或开放情况已核验。"
+    },
+    {
+      "id": "U11",
+      "name": "朱宅",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "文旅局控保名录列示朱宅，时代为清，地址为曹胡徐巷51号。",
+          "source_id": "S22",
+          "locator": "姑苏区第76项"
+        }
+      ],
+      "learning_question": null,
+      "limits": "基础身份摘编，尚缺建筑格局、历史沿革与文化介绍。按原图名称和街巷作目录对应，不表示现场门牌、坐标或开放情况已核验。"
+    },
+    {
+      "id": "U36",
+      "name": "丁宅",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "文旅局控保名录列示丁宅，时代为清，地址为大儒巷6号。",
+          "source_id": "S22",
+          "locator": "姑苏区第68项"
+        }
+      ],
+      "learning_question": null,
+      "limits": "基础身份摘编，尚缺建筑格局、历史沿革与文化介绍。按原图名称和街巷作目录对应，不表示现场门牌、坐标或开放情况已核验。"
+    },
+    {
+      "id": "U38",
+      "name": "艾步蟾故居",
+      "status": "pending_source_or_identity",
+      "facts": [],
+      "learning_question": null,
+      "background_facts": [
+        {
+          "text": "文旅局控保名录列示艾步蟾故居，时代为清，地址为肖家巷15号。",
+          "source_id": "S22",
+          "locator": "姑苏区第112项"
+        }
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "S22",
+          "locator": "姑苏区第112项"
+        }
+      ],
+      "limits": "官方名录正文已读取；原图小字或异名对应仍待核，暂不落图、不纳入正式点位检索。仅支持名称、时代与地址，不能扩写人物故事或建筑格局。"
+    },
+    {
+      "id": "U47",
+      "name": "孝友堂张宅",
+      "status": "pending_source_or_identity",
+      "facts": [],
+      "learning_question": null,
+      "background_facts": [
+        {
+          "text": "文旅局控保名录列示孝友堂张宅，时代为清，地址为干将路622号。",
+          "source_id": "S22",
+          "locator": "姑苏区第107项"
+        }
+      ],
+      "candidate_sources": [
+        {
+          "source_id": "S22",
+          "locator": "姑苏区第107项"
+        }
+      ],
+      "limits": "官方名录正文已读取；原图小字或异名对应仍待核，暂不落图、不纳入正式点位检索。仅支持名称、时代与地址，不能扩写人物故事或建筑格局。"
+    },
+    {
+      "id": "U13",
+      "name": "汪氏义庄",
+      "status": "verified_excerpt",
+      "aliases": [
+        "汪氏诵芬义庄"
+      ],
+      "facts": [
+        {
+          "text": "地方志介绍平江路254号汪氏诵芬义庄，又名汪家祠堂，创办于1842年。",
+          "source_id": "S24",
+          "locator": "汪氏诵芬义庄节"
+        },
+        {
+          "text": "该文记载义庄原有两路五进，前临河埠、后设花园池塘；河边功德坊是其建筑标志。",
+          "source_id": "S24",
+          "locator": "汪氏诵芬义庄节"
+        }
+      ],
+      "limits": "采用原图北入口东侧汪氏义庄标签对应，不能与东花桥巷汪宅合并。格局为文献所述历史信息，不承诺当前存续细节或开放参观。",
+      "learning_question": "为什么承担宗族事务的建筑，也会与河埠、码头相连？"
+    },
+    {
+      "id": "X003",
+      "name": "狮子林",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "狮子林始建于1342年，由天如禅师维则的弟子为其营建，早期兼具寺院与园林性质。",
+          "source_id": "S35",
+          "locator": "正文首段：建园与寺园沿革"
+        },
+        {
+          "text": "园林以假山见长，2000年列入《世界遗产名录》。",
+          "source_id": "S35",
+          "locator": "正文首段：园名和保护身份"
+        }
+      ],
+      "limits": "仅摘编来源支持的历史及空间信息；未核验当前开放、预约、价格及游客入口。介绍资料不改变现有地图定位状态。",
+      "learning_question": null,
+      "checked_at": "2026-10-08"
+    },
+    {
+      "id": "X071",
+      "name": "留园",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "留园位于留园路338号；1593年始建时为徐泰时的私家园林，初称东园。",
+          "source_id": "S36",
+          "locator": "正文第1—2段"
+        },
+        {
+          "text": "刘恕在园内廊壁嵌置书法刻石，后来的园主沿用这一做法，形成园中书条石特色。",
+          "source_id": "S36",
+          "locator": "正文第3段：刘恕与廊壁刻石"
+        }
+      ],
+      "limits": "仅摘编来源支持的历史及空间信息；未核验当前开放、预约、价格及游客入口。介绍资料不改变现有地图定位状态。",
+      "learning_question": null,
+      "checked_at": "2026-10-08"
+    },
+    {
+      "id": "X012",
+      "name": "山塘街",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "地方志引《苏州市志》记述：山塘街从渡僧桥延伸至虎丘。",
+          "source_id": "S37",
+          "locator": "正文引《苏州市志》段"
+        },
+        {
+          "text": "山塘街又称七里山塘；唐代白居易任苏州刺史期间曾修筑。",
+          "source_id": "S43",
+          "locator": "第25项：山塘街"
+        }
+      ],
+      "limits": "仅摘编来源支持的历史及空间信息；未核验当前开放、预约、价格及游客入口。介绍资料不改变现有地图定位状态。",
+      "learning_question": null,
+      "checked_at": "2026-10-08"
+    },
+    {
+      "id": "X080",
+      "name": "双塔市集",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "文旅局2020年介绍将双塔市集地址记为定慧寺巷与石匠弄交叉口。",
+          "source_id": "S38",
+          "locator": "双塔市集小节：地址"
+        },
+        {
+          "text": "双塔市集由双塔菜场改造而来，改造时将餐饮、文创和阅读等功能融入菜场空间。",
+          "source_id": "S38",
+          "locator": "双塔市集小节：前身与改造"
+        }
+      ],
+      "limits": "仅摘编来源支持的历史及空间信息；未核验当前开放、预约、价格及游客入口。介绍资料不改变现有地图定位状态。",
+      "learning_question": null,
+      "checked_at": "2026-10-08"
+    },
+    {
+      "id": "X073",
+      "name": "观前街",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "观前街东接临顿路，西至人民路察院场，街名源于玄妙观。",
+          "source_id": "S39",
+          "locator": "正文首个街区介绍段"
+        }
+      ],
+      "limits": "仅摘编来源支持的历史及空间信息；未核验当前开放、预约、价格及游客入口。介绍资料不改变现有地图定位状态。",
+      "learning_question": null,
+      "checked_at": "2026-10-08"
+    },
+    {
+      "id": "X072",
+      "name": "金鸡湖",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "园区2026年8月介绍将金鸡湖景区列为开放式国家5A级旅游景区，水域面积约7.4平方公里。",
+          "source_id": "S40",
+          "locator": "正文首段：景区概况"
+        }
+      ],
+      "limits": "仅摘编来源支持的历史及空间信息；未核验当前开放、预约、价格及游客入口。介绍资料不改变现有地图定位状态。",
+      "learning_question": null,
+      "checked_at": "2026-10-08"
+    },
+    {
+      "id": "X015",
+      "name": "大儒巷",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "大儒巷东起平江路、西至临顿路；巷名与明代学者王敬臣在此居住有关。",
+          "source_id": "S41",
+          "locator": "“大儒巷的由来”段"
+        }
+      ],
+      "limits": "仅摘编来源支持的历史及空间信息；未核验当前开放、预约、价格及游客入口。介绍资料不改变现有地图定位状态。",
+      "learning_question": null,
+      "checked_at": "2026-10-08"
+    },
+    {
+      "id": "X078",
+      "name": "平江文化中心",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "平江文化中心位于大儒巷38号的古昭庆寺空间；地方志记述该处2005年经过翻修。",
+          "source_id": "S41",
+          "locator": "“大儒巷的古迹遗存”第1—2段"
+        }
+      ],
+      "limits": "仅摘编来源支持的历史及空间信息；未核验当前开放、预约、价格及游客入口。介绍资料不改变现有地图定位状态。",
+      "learning_question": null,
+      "checked_at": "2026-10-08"
+    },
+    {
+      "id": "X046",
+      "name": "丁香巷",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "丁香巷连接平江路与仓街；文旅局介绍将巷名与过去巷内的丁香树联系起来。",
+          "source_id": "S42",
+          "locator": "正文第3段：丁香巷"
+        }
+      ],
+      "limits": "仅摘编来源支持的历史及空间信息；未核验当前开放、预约、价格及游客入口。介绍资料不改变现有地图定位状态。",
+      "learning_question": null,
+      "checked_at": "2026-10-08"
+    },
+    {
+      "id": "X051",
+      "name": "钮家巷",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "钮家巷是连接临顿路和平江路的古巷。",
+          "source_id": "S42",
+          "locator": "正文第2段：钮家巷"
+        }
+      ],
+      "limits": "仅摘编来源支持的历史及空间信息；未核验当前开放、预约、价格及游客入口。介绍资料不改变现有地图定位状态。",
+      "learning_question": null,
+      "checked_at": "2026-10-08"
+    },
+    {
+      "id": "X055",
+      "name": "菉葭巷",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "菉葭巷西接临顿路、东至平江路；文旅局介绍记述，名称由陆氏族人居住及吴语谐音雅化而来。",
+          "source_id": "S42",
+          "locator": "正文第3段：菉葭巷"
+        }
+      ],
+      "limits": "仅摘编来源支持的历史及空间信息；未核验当前开放、预约、价格及游客入口。介绍资料不改变现有地图定位状态。",
+      "learning_question": null,
+      "checked_at": "2026-10-08"
+    },
+    {
+      "id": "X070",
+      "name": "西园寺",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "地方志介绍将西园记为戒幢律寺与西花园放生池的合称，地址为西园弄18号。",
+          "source_id": "S43",
+          "locator": "第21项：西园"
+        },
+        {
+          "text": "寺院建筑包括五百罗汉堂、观音殿和藏经楼。",
+          "source_id": "S43",
+          "locator": "第21项：西园"
+        }
+      ],
+      "limits": "仅摘编来源支持的历史及空间信息；未核验当前开放、预约、价格及游客入口。介绍资料不改变现有地图定位状态。",
+      "learning_question": null,
+      "checked_at": "2026-10-08"
+    },
+    {
+      "id": "X081",
+      "name": "罗汉院双塔",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "罗汉院双塔位于定慧寺巷22号，北宋太平兴国七年（982年）由王氏三兄弟创建。",
+          "source_id": "S43",
+          "locator": "第24项：双塔"
+        },
+        {
+          "text": "两塔并立，属于仿木楼阁式砖塔。",
+          "source_id": "S43",
+          "locator": "第24项：双塔"
+        }
+      ],
+      "limits": "仅摘编来源支持的历史及空间信息；未核验当前开放、预约、价格及游客入口。介绍资料不改变现有地图定位状态。",
+      "learning_question": null,
+      "checked_at": "2026-10-08"
+    },
+    {
+      "id": "X079",
+      "name": "玄妙观",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "玄妙观位于苏州古城中心，观内三清殿建于南宋。",
+          "source_id": "S43",
+          "locator": "第28项：玄妙观"
+        }
+      ],
+      "limits": "仅摘编来源支持的历史及空间信息；未核验当前开放、预约、价格及游客入口。介绍资料不改变现有地图定位状态。",
+      "learning_question": null,
+      "checked_at": "2026-10-08"
+    },
+    {
+      "id": "X001",
+      "name": "平江路",
+      "status": "verified_excerpt",
+      "facts": [
+        {
+          "text": "平江街区保留河街相邻、水陆并行的城市空间格局。",
+          "source_id": "S42",
+          "locator": "正文第1段：街区格局"
+        }
+      ],
+      "limits": "仅摘编来源支持的历史及空间信息；未核验当前开放、预约、价格及游客入口。介绍资料不改变现有地图定位状态。",
+      "learning_question": null,
+      "checked_at": "2026-10-08"
+    }
+  ],
+  "contexts": [
+    {
+      "id": "bridge_name",
+      "name": "胡厢使桥／胡相思桥",
+      "facts": [
+        {
+          "text": "2009年地方志文章称，胡相思桥在宋《平江图》上称胡厢使桥，转名时间无从查考。",
+          "source_id": "S07",
+          "locator": "硕果仅存的石拱古桥"
+        },
+        {
+          "text": "2018年地方志文章提出吴语谐音解释，并记载2005年恢复定名胡厢使桥。应注明这是该文的解释，不编造爱情传说。",
+          "source_id": "S06",
+          "locator": "94胡厢使桥"
+        }
+      ],
+      "limits": "两篇资料详略不同；桥名解释须注明来源。尚未绑定地图符号。"
+    },
+    {
+      "id": "two_bridges",
+      "name": "小新桥与众安桥",
+      "facts": [
+        {
+          "text": "地方志文章将小新桥与众安桥的相邻组合称为双桥格局。",
+          "source_id": "S07",
+          "locator": "声名远扬的双桥景观"
+        }
+      ],
+      "limits": "不据此推断截图中的具体桥位，游戏连线不是实地导航。"
+    }
+  ],
+  "garden_scope": {
+    "map_point_ids": [
+      "U02",
+      "U03",
+      "U04",
+      "U05",
+      "U28"
+    ],
+    "related_pending": [
+      {
+        "id": "C03",
+        "label": "凤池园",
+        "reason": "原图状元博物馆附注，暂不另建独立园林点位。"
+      }
+    ],
+    "excluded_commercial": [
+      "B02",
+      "U37"
+    ],
+    "note": "依据当前截图已辨识标签，不声称穷尽所有宅园。保留原始地图名称与编号。"
+  },
+  "expanded_at": "2026-10-08"
+}

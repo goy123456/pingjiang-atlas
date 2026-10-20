@@ -1,0 +1,363 @@
+{
+  "checked_at": "2026-10-09",
+  "policy": "优先官方图片，允许明确对应地点的旅游平台及媒体实景图；保留来源和水印，未生成图片。外链展示不代表获得公开复用许可。页面日期不代表拍摄日期。",
+  "photos": [
+    {
+      "ids": [
+        "X003"
+      ],
+      "caption": "狮子林 · 园林风貌",
+      "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/nlzkwu3wxeh.jpg",
+      "source_url": "https://ylj.suzhou.gov.cn/szsylj/ylml/201904/afb382ddaa0e427cab8d525b35f2674a.shtml",
+      "publisher": "苏州市园林和绿化管理局",
+      "published_at": "2025-10-22"
+    },
+    {
+      "ids": [
+        "C01",
+        "X038"
+      ],
+      "caption": "中国昆曲博物馆（全晋会馆）· 官方资料配图",
+      "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/mzxmiwj1zov.jpg",
+      "source_url": "https://ylj.suzhou.gov.cn/szsylj/ylml/201912/023ecb40b7d04222bb762d52331e5777.shtml",
+      "publisher": "苏州市园林和绿化管理局",
+      "published_at": "2025-10-22"
+    },
+    {
+      "ids": [
+        "U03",
+        "X041"
+      ],
+      "caption": "耦园 · 官方资料配图",
+      "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/5p52o0ntr2s.jpg",
+      "source_url": "https://ylj.suzhou.gov.cn/szsylj/ylml/201904/0dc618967c32448e8f71746dfdf3d3ef.shtml",
+      "publisher": "苏州市园林和绿化管理局",
+      "published_at": "2025-10-22"
+    },
+    {
+      "ids": [
+        "X001"
+      ],
+      "caption": "平江路 · 官方资料配图",
+      "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20160711165016_5268.jpg",
+      "source_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201506/9f6c3833968b4e2481403e4275eefa43.shtml",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2015-06-08"
+    },
+    {
+      "ids": [
+        "X012"
+      ],
+      "caption": "山塘街 · 官方资料配图",
+      "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20160711164840_7934.jpg",
+      "source_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201506/9f6c3833968b4e2481403e4275eefa43.shtml",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2015-06-08"
+    },
+    {
+      "ids": [
+        "X081"
+      ],
+      "caption": "罗汉院双塔 · 官方资料配图",
+      "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20160711164728_4406.jpg",
+      "source_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201506/9f6c3833968b4e2481403e4275eefa43.shtml",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2015-06-08"
+    },
+    {
+      "ids": [
+        "X073"
+      ],
+      "caption": "观前街 · 官方资料配图",
+      "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20160711165034_7550.jpg",
+      "source_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201506/9f6c3833968b4e2481403e4275eefa43.shtml",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2015-06-08"
+    },
+    {
+      "ids": [
+        "X079"
+      ],
+      "caption": "玄妙观 · 官方资料配图",
+      "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20160711165049_4295.png",
+      "source_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201506/9f6c3833968b4e2481403e4275eefa43.shtml",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2015-06-08"
+    },
+    {
+      "ids": [
+        "X070"
+      ],
+      "caption": "西园 · 官方资料配图",
+      "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20160711164624_2422.jpg",
+      "source_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201506/9f6c3833968b4e2481403e4275eefa43.shtml",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2015-06-08"
+    },
+    {
+      "ids": [
+        "U02",
+        "X002"
+      ],
+      "caption": "拙政园 · 中花园",
+      "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/bg5naimiu1e.jpg",
+      "source_url": "https://ylj.suzhou.gov.cn/szsylj/sjyc/201905/c1df393edc8745abb20e8a9bd5525782.shtml",
+      "publisher": "苏州市园林和绿化管理局",
+      "published_at": "2020-03-16"
+    },
+    {
+      "ids": [
+        "U05"
+      ],
+      "caption": "北半园 · 官方资料配图",
+      "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/gfu1j1kpezp.jpg",
+      "source_url": "https://ylj.suzhou.gov.cn/szsylj/ylml/201903/64821f9615634c89863258c5d064892a.shtml",
+      "publisher": "苏州市园林和绿化管理局",
+      "published_at": "2025-10-20"
+    },
+    {
+      "ids": [
+        "U28"
+      ],
+      "caption": "惠荫园 · 官方资料配图",
+      "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/j10ax24h3bd.jpg",
+      "source_url": "https://ylj.suzhou.gov.cn/szsylj/ylml/201902/e022c009d8034aea83afe47e36ae0876.shtml",
+      "publisher": "苏州市园林和绿化管理局",
+      "published_at": "2025-10-17"
+    },
+    {
+      "ids": [
+        "H01"
+      ],
+      "caption": "保吉利桥 · 文献配图",
+      "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20181128091446_7035.jpg",
+      "source_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201811/93f014f81a794a7292a8b29a427149d0.shtml",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2018-11-27"
+    },
+    {
+      "ids": [
+        "H02"
+      ],
+      "caption": "胡厢使桥 · 文献配图",
+      "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20181128091354_2874.jpg",
+      "source_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201811/93f014f81a794a7292a8b29a427149d0.shtml",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2018-11-27"
+    },
+    {
+      "ids": [
+        "H03"
+      ],
+      "caption": "唐家桥 · 文献配图",
+      "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20181128091305_1473.jpg",
+      "source_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201811/93f014f81a794a7292a8b29a427149d0.shtml",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2018-11-27"
+    },
+    {
+      "ids": [
+        "H04"
+      ],
+      "caption": "通利桥 · 文献配图",
+      "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20181128091241_6069.jpg",
+      "source_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201811/93f014f81a794a7292a8b29a427149d0.shtml",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2018-11-27"
+    },
+    {
+      "ids": [
+        "H05"
+      ],
+      "caption": "朱马交桥 · 文献配图",
+      "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20181128091201_6552.jpg",
+      "source_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201811/93f014f81a794a7292a8b29a427149d0.shtml",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2018-11-27"
+    },
+    {
+      "ids": [
+        "H06"
+      ],
+      "caption": "众安桥 · 文献配图",
+      "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20181127165157_6015.jpg",
+      "source_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201811/93f014f81a794a7292a8b29a427149d0.shtml",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2018-11-27"
+    },
+    {
+      "ids": [
+        "H07"
+      ],
+      "caption": "苏军桥 · 文献配图",
+      "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20181127165100_3494.jpg",
+      "source_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201811/93f014f81a794a7292a8b29a427149d0.shtml",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2018-11-27"
+    },
+    {
+      "ids": [
+        "H08"
+      ],
+      "caption": "积庆桥 · 文献配图",
+      "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20181127164854_2856.jpg",
+      "source_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201811/93f014f81a794a7292a8b29a427149d0.shtml",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2018-11-27"
+    },
+    {
+      "ids": [
+        "X056"
+      ],
+      "caption": "思婆桥 · 文献配图",
+      "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20181127164717_8931.jpg",
+      "source_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201811/93f014f81a794a7292a8b29a427149d0.shtml",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2018-11-27"
+    },
+    {
+      "ids": [
+        "X057"
+      ],
+      "caption": "寿安桥 · 文献配图",
+      "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20181127164744_2883.jpg",
+      "source_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201811/93f014f81a794a7292a8b29a427149d0.shtml",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2018-11-27"
+    },
+    {
+      "ids": [
+        "X058"
+      ],
+      "caption": "雪糕桥 · 文献配图",
+      "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20181127164807_0643.jpg",
+      "source_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201811/93f014f81a794a7292a8b29a427149d0.shtml",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2018-11-27"
+    },
+    {
+      "ids": [
+        "U01"
+      ],
+      "caption": "苏州博物馆（本馆）· 入口外观",
+      "url": "https://file.szmuseum.com/WaterMark/微信素材/EditorImage/20151118/20151118161139_9886.jpg",
+      "source_url": "https://dx.szmuseum.com/views/NewsDetails.aspx?guid=349a54de-f3f5-41bc-b86d-7c3488d3c0d6",
+      "publisher": "苏州博物馆",
+      "published_at": null,
+      "checked_at": "2026-10-08",
+      "selection_note": "已核对官网上下文及实际画面；用于识别地点，不代表当前开放情况。"
+    },
+    {
+      "ids": [
+        "C02"
+      ],
+      "caption": "中国苏州评弹博物馆 · 门厅",
+      "url": "https://english.suzhou.gov.cn/szdoc/uploadfile/fw/shfw/y/zgszpdbwg/201611/W020161111566429271562.jpg",
+      "source_url": "https://english.suzhou.gov.cn/szsenglish/ptbwg/201611/df39f0899698425e9d8cc8f40f6b3a11.shtml",
+      "publisher": "苏州市人民政府英文网",
+      "published_at": "2021-07-29",
+      "checked_at": "2026-10-08",
+      "selection_note": "已核对官网上下文及实际画面；用于识别地点，不代表当前开放情况。"
+    },
+    {
+      "ids": [
+        "C04"
+      ],
+      "caption": "礼耕堂 · 城建博物馆城市会客厅",
+      "url": "https://zfcjj.suzhou.gov.cn/szszjj/gzdt/202204/f9f5ade3ba704b2a9d27298f5f83aab3/images/bb67972678b6486d98f4760f461ef42b.png",
+      "source_url": "https://zfcjj.suzhou.gov.cn/szszjj/gzdt/202204/f9f5ade3ba704b2a9d27298f5f83aab3.shtml",
+      "publisher": "苏州市住房和城乡建设局",
+      "published_at": "2022-04-27",
+      "checked_at": "2026-10-08",
+      "selection_note": "已核对官网上下文及实际画面；用于识别地点，不代表当前开放情况。"
+    },
+    {
+      "ids": [
+        "C06"
+      ],
+      "caption": "洪钧故居 · 入口",
+      "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202412/7b6b7ecf19c145f6a22fcf1b8eef33bf/images/31610678428649a9917be006ab31a6c7.png",
+      "source_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202412/7b6b7ecf19c145f6a22fcf1b8eef33bf.shtml",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2024-12-18",
+      "checked_at": "2026-10-08",
+      "selection_note": "已核对官网上下文及实际画面；用于识别地点，不代表当前开放情况。"
+    },
+    {
+      "ids": [
+        "U13"
+      ],
+      "caption": "汪氏诵芬义庄 · 门面",
+      "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202405/4dedac83796e451ca21c8d631c8e712e/images/5c37697c45834e3aad160d12a6371f1c.png",
+      "source_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202405/4dedac83796e451ca21c8d631c8e712e.shtml",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "published_at": "2024-05-29",
+      "checked_at": "2026-10-08",
+      "selection_note": "已核对官网上下文及实际画面；用于识别地点，不代表当前开放情况。"
+    },
+    {
+      "ids": [
+        "C05"
+      ],
+      "caption": "顾颉刚故居 · 2023年报道所刊门面照片（原图来源：江苏建设）",
+      "url": "https://fcdn.goodq.top/caches/61d30741ec95d86006ccd4813ab971c1/aHR0cHM6Ly93d3cuc3pjdC5vcmcuY24vcWZ5LWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzEyL2JmNzQ5MDc4YTE1MjJiNDk4YTdmZWNhODEyOGNhZTlkLmpwZw_p_p100_p_3D_p_p100_p_3D.jpg",
+      "source_url": "https://www.szct.org.cn/?p=26454",
+      "publisher": "苏州城投集团官网",
+      "published_at": "2023-12-19",
+      "checked_at": "2026-10-08",
+      "selection_note": "已核对官网上下文及实际画面；用于识别地点，不代表当前开放情况。"
+    },
+    {
+      "ids": [
+        "C03"
+      ],
+      "url": "https://dimg04.c-ctrip.com/images/0100e12000f6twp3i1E34_W_1080_0_Q80.jpg?proc=crop/m_c,w_998,h_665,x_0,y_414,829F&_fr=wc",
+      "source_url": "https://gs.ctrip.com/html5/you/sight/suzhou11/1487345.html",
+      "caption": "苏州状元博物馆 · 庭院",
+      "publisher": "携程旅行",
+      "published_at": null,
+      "checked_at": "2026-10-09",
+      "source_type": "travel_platform",
+      "selection_note": "用户允许非官方来源；已核对来源景点和实际画面，拍摄日期未确认。"
+    },
+    {
+      "ids": [
+        "C07"
+      ],
+      "url": "https://ak-d.tripcdn.com/images/100o0q000000g7jg6937E_W_960_0_R5_Q50.webp?proc=source/trip",
+      "source_url": "https://tw.trip.com/travel-guide/attraction/suzhou/guoshaoyu-former-residence-13853796/",
+      "caption": "郭绍虞故居 · 门面",
+      "publisher": "Trip.com",
+      "published_at": null,
+      "checked_at": "2026-10-09",
+      "source_type": "travel_platform",
+      "selection_note": "用户允许非官方来源；已核对来源景点和实际画面，拍摄日期未确认。"
+    },
+    {
+      "ids": [
+        "C08"
+      ],
+      "url": "https://dimg04.c-ctrip.com/images/0103812000aty58qnB2D6_W_1080_0_Q80.jpg?proc=crop/m_c,w_854,h_569,x_0,y_35,6EFE&_fr=wc",
+      "source_url": "https://gs.ctrip.com/html5/you/sight/suzhou11/115799.html",
+      "caption": "唐纳故居 · 门面",
+      "publisher": "携程旅行",
+      "published_at": null,
+      "checked_at": "2026-10-09",
+      "source_type": "travel_platform",
+      "selection_note": "用户允许非官方来源；已核对来源景点和实际画面，拍摄日期未确认。"
+    },
+    {
+      "ids": [
+        "C09"
+      ],
+      "url": "https://images.gochinafreely.com/AJ019/yuan-bridge-and-pingjiang-picture-stele-pavilion-at-the-south-end-of-pingjiang-road-suzhou-800.webp",
+      "source_url": "https://gochinafreely.com/things-to-do/pingjiang-road-suzhou-walking-guide",
+      "caption": "平江图碑亭 · 亭内图碑",
+      "publisher": "Go China Freely",
+      "published_at": null,
+      "checked_at": "2026-10-09",
+      "source_type": "travel_platform",
+      "selection_note": "用户允许非官方来源；已核对来源景点和实际画面，拍摄日期未确认。"
+    }
+  ]
+}

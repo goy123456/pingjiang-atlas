@@ -1,0 +1,7 @@
+#sketch-overlay{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;display:none}
+#sketch-toggle{border:1px solid #b5bea9;padding:5px 10px;font-size:12px}
+#sketch-toggle[aria-pressed=true]{background:#355b4e;color:#fff}
+.sketch-note{margin:0;padding:8px 16px;font:11px/1.6 system-ui;color:#687763;background:#f4efdf}
+.hide-layer-bridge .sketch-bridges{display:none}
+#viewport{scrollbar-width:none}#viewport::-webkit-scrollbar{display:none}
+body:not(.comparison-map) #viewport{height:auto;aspect-ratio:1000 / 1082.21}

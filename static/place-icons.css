@@ -1,0 +1,16 @@
+/* Fixed-size hit targets; shape as well as color communicates category. */
+body #markers .place-symbol,body[data-map-mode=explore] #markers .place-symbol{width:48px;height:48px;min-width:48px;min-height:48px;padding:4px;border:1px solid #d8dfd0;border-radius:50%;background:#fffdf3f2;color:#47745c;box-shadow:0 3px 8px #29494220;display:grid;place-items:center}
+body #markers .place-symbol svg{width:38px;height:38px;margin:0;display:block}
+body #markers .place-symbol[data-symbol=charity]{color:#985b37;background:#fff3df}
+body #markers .place-symbol[data-symbol=home]{color:#74604d}
+body #markers .place-symbol[data-symbol=museum]{color:#496b89}
+body #markers .place-symbol[data-symbol=theatre]{color:#9c5257}
+body #markers .place-symbol[data-symbol=hall]{color:#8b6840}
+body #markers .place-symbol[data-symbol=stele]{color:#6f6a88}
+body #markers .place-symbol[data-symbol=bridge]{color:#397e87}
+body #markers .place-symbol::before{display:none!important}
+body #markers .place-symbol:hover,body #markers .place-symbol:focus-visible,body #markers .place-symbol[aria-pressed=true]{background:#fff8dd;outline:3px solid #bd8d47;outline-offset:2px;z-index:8}
+body #markers .place-symbol:hover::after,body #markers .place-symbol:focus-visible::after,body #markers .place-symbol[aria-pressed=true]::after{content:attr(data-name);display:block;position:absolute;top:auto;bottom:calc(100% + 9px);left:50%;transform:translateX(-50%);padding:5px 9px;background:#294942;color:#fff;border:0;border-radius:6px;white-space:nowrap;font:12px/1.5 'Microsoft YaHei',sans-serif;pointer-events:none;box-shadow:0 2px 6px #29494220}
+.symbol-legend{display:flex;gap:12px;flex-wrap:wrap;padding:8px 16px;color:#65756a;font-size:11px}
+.symbol-legend span{display:flex;align-items:center;gap:3px}
+.symbol-legend svg{width:24px;height:24px}

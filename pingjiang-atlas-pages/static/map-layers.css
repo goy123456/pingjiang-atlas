@@ -1,0 +1,8 @@
+.map-legend button{display:inline-flex;align-items:center;gap:9px;min-height:42px;padding:8px 12px;border:1px solid #cad5c8;border-radius:9px;background:#f0f5ec;color:#35564c;font:14px system-ui;cursor:pointer}
+.map-legend button[aria-pressed=false]{background:#fff;color:#777;border-style:dashed}
+.map-legend button[aria-pressed=false] i{opacity:.25}
+.map-legend button:focus-visible{outline:3px solid #b87735;outline-offset:2px}
+.hide-layer-bridge .ancient-bridge-rail{display:none!important}
+.hide-layer-water #ancient-guide [stroke="#23749c"],.hide-layer-water .context-water,.hide-layer-water .context-water-area,.hide-layer-water .context-label.water,
+.hide-layer-street #ancient-guide [stroke="#518360"],.hide-layer-street .context-street,.hide-layer-street .context-label.street,
+.hide-layer-bridge #ancient-guide [stroke="#b74229"],.hide-layer-bridge #old-marker,.hide-layer-bridge .context-bridge,.hide-layer-bridge .bridge-callout,.hide-layer-bridge #relation-labels svg,.hide-layer-bridge #markers [data-kind=bridge]{display:none!important}

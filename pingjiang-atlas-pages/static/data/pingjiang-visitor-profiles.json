@@ -1,0 +1,462 @@
+{
+  "description": "游客端事实摘要；完整史料与待核项保留在研究档案。",
+  "profiles": [
+    {
+      "id": "U01",
+      "name": "苏州博物馆（本馆）",
+      "identity": [
+        {
+          "text": "东北街204号",
+          "source_id": "S01",
+          "locator": "官方介绍"
+        }
+      ],
+      "history": [
+        {
+          "text": "新馆由贝聿铭设计，2006年10月6日开放。",
+          "source_id": "S28",
+          "locator": "官方介绍"
+        }
+      ],
+      "architecture": [],
+      "culture": [],
+      "introduction": {
+        "text": "新馆由贝聿铭设计，2006年10月6日开放。",
+        "source_ids": [
+          "S28"
+        ]
+      }
+    },
+    {
+      "id": "U02",
+      "name": "拙政园",
+      "identity": [
+        {
+          "text": "东北街178号",
+          "source_id": "S04",
+          "locator": "官方介绍"
+        }
+      ],
+      "history": [
+        {
+          "text": "1509年王献臣归乡建园。园林分东、中、西三部分，中部以水面为中心。",
+          "source_id": "S04",
+          "locator": "官方介绍"
+        }
+      ],
+      "architecture": [],
+      "culture": [],
+      "introduction": {
+        "text": "1509年王献臣归乡建园。园林分东、中、西三部分，中部以水面为中心。",
+        "source_ids": [
+          "S04"
+        ]
+      }
+    },
+    {
+      "id": "U03",
+      "name": "耦园",
+      "identity": [
+        {
+          "text": "小新桥巷",
+          "source_id": "S27",
+          "locator": "官方介绍"
+        }
+      ],
+      "history": [
+        {
+          "text": "1874年沈秉成购入涉园。住宅居中，东西两侧设园，东园以黄石假山见长。",
+          "source_id": "S27",
+          "locator": "官方介绍"
+        }
+      ],
+      "architecture": [],
+      "culture": [],
+      "introduction": {
+        "text": "1874年沈秉成购入涉园。住宅居中，东西两侧设园，东园以黄石假山见长。",
+        "source_ids": [
+          "S27"
+        ]
+      }
+    },
+    {
+      "id": "C01",
+      "name": "中国昆曲博物馆",
+      "identity": [
+        {
+          "text": "中张家巷14号，全晋会馆内",
+          "source_id": "S15",
+          "locator": "官方介绍"
+        }
+      ],
+      "history": [
+        {
+          "text": "全晋会馆由晋商于1879年兴建。馆内古戏台设螺旋式藻井，两侧有看楼。",
+          "source_id": "S15",
+          "locator": "官方介绍"
+        }
+      ],
+      "architecture": [],
+      "culture": [],
+      "introduction": {
+        "text": "全晋会馆由晋商于1879年兴建。馆内古戏台设螺旋式藻井，两侧有看楼。",
+        "source_ids": [
+          "S15"
+        ]
+      }
+    },
+    {
+      "id": "C02",
+      "name": "中国苏州评弹博物馆",
+      "identity": [
+        {
+          "text": "中张家巷3号",
+          "source_id": "S01",
+          "locator": "官方介绍"
+        }
+      ],
+      "history": [
+        {
+          "text": "馆址为沈宅旧址。",
+          "source_id": "S30",
+          "locator": "官方介绍"
+        }
+      ],
+      "architecture": [],
+      "culture": [],
+      "introduction": {
+        "text": "这座评弹专题博物馆设在沈宅旧址，兼具收藏、展览、研究与教育功能。",
+        "source_ids": [
+          "S30",
+          "S16"
+        ]
+      }
+    },
+    {
+      "id": "C03",
+      "name": "苏州状元博物馆",
+      "identity": [
+        {
+          "text": "钮家巷3号，潘世恩故居内",
+          "source_id": "S10",
+          "locator": "官方介绍"
+        }
+      ],
+      "history": [
+        {
+          "text": "展陈介绍苏州科举文化与潘氏家族，建筑包括轿厅、鸳鸯厅、纱帽厅和后厅。",
+          "source_id": "S10",
+          "locator": "官方介绍"
+        }
+      ],
+      "architecture": [],
+      "culture": [],
+      "introduction": {
+        "text": "展陈介绍苏州科举文化与潘氏家族，建筑包括轿厅、鸳鸯厅、纱帽厅和后厅。",
+        "source_ids": [
+          "S10"
+        ]
+      }
+    },
+    {
+      "id": "C04",
+      "name": "礼耕堂",
+      "identity": [
+        {
+          "text": "卫道观前3号潘宅内",
+          "source_id": "S26",
+          "locator": "官方介绍"
+        }
+      ],
+      "history": [
+        {
+          "text": "礼耕堂为潘宅正厅。",
+          "source_id": "S02",
+          "locator": "官方介绍"
+        }
+      ],
+      "architecture": [],
+      "culture": [],
+      "introduction": {
+        "text": "礼耕堂是卫道观前潘宅的正厅。旧宅改建为城建博物馆后，这里保留厅堂格局，成为城市会客厅。",
+        "source_ids": [
+          "S02"
+        ]
+      }
+    },
+    {
+      "id": "C05",
+      "name": "顾颉刚故居",
+      "identity": [
+        {
+          "text": "顾家花园",
+          "source_id": "S09",
+          "locator": "官方介绍"
+        }
+      ],
+      "history": [
+        {
+          "text": "故居东路第五进于1931年翻建。",
+          "source_id": "S09",
+          "locator": "官方介绍"
+        }
+      ],
+      "architecture": [],
+      "culture": [],
+      "introduction": {
+        "text": "这里是历史学家顾颉刚的故居，坐落于顾家花园。故居东路第五进于1931年翻建，4号小院由正房、厢房和天井组成。",
+        "source_ids": [
+          "S17",
+          "S09",
+          "S18"
+        ]
+      }
+    },
+    {
+      "id": "C06",
+      "name": "洪钧状元府",
+      "identity": [
+        {
+          "text": "悬桥巷27号为状元府西部",
+          "source_id": "S32",
+          "locator": "官方介绍"
+        }
+      ],
+      "history": [
+        {
+          "text": "洪钧于1868年中状元，后曾出使欧洲。",
+          "source_id": "S32",
+          "locator": "官方介绍"
+        }
+      ],
+      "architecture": [],
+      "culture": [],
+      "introduction": {
+        "text": "洪钧于1868年中状元，后曾出使欧洲。",
+        "source_ids": [
+          "S32"
+        ]
+      }
+    },
+    {
+      "id": "C07",
+      "name": "郭绍虞故居",
+      "identity": [
+        {
+          "text": "大新桥巷13号",
+          "source_id": "S06",
+          "locator": "官方介绍"
+        }
+      ],
+      "history": [
+        {
+          "text": "郭绍虞曾任复旦大学中文系主任、《辞海》副主编。",
+          "source_id": "S20",
+          "locator": "官方介绍"
+        }
+      ],
+      "architecture": [],
+      "culture": [],
+      "introduction": {
+        "text": "郭绍虞曾任复旦大学中文系主任、《辞海》副主编。",
+        "source_ids": [
+          "S20"
+        ]
+      }
+    },
+    {
+      "id": "C08",
+      "name": "唐纳故居",
+      "identity": [
+        {
+          "text": "胡厢使巷40号，又称马家墙门",
+          "source_id": "S09",
+          "locator": "官方介绍"
+        }
+      ],
+      "history": [
+        {
+          "text": "唐纳姓马，曾从事影剧评论和报刊工作。",
+          "source_id": "S09",
+          "locator": "官方介绍"
+        }
+      ],
+      "architecture": [],
+      "culture": [],
+      "introduction": {
+        "text": "唐纳姓马，曾从事影剧评论和报刊工作。",
+        "source_ids": [
+          "S09"
+        ]
+      }
+    },
+    {
+      "id": "C09",
+      "name": "《平江图》碑亭",
+      "identity": [
+        {
+          "text": "平江路南端",
+          "source_id": "S11",
+          "locator": "官方介绍"
+        }
+      ],
+      "history": [
+        {
+          "text": "亭内展示宋代《平江图》的复刻图。",
+          "source_id": "S11",
+          "locator": "官方介绍"
+        }
+      ],
+      "architecture": [],
+      "culture": [],
+      "introduction": {
+        "text": "亭内展示宋代《平江图》的复刻图。",
+        "source_ids": [
+          "S11"
+        ]
+      }
+    },
+    {
+      "id": "U05",
+      "name": "北半园",
+      "identity": [
+        {
+          "text": "白塔东路60号",
+          "source_id": "S06",
+          "locator": "官方介绍"
+        }
+      ],
+      "history": [
+        {
+          "text": "北半园建于清咸丰六年，由陆解眉营建。",
+          "source_id": "S33",
+          "locator": "官方介绍"
+        }
+      ],
+      "architecture": [],
+      "culture": [],
+      "introduction": {
+        "text": "北半园建于清咸丰六年，由陆解眉营建。园中以水池组织景物，半亭、半廊、半桥呼应“知足不求全”的园名意趣。",
+        "source_ids": [
+          "S33",
+          "S06"
+        ]
+      }
+    },
+    {
+      "id": "U28",
+      "name": "惠荫园",
+      "identity": [
+        {
+          "text": "早名洽隐山房",
+          "source_id": "S12",
+          "locator": "官方介绍"
+        }
+      ],
+      "history": [
+        {
+          "text": "始建于明代，同治年间由安徽会馆重修；园中有小林屋石景。",
+          "source_id": "S12",
+          "locator": "官方介绍"
+        }
+      ],
+      "architecture": [],
+      "culture": [],
+      "introduction": {
+        "text": "始建于明代，同治年间由安徽会馆重修；园中有小林屋石景。",
+        "source_ids": [
+          "S12"
+        ]
+      }
+    },
+    {
+      "id": "U13",
+      "name": "汪氏诵芬义庄",
+      "identity": [
+        {
+          "text": "平江路254号，又称汪家祠堂",
+          "source_id": "S24",
+          "locator": "官方介绍"
+        }
+      ],
+      "history": [
+        {
+          "text": "创建于1842年。",
+          "source_id": "S24",
+          "locator": "官方介绍"
+        }
+      ],
+      "architecture": [],
+      "culture": [],
+      "introduction": {
+        "text": "汪氏诵芬义庄又称汪家祠堂，创建于1842年。历史上前临河埠、后设花园池塘，河边功德坊是其建筑标志。",
+        "source_ids": [
+          "S24"
+        ]
+      }
+    },
+    {
+      "id": "X056",
+      "name": "思婆桥",
+      "identity": [],
+      "history": [
+        {
+          "text": "思婆桥横跨平江河，西接建新巷。宋代《平江图》中记作“寺东桥”，桥名与附近的资寿寺有关。",
+          "source_id": "S06",
+          "locator": "思婆桥条目"
+        }
+      ],
+      "architecture": [],
+      "culture": [],
+      "introduction": {
+        "text": "思婆桥横跨平江河，西接建新巷。宋代《平江图》中记作“寺东桥”，桥名与附近的资寿寺有关。",
+        "source_ids": [
+          "S06"
+        ]
+      },
+      "collection": "bridge"
+    },
+    {
+      "id": "X057",
+      "name": "寿安桥",
+      "identity": [],
+      "history": [
+        {
+          "text": "寿安桥横跨平江河，连接平江路与钮家巷。宋代《平江图》中称“寺后桥”，后改名寿安桥，寄寓福寿安康的心愿。",
+          "source_id": "S06",
+          "locator": "寿安桥条目"
+        }
+      ],
+      "architecture": [],
+      "culture": [],
+      "introduction": {
+        "text": "寿安桥横跨平江河，连接平江路与钮家巷。宋代《平江图》中称“寺后桥”，后改名寿安桥，寄寓福寿安康的心愿。",
+        "source_ids": [
+          "S06"
+        ]
+      },
+      "collection": "bridge"
+    },
+    {
+      "id": "X058",
+      "name": "雪糕桥",
+      "identity": [],
+      "history": [
+        {
+          "text": "雪糕桥横跨平江河，西接凤池弄、通向肖家巷。宋代《平江图》中已有其名，桥名相传与“抟雪为糕”的孝亲故事有关。",
+          "source_id": "S06",
+          "locator": "雪糕桥条目"
+        }
+      ],
+      "architecture": [],
+      "culture": [],
+      "introduction": {
+        "text": "雪糕桥横跨平江河，西接凤池弄、通向肖家巷。宋代《平江图》中已有其名，桥名相传与“抟雪为糕”的孝亲故事有关。",
+        "source_ids": [
+          "S06"
+        ]
+      },
+      "collection": "bridge"
+    }
+  ]
+}

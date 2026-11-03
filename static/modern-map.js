@@ -3,6 +3,15 @@ const ugcMode=new URLSearchParams(location.search).get('ugc')==='1';
 const visitor=document.body.dataset.audience==='visitor';
 const corridorMode=new URLSearchParams(location.search).get('view')==='bridges';
 if(corridorMode){
+ // Decorative paper extends outside the rotated map; it carries no geographic features.
+ const paper=document.createElement('style');
+ paper.textContent=`body.comparison-map #viewport{background-color:var(--edge-paper,#f7f3e9)!important;background-image:radial-gradient(ellipse at 15% 25%,#b5a77a0a,transparent 65%),radial-gradient(#8b795a0c .55px,transparent .8px)!important;background-size:100% 100%,5px 5px!important}body.comparison-map header::before{content:'边缘为装饰纸纹 · 非地理信息';font:10px/1.4 system-ui;color:#788071;margin-right:auto}`;
+ document.head.append(paper);
+ function matchPaper(){const sketch=document.getElementById('sketch-toggle');document.getElementById('viewport').style.setProperty('--edge-paper',sketch?.getAttribute('aria-pressed')==='true'?'#f4edda':'#f7f3e9');}
+ const paperObserver=new MutationObserver(matchPaper);
+ paperObserver.observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['aria-pressed']});
+ matchPaper();
+
  document.body.classList.add('comparison-map');
  const style=document.createElement('style');style.textContent='html,body{height:100%;overflow:hidden}body.comparison-map #viewport{height:calc(100dvh - 50px)!important;overflow:hidden}body.comparison-map .credit,body.comparison-map>section,body.comparison-map #points{display:none!important}body.comparison-map .pin:not([data-kind="bridge"]){display:none}';document.head.append(style);
 }

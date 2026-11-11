@@ -1,0 +1,29 @@
+.compare-controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:10px 0}
+.compare-controls button,.atlas-journal .map-toolbar button{min-width:44px;min-height:44px;padding:8px 12px;font:14px/1.4 system-ui;border:1px solid #bac5b4;border-radius:6px;color:#294a43;background:#fffdf7;touch-action:manipulation}
+.compare-controls button[aria-pressed=true]{background:#294a43;color:white}
+.compare-controls span{font-size:12px;color:#657466}
+.atlas-journal .comparison{min-width:0}.atlas-journal .comparison>section{min-width:0}
+.atlas-journal .comparison .map-toolbar{height:auto!important;min-height:58px;flex-wrap:wrap;gap:6px}
+.atlas-journal .comparison .zoom{flex-wrap:wrap}
+.touch-display main{max-width:none!important;padding:10px 24px!important}
+.touch-display .intro,.touch-display .journal-description,.touch-display .map-legend,.touch-display .comparison-context,.touch-display .source-note,.touch-display .reading-guide{display:none!important}
+.touch-display .comparison{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important}
+.touch-display #old-viewport,.touch-display .modern-panel iframe{height:calc(100dvh - 380px)!important;min-height:300px}
+.touch-display #bridge-list button{min-height:52px!important;font-size:18px!important}
+.touch-display .compare-controls button{min-height:52px;font-size:18px}
+@media(max-width:700px){
+ body.atlas-journal main{padding:0 18px 24px!important}
+ .atlas-journal .intro{padding:16px 0 12px}.atlas-journal .intro h1{font-size:26px;letter-spacing:1px}
+ .atlas-journal .journal-description{font-size:12px;line-height:1.6}
+ .atlas-journal main>.journal-index{padding:8px 0!important;max-width:100%}
+ .atlas-journal #bridge-list{flex-wrap:nowrap!important;overflow-x:auto;padding-bottom:8px;overscroll-behavior-x:contain}
+ .atlas-journal #bridge-list button{flex:0 0 auto;white-space:nowrap;min-height:46px!important}
+ .atlas-journal .comparison,.touch-display .comparison{grid-template-columns:minmax(0,1fr)!important;gap:14px!important}
+ .atlas-journal #old-viewport,.atlas-journal .modern-panel iframe{height:340px!important;min-height:0!important}
+ .atlas-journal .map-toolbar h2{font-size:17px!important}
+ .compare-controls{gap:6px}.compare-controls span{flex-basis:100%}
+ .atlas-journal .journal-reading{grid-template-columns:minmax(0,1fr)}
+ .atlas-journal .editorial-actions button{min-height:44px}
+ .atlas-journal .map-legend{padding:10px!important;gap:8px!important}
+ .atlas-journal .map-legend small{display:none}
+}

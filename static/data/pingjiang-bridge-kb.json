@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "version": "2026-11-11.r1",
+  "scope": "地图收录的八桥及其相邻河街，不是街区全部桥梁名录。",
+  "policy": "仅verified摘编进入检索；照片只检索已核图注，不从像素推断历史。对话不写入知识库。",
+  "sources": [
+    {"id":"SZ-BRIDGES","title":"平江河上的老桥——苏州老桥记④","url":"https://dfzb.suzhou.gov.cn/dfzb/szdq/201811/93f014f81a794a7292a8b29a427149d0.shtml","publisher":"苏州市地方志编纂委员会办公室","published_at":"2018-11-27","checked_at":"2026-11-11","status":"page_read"},
+    {"id":"SZ-HUXIANG","title":"百巷苏州丨“相思”巷口“相思”桥","url":"https://www.sohu.com/a/592061509_570901","publisher":"搜狐·看见的苏州","published_at":"2022-10-12","checked_at":"2026-11-11","status":"page_read"},
+    {"id":"SZ-LUJIA","title":"百巷苏州丨这条小巷，逛起来很美，吃起来更美！","url":"https://www.sohu.com/a/577793309_570901","publisher":"看见的苏州；来源好玩苏州","published_at":"2022-08-18","checked_at":"2026-11-11","status":"page_read"},
+    {"id":"SZ-LIUZHI","title":"百巷苏州丨柳枝巷深处，藏着超好吃的面拖大排","url":"https://news.2500sz.com/doc/2022/09/29/903050.shtml","publisher":"名城苏州；来源好玩苏州","published_at":"2022-09-29","checked_at":"2026-11-11","status":"page_read"},
+    {"id":"SZ-PINGJIANG","title":"百巷苏州丨你真的了解平江路吗？","url":"https://news.2500sz.com/doc/2022/06/09/859937.shtml","publisher":"名城苏州；来源好玩苏州","published_at":"2022-06-09","checked_at":"2026-11-11","status":"page_read"}
+  ],
+  "entities": [
+    {"id":"H01","name":"保吉利桥","aliases":["打急路桥"],"river":"平江河","streets":["白塔东路"],"nearby":["平江路"],"pair_ids":[],"external_pair":null},
+    {"id":"H02","name":"胡厢使桥","aliases":["胡相思桥"],"river":"平江河","streets":["曹胡徐巷","平江路"],"nearby":["胡厢使巷"],"pair_ids":["H03"],"external_pair":null},
+    {"id":"H03","name":"唐家桥","aliases":[],"river":"胡厢使河","streets":["平江路"],"nearby":["胡厢使巷"],"pair_ids":["H02"],"external_pair":null},
+    {"id":"H04","name":"通利桥","aliases":[],"river":"平江河","streets":["菉葭巷","平江路"],"nearby":[],"pair_ids":["H05"],"external_pair":null},
+    {"id":"H05","name":"朱马交桥","aliases":["朱马茭桥"],"river":"大柳枝河","streets":["平江路"],"nearby":["大柳枝巷"],"pair_ids":["H04"],"external_pair":null},
+    {"id":"H06","name":"众安桥","aliases":["大新桥","庆安桥"],"river":"平江河","streets":["悬桥巷","平江路"],"nearby":["大新桥巷"],"pair_ids":[],"external_pair":"新桥"},
+    {"id":"H07","name":"苏军桥","aliases":["青石桥"],"river":"平江河","streets":["南石子街","平江路","卫道观前"],"nearby":[],"pair_ids":[],"external_pair":null},
+    {"id":"H08","name":"积庆桥","aliases":["胜利桥","吉庆桥"],"river":"平江河","streets":["大儒巷","平江路"],"nearby":[],"pair_ids":[],"external_pair":null}
+  ],
+  "passages": [
+    {"id":"H01-R","entity_ids":["H01"],"topic":"connection","text":"保吉利桥跨平江河，沿白塔东路东西向通行。","source_id":"SZ-BRIDGES","locator":"95 保吉利桥","status":"verified","kind":"curated_summary"},
+    {"id":"H01-N","entity_ids":["H01"],"topic":"name","text":"保吉利桥在宋《平江图》中标为打急路桥。","source_id":"SZ-BRIDGES","locator":"95 保吉利桥","status":"verified","kind":"curated_summary"},
+    {"id":"H02-R","entity_ids":["H02"],"topic":"connection","text":"胡厢使桥跨平江河，西对曹胡徐巷，东接平江路。","source_id":"SZ-HUXIANG","locator":"古桥寻踪·胡厢使桥","status":"verified","kind":"curated_summary"},
+    {"id":"H02-N","entity_ids":["H02"],"topic":"name","text":"胡厢使桥也叫胡相思桥；2005年恢复定名胡厢使桥。","source_id":"SZ-HUXIANG","locator":"古桥寻踪·胡厢使桥","event_date":"2005","status":"verified","kind":"curated_summary"},
+    {"id":"H03-R","entity_ids":["H03"],"topic":"connection","text":"唐家桥让平江路跨过胡厢使河，位于胡厢使桥东端南侧。","source_id":"SZ-HUXIANG","locator":"古桥寻踪·唐家桥","status":"verified","kind":"curated_summary"},
+    {"id":"H03-N","entity_ids":["H03"],"topic":"name","text":"宋《平江图》已记录唐家桥这一名称。","source_id":"SZ-BRIDGES","locator":"93 唐家桥","status":"verified","kind":"curated_summary"},
+    {"id":"H04-R","entity_ids":["H04"],"topic":"connection","text":"通利桥跨平江河，连接西侧菉葭巷与东侧平江路。","source_id":"SZ-BRIDGES","locator":"92 通利桥","status":"verified","kind":"curated_summary"},
+    {"id":"H04-N","entity_ids":["H04"],"topic":"name","text":"通利桥的名称已见于宋《平江图》。","source_id":"SZ-BRIDGES","locator":"92 通利桥","status":"verified","kind":"curated_summary"},
+    {"id":"H05-R","entity_ids":["H05"],"topic":"connection","text":"朱马交桥跨大柳枝河，使平江路南北连通；大柳枝巷在桥北端东侧。","source_id":"SZ-BRIDGES","locator":"91 朱马交桥","status":"verified","kind":"curated_summary"},
+    {"id":"H05-N","entity_ids":["H05"],"topic":"name","text":"朱马交桥另有朱马茭桥的写法；宋《平江图》标名朱马交桥。","source_id":"SZ-BRIDGES","locator":"91 朱马交桥","status":"verified","kind":"curated_summary"},
+    {"id":"H06-R","entity_ids":["H06"],"topic":"connection","text":"众安桥跨平江河，西侧接悬桥巷，东侧接平江路。","source_id":"SZ-BRIDGES","locator":"89 众安桥","status":"verified","kind":"curated_summary"},
+    {"id":"H06-N","entity_ids":["H06"],"topic":"name","text":"众安桥又称大新桥；宋《平江图》标名众安桥。","source_id":"SZ-BRIDGES","locator":"89 众安桥","status":"verified","kind":"curated_summary"},
+    {"id":"H07-R","entity_ids":["H07"],"topic":"connection","text":"苏军桥跨平江河，连通南石子街与卫道观前一线，东接平江路。","source_id":"SZ-BRIDGES","locator":"88．苏军桥","status":"verified","kind":"curated_summary"},
+    {"id":"H07-N","entity_ids":["H07"],"topic":"name","text":"青石桥是苏军桥的俗称。","source_id":"SZ-PINGJIANG","locator":"“桥”见平江路·青石桥段","status":"verified","kind":"curated_summary"},
+    {"id":"H08-R","entity_ids":["H08"],"topic":"connection","text":"积庆桥跨平江河，西接大儒巷，东接平江路。","source_id":"SZ-PINGJIANG","locator":"“桥”见平江路·胜利桥段","status":"verified","kind":"curated_summary"},
+    {"id":"H08-N","entity_ids":["H08"],"topic":"name","text":"胜利桥与积庆桥指同一地点。","source_id":"SZ-PINGJIANG","locator":"“桥”见平江路·胜利桥段","status":"verified","kind":"curated_summary"},
+    {"id":"PAIR-23","entity_ids":["H02","H03"],"topic":"pair","text":"胡厢使桥与唐家桥直角相交：前者跨平江河，后者跨胡厢使河，分别衔接横向街巷与平江路。","source_id":"SZ-HUXIANG","locator":"古桥寻踪·胡厢使桥、唐家桥","status":"verified","kind":"curated_summary"},
+    {"id":"PAIR-45","entity_ids":["H04","H05"],"topic":"pair","text":"通利桥与朱马交桥组成一对双桥；从平江路进入菉葭巷时可以看到这一组合。","source_id":"SZ-LUJIA","locator":"开篇双桥段、菉葭巷示意图","status":"verified","kind":"curated_summary"},
+    {"id":"PAIR-6X","entity_ids":["H06"],"topic":"pair","text":"众安桥又叫大新桥，与东端相邻的新桥直角相接。新桥是相邻桥，不属于本项目选取的八桥。","source_id":"SZ-PINGJIANG","locator":"“桥”见平江路·众安桥段（八桥范围为项目标注）","status":"verified","kind":"curated_summary"},
+    {"id":"LANE-LIUZHI","entity_ids":["H05"],"topic":"connection","text":"大柳枝巷从平江路向东延伸至仓街，沿河形成步行空间。","source_id":"SZ-LIUZHI","locator":"大柳枝巷小节、街巷照片","status":"verified","kind":"curated_summary"},
+    {"id":"PHOTO-H02","entity_ids":["H02"],"topic":"photo","text":"地方志页面收录一张标注为1980年代拍摄的胡厢使桥照片；具体年份未注明。","source_id":"SZ-BRIDGES","locator":"开篇图注：胡厢使桥（摄于80年代）","capture_date":"1980–1989","status":"verified","kind":"verified_caption"},
+    {"id":"PHOTO-H03","entity_ids":["H03"],"topic":"photo","text":"2022年胡厢使巷专题的唐家桥配图，可见桥名、支河及两侧沿河空间；拍摄日期未注明。","source_id":"SZ-HUXIANG","locator":"古桥寻踪·唐家桥配图","capture_date":null,"status":"verified","kind":"verified_caption"},
+    {"id":"PHOTO-H06","entity_ids":["H06"],"topic":"photo","text":"平江路专题分别展示众安桥与相邻新桥；可通过各自桥额区分两座桥。","source_id":"SZ-PINGJIANG","locator":"众安桥段后的两张照片","capture_date":null,"status":"verified","kind":"verified_caption"}
+  ]
+}

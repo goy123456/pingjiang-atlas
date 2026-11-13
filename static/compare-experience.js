@@ -1,7 +1,4 @@
-(()=>{'use strict';
-const panel=document.createElement('section');panel.className='bridge-matches';panel.id='bridge-experience';
-panel.innerHTML='<h2>问问这座桥</h2><p id="qa-context">先在地图上选择一座桥</p><button id="start-observe">回到地图</button> <button id="guide-toggle" aria-pressed="false">古图辅助线</button><div class="qa-questions"><button data-question="pair">为什么有两座桥？</button><button data-question="connection">连接哪些街巷？</button><button data-question="change">古今有什么变化？</button></div><label for="map-thought">还有什么想了解？</label><textarea id="map-thought" maxlength="600" rows="2" placeholder="关于这座桥，问一个问题……"></textarea><small>发送的问题将交由AI服务处理，请勿填写个人隐私。</small><div><button data-map-action="thought">发送问题</button></div><p id="map-reply" role="status"></p><details id="qa-source-box" hidden><summary>资料来源</summary><div id="qa-sources"></div></details>';
-document.querySelector('.comparison').before(panel);
+(()=>{'use strict';const panel=document.createElement('section');panel.id='bridge-experience';panel.innerHTML='<button id="guide-toggle" aria-pressed="false">古图辅助线</button>';document.querySelector('.comparison').before(panel);
 const NS='http://www.w3.org/2000/svg',guide=document.createElementNS(NS,'svg');guide.id='ancient-guide';guide.setAttribute('viewBox','0 0 12540 18448');guide.setAttribute('aria-hidden','true');guide.style.cssText='position:absolute;inset:0;width:100%;height:100%;pointer-events:none;display:none';
 // Distinct visual encodings explain relationships, not surveyed feature edges.
 const anchors={

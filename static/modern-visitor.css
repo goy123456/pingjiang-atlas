@@ -4,3 +4,7 @@ body[data-audience=visitor] #points{display:flex;max-height:140px;overflow:auto;
 body:not(.comparison-map)>header{position:sticky;top:0;z-index:40;height:auto;min-height:56px;background:#fbfcf8;border-bottom:1px solid #dce2d7;box-shadow:0 3px 10px #29494210}
 body:not(.comparison-map)>header>div{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:4px}
 body:not(.comparison-map)>header button{min-height:44px;min-width:44px}
+body[data-audience=visitor]:not(.comparison-map) #viewport{height:max(160px,calc(100dvh - var(--explore-toolbar-height,65px) - 32px));aspect-ratio:auto;overflow:hidden;touch-action:none;overscroll-behavior:none;user-select:none;cursor:grab}
+body[data-audience=visitor]:not(.comparison-map) #viewport[data-dragging=true]{cursor:grabbing}
+.explore-map-help{height:32px;margin:0;padding:6px 12px;background:#fbfcf8;color:#687b72;font:12px/20px system-ui;text-align:center}
+body.comparison-map #viewport{height:var(--modern-fit-height,70vh);overflow:hidden}

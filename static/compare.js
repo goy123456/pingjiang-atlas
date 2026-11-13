@@ -101,6 +101,7 @@ function render(reset=false){
  stage.style.width=width+'px';stage.style.height=height+'px';
  img.style.width=width+'px';img.style.height=height+'px';img.style.transform='none';
  stage.style.margin=zoom===1?'0 auto':'0';
+ v.dataset.zoom=zoom;v.dataset.minZoom=1;v.dataset.maxZoom=MAX_ZOOM;
  document.getElementById('old-scale').textContent=Math.round(zoom*100)+'%';
  document.getElementById('old-minus').disabled=zoom<=1;document.getElementById('old-plus').disabled=zoom>=MAX_ZOOM;
  v.scrollLeft=reset?0:rx*width-v.clientWidth/2;v.scrollTop=reset?0:ry*height-v.clientHeight/2;
@@ -116,9 +117,14 @@ img.onload=()=>{status.textContent='平江图 · '+img.naturalWidth+' × '+img.n
 img.onerror=()=>{status.textContent='古图加载失败，请刷新；来源链接仍可查看。'};
 if(img.complete&&img.naturalWidth)img.onload();
 v.addEventListener('atlas-manual-pan',()=>{corridorOverview=false;autoFocus=false;});
-v.addEventListener('atlas-pinch',e=>{const factor=e.detail?.factor;if(!Number.isFinite(factor)||factor<=0)return;corridorOverview=false;autoFocus=false;zoom=Math.max(1,Math.min(MAX_ZOOM,zoom*factor));render();});
-document.getElementById('old-plus').onclick=()=>{corridorOverview=false;autoFocus=false;zoom=Math.min(MAX_ZOOM,zoom*1.5);render()};
-document.getElementById('old-minus').onclick=()=>{corridorOverview=false;autoFocus=false;zoom=Math.max(1,zoom/1.5);render()};
+function changeZoom(factor,sync=false){
+ if(!Number.isFinite(factor)||factor<=0)return;
+ if(!sync&&!v.dispatchEvent(new CustomEvent('atlas-zoom-request',{cancelable:true,detail:{factor}})))return;
+ corridorOverview=false;autoFocus=false;zoom=Math.max(1,Math.min(MAX_ZOOM,zoom*factor));render();
+}
+v.addEventListener('atlas-pinch',e=>changeZoom(e.detail?.factor,e.detail?.sync===true));
+document.getElementById('old-plus').onclick=()=>changeZoom(1.5);
+document.getElementById('old-minus').onclick=()=>changeZoom(1/1.5);
 document.getElementById('old-reset').onclick=()=>{if(visitor){document.getElementById('bridge-start')?.click();return;}corridorOverview=false;autoFocus=false;focusedBridge=null;marker.hidden=true;zoom=1;render(true)};
 if(visitor)document.getElementById('old-reset').textContent='八桥';
 v.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse'||e.button!==0)return;drag={x:e.clientX,y:e.clientY,l:v.scrollLeft,t:v.scrollTop};v.setPointerCapture(e.pointerId);v.classList.add('dragging');e.preventDefault()});
@@ -132,7 +138,9 @@ new ResizeObserver(()=>{
 }).observe(v);
 window.addEventListener('message',e=>{
  const frame=document.querySelector('iframe');
- if(e.origin!==location.origin||e.source!==frame.contentWindow||e.data?.type!=='atlas-point-selected')return;
+ if(e.origin!==location.origin||e.source!==frame.contentWindow)return;
+ if(e.data?.type==='atlas-overview-request'){document.getElementById('bridge-start')?.click();return;}
+ if(e.data?.type!=='atlas-point-selected')return;
  if(typeof e.data.id!=='string'||!/^([CBUFH])\d{2}$/.test(e.data.id)||typeof e.data.name!=='string'||e.data.name.length>100)return;
  syncSelection({id:e.data.id,name:e.data.name});
 });

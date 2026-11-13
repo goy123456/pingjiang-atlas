@@ -22,13 +22,19 @@ function touchMetrics(points){
  if(p.length===1)return {x:p[0].x,y:p[0].y,distance:0};
  return {x:(p[0].x+p[1].x)/2,y:(p[0].y+p[1].y)/2,distance:Math.hypot(p[1].x-p[0].x,p[1].y-p[0].y)};
 }
-if(typeof module==='object'&&module.exports){module.exports={similarity,safeCenter,touchMetrics};return;}
+function linkedZoomFactor(factor,states){
+ if(!Number.isFinite(factor)||factor<=0||!states.length||states.some(s=>![s.zoom,s.min,s.max].every(Number.isFinite)||s.zoom<=0||s.min<=0||s.max<s.min))return 1;
+ const low=Math.max(...states.map(s=>s.min/s.zoom)),high=Math.min(...states.map(s=>s.max/s.zoom));
+ return Math.max(low,Math.min(high,factor));
+}
+if(typeof module==='object'&&module.exports){module.exports={similarity,safeCenter,touchMetrics,linkedZoomFactor};return;}
 const base=new URL('.',document.currentScript.src);
 function start(){
  const frame=document.querySelector('.modern-panel iframe'),oldV=document.getElementById('old-viewport'),oldS=document.getElementById('old-stage');
  if(!frame||!oldV)return;
  let mapping,modernSize,oldSize,modern,source=null,raf=0,linked=true;
  const old={v:oldV,s:oldS};
+ window.addEventListener('comparison-context',()=>{source=null;});
  const hint=document.createElement('p');hint.className='pan-link-hint';hint.textContent='双图拖拽联动 · 按八桥位置近似对应 · 到边界自动停住';hint.style.cssText='font-size:12px;color:#68766b;margin:8px 0';frame.closest('.comparison').before(hint);
  const css=document.createElement('link');css.rel='stylesheet';css.href=new URL('compare-touch.css?v=20261111touch',base);document.head.append(css);
  const controls=document.createElement('div');controls.className='compare-controls';controls.setAttribute('aria-label','地图操作');hint.before(controls);
@@ -78,6 +84,14 @@ function start(){
  }
  function bind(view){
   const v=view.v;v.style.touchAction='none';v.style.overscrollBehavior='contain';
+  v.addEventListener('atlas-zoom-request',e=>{
+   if(!linked||!modern||!mapping)return;e.preventDefault();
+   const views=[old,modern],states=views.map(x=>({zoom:Number(x.v.dataset.zoom),min:Number(x.v.dataset.minZoom),max:Number(x.v.dataset.maxZoom)}));
+   const factor=linkedZoomFactor(e.detail.factor,states);
+   for(const target of views)target.v.dispatchEvent(new CustomEvent('atlas-pinch',{detail:{factor,sync:true}}));
+   source=view;schedule();
+  });
+  v.addEventListener('wheel',()=>{v.dispatchEvent(new CustomEvent('atlas-manual-pan'));source=view;schedule();},{passive:true});
   const pointers=new Map();let previous=null;
   v.addEventListener('pointerdown',e=>{
    if(e.target.closest('button')||(e.pointerType==='mouse'&&e.button!==0))return;

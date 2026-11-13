@@ -12,7 +12,7 @@
   button.onclick=()=>{target.open=!target.open;if(target.open)target.scrollIntoView({block:'nearest',behavior:'auto'});};bar.insertBefore(button,hint);
  }
  const photos=document.querySelector('.bridge-photos');
- if(photos){const details=document.createElement('details');details.className='editorial-drawer';const title=document.createElement('summary');title.textContent='桥边影像 · 年代与视角';photos.before(details);details.append(title,photos);control('查看桥边影像',details);}
+ if(photos){const details=document.createElement('details');details.className='editorial-drawer';details.open=true;const title=document.createElement('summary');title.textContent='桥边影像 · 年代与视角';bar.after(details);details.append(title,photos);control('查看桥边影像',details);}
  const qa=document.getElementById('bridge-experience');
  if(qa&&document.getElementById('map-thought')){
   let drawer=qa.closest('details');if(!drawer){drawer=document.createElement('details');drawer.className='visitor-experience';const title=document.createElement('summary');title.textContent='资料与问答';map.after(drawer);drawer.append(title,qa);}

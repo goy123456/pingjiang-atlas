@@ -1,0 +1,43 @@
+/* Shared paper, ink, seal-red and original line icons. */
+:root{--paper:#f6f3e9;--ink:#294f46;--line:#d5d8c8;--seal:#a34e37;--serif:'Songti SC','SimSun',serif}
+body[data-audience=visitor]{background:var(--paper);color:var(--ink)}
+body[data-audience=visitor] button:not(.pin):not(.bridge-callout){transition:background .16s,color .16s,box-shadow .16s;border-color:var(--line);min-height:40px}
+body[data-audience=visitor] button:not(.pin):not(.bridge-callout):not(:disabled):hover{background:#e5eade;color:#23463d;box-shadow:0 2px 7px #294f4615}
+body[data-audience=visitor] button:focus-visible,body[data-audience=visitor] summary:focus-visible{outline:2px solid var(--seal);outline-offset:3px}
+button[data-atlas-icon]::before{content:'';display:inline-block;width:19px;height:19px;vertical-align:-4px;margin-right:7px;background:currentColor;mask:var(--atlas-icon) center/contain no-repeat;-webkit-mask:var(--atlas-icon) center/contain no-repeat}
+body[data-audience=visitor] .intro{padding:26px 0 20px;border-bottom:1px solid var(--line);margin-bottom:16px}
+body[data-audience=visitor] .intro h1{font-family:var(--serif);font-weight:500;font-size:clamp(28px,3vw,44px);letter-spacing:.12em;line-height:1.4}
+body[data-audience=visitor] .eyebrow{color:var(--seal);letter-spacing:.28em;font-size:11px}
+body[data-audience=visitor] #bridge-list{display:flex;gap:8px!important;flex-wrap:wrap;counter-reset:bridge}
+body[data-audience=visitor] #bridge-list button{border:1px solid var(--line)!important;border-radius:5px 14px 5px 5px!important;padding:10px 14px!important;background:#fffdf6;font-size:13px!important;min-height:44px}
+body[data-audience=visitor] #bridge-list button[data-bridge]{counter-increment:bridge}
+body[data-audience=visitor] #bridge-list button[data-bridge]::before{content:counter(bridge,decimal-leading-zero);color:var(--seal);font:11px Georgia,serif;margin-right:9px}
+body[data-audience=visitor] #bridge-list button[aria-pressed=true]{background:var(--ink)!important;border-color:var(--ink)!important;color:#fffdf5!important}
+body[data-audience=visitor] #bridge-list button[aria-pressed=true]::before{color:#e7c9a1}
+body[data-audience=visitor] .map-legend{background:#eeeee3!important;border:1px solid #dedfd1!important;border-radius:8px!important;padding:10px 14px!important;margin:16px 0!important;color:#52665b}
+body[data-audience=visitor] .map-legend button{border:1px solid #d2d8c9;background:#f8f8ef;border-radius:6px}
+body[data-audience=visitor] .compare-controls{gap:8px;margin:14px 0 8px;align-items:center}
+body[data-audience=visitor] .compare-controls button,body[data-audience=visitor] .editorial-actions button{border:1px solid var(--line);border-radius:7px;background:#fffdf6;padding:10px 14px;font-size:13px;min-height:44px}
+body[data-audience=visitor] .compare-controls button[aria-pressed=true],body[data-audience=visitor] .editorial-actions button[aria-expanded=true]{background:var(--ink);color:#fffdf5;border-color:var(--ink)}
+body[data-audience=visitor] .comparison{gap:16px!important}
+body[data-audience=visitor] .comparison .ancient-panel,body[data-audience=visitor] .comparison .modern-panel{border:1px solid #d1d6c6;border-radius:10px!important;box-shadow:0 6px 20px #294f4608!important;overflow:hidden}
+body[data-audience=visitor] .comparison .map-toolbar{background:#fffdf7;border-bottom:1px solid #dddccd}
+body[data-audience=visitor] .comparison h2{font-family:var(--serif);font-weight:500;letter-spacing:.18em!important}
+body[data-audience=visitor] #old-plus,body[data-audience=visitor] #old-minus,body[data-audience=visitor] #plus,body[data-audience=visitor] #minus{border-radius:50%;background:#eef0e5;min-width:40px;min-height:40px;border:1px solid #dce0d2;font-size:20px}
+body[data-audience=visitor] #old-reset,body[data-audience=visitor] #reset{border-radius:6px;border:1px solid #c9d2c1;background:#fffdf6;padding:8px 12px;font-size:13px}
+body[data-audience=visitor]>header{background:#fffdf6;border-bottom:1px solid #d8dcce}
+body[data-audience=visitor] #sketch-toggle{border-radius:6px;border:1px solid #d0d7c7;min-height:40px}
+body[data-audience=visitor] #sketch-toggle[aria-pressed=true]{background:var(--ink);color:#fffdf5}
+body[data-audience=visitor] .explore-map-help{background:#eeeee3;color:#51665a;letter-spacing:.05em}
+body[data-audience=visitor] .editorial-drawer,body[data-audience=visitor] .bridge-library{border:1px solid #d8d9c9;border-radius:10px;background:#fffdf7;overflow:hidden}
+body[data-audience=visitor] .editorial-drawer>summary{font-family:var(--serif);font-size:17px;letter-spacing:.12em;padding:18px 20px;border-bottom:1px solid #e4e3d7}
+body[data-audience=visitor] .bridge-photos{background:var(--paper);padding:24px!important}
+body[data-audience=visitor] .bridge-photos h2,body[data-audience=visitor] .library-heading h2{font:500 26px/1.5 var(--serif);letter-spacing:.08em}
+body[data-audience=visitor] .bridge-photo-pair h3{color:var(--seal);font-size:12px;letter-spacing:.16em}
+body[data-audience=visitor] .bridge-photo-image{border:5px solid #fffdf7;border-radius:4px;box-shadow:0 0 0 1px #d8d8c8}
+body[data-audience=visitor] .library-kicker{color:var(--seal)}
+body[data-audience=visitor] #bridge-experience{padding:0!important;margin:8px 0!important;border:0!important;background:none!important}
+body[data-audience=visitor] #guide-toggle{border-radius:7px;border:1px solid var(--line);background:#fffdf6;padding:8px 12px}
+body[data-audience=visitor] .compare-controls{margin-top:6px;padding-top:4px}
+@media(max-width:700px){body[data-audience=visitor] .intro{padding:18px 0 12px}body[data-audience=visitor] .comparison{gap:6px!important}body[data-audience=visitor] #bridge-list{gap:6px!important}body[data-audience=visitor] #bridge-list button{padding:8px 10px!important}body[data-audience=visitor] .compare-controls button{padding:8px 10px}body[data-audience=visitor] .compare-controls>span{width:100%;font-size:11px}body[data-audience=visitor] .bridge-photos{padding:16px!important}.comparison #old-reset::before,body.comparison-map #reset::before{display:none}body.comparison-map header{padding:4px!important}body.comparison-map #reset{padding:6px}body.comparison-map #plus,body.comparison-map #minus{min-width:32px;min-height:36px}}
+@media(prefers-reduced-motion:reduce){body[data-audience=visitor] button{transition:none!important}}

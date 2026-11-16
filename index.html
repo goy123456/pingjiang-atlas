@@ -1,15 +1,16 @@
 <!doctype html><html lang="zh-CN"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>平江图 · 地图展示版</title>
+<title>平江图 · 循水寻街，古今相望</title>
 <style>*{box-sizing:border-box}body{margin:0;background:#f7f5ed;color:#304d48;font-family:system-ui}
 header{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:16px 4vw;border-bottom:1px solid #ddd}
 h1{font:26px serif;margin:0 auto 0 0}a{color:inherit;text-decoration:none;padding:9px 14px;border-radius:24px}
 a[aria-current=true]{background:#304d48;color:white}iframe{border:0;width:100%;height:calc(100dvh - 96px);display:block}
 small{display:block;text-align:center;font-size:12px;padding:6px;color:#687b72}</style>
-<header><h1>平江图</h1><a href="#map">探索地图</a><a href="#compare">古今对照</a></header>
+<style>body{height:100dvh;display:flex;flex-direction:column}header{flex:none;background:#fffdf6;border-color:#d5d8c8;padding:16px 4vw;gap:12px}h1{display:flex;align-items:center;gap:14px;font:30px/1.2 SimSun,serif;letter-spacing:.15em}h1::before{content:'平\a 江';white-space:pre;display:block;border:1px solid #a34e37;color:#a34e37;border-radius:3px;padding:5px 7px;font:17px/1.05 SimSun,serif;transform:rotate(-3deg)}.atlas-motto{font:14px SimSun,serif;letter-spacing:.18em;color:#718075;margin:0 20px}header a{display:flex;gap:8px;align-items:center;border:1px solid #d5d8c8;border-radius:6px;min-height:44px;font-size:14px}header a:hover{background:#e9eddf}header a[aria-current=true]{background:#294f46;color:#fffdf6}header svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}header a:focus-visible{outline:2px solid #a34e37;outline-offset:3px}iframe{flex:1;min-height:0;height:auto}body>small{flex:none;font-size:10px;letter-spacing:.05em;padding:7px 12px;border-top:1px solid #d5d8c8}@media(max-width:760px){.atlas-motto{display:none}header{padding:12px 16px}h1{font-size:25px}header a{font-size:13px;padding:9px 12px}}@media(max-width:440px){h1{width:100%}header a{flex:1;justify-content:center}}</style>
+<header><h1>平江图</h1><p class="atlas-motto">循水寻街 · 古今相望</p><a href="#map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5l6-2 6 2 6-2v16l-6 2-6-2-6 2V5zm6-2v16m6-14v16"/></svg>探索地图</a><a href="#compare"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 16h20M4 16V9m16 7V9M4 12Q12 2 20 12M8 16v-6m8 6v-6M2 21q3-2 6 0t6 0 6 0"/></svg>古今对照</a></header>
 <iframe id="map" title="平江交互地图"></iframe>
 <small>地图展示版 · 不提供在线 AI 问答 · 底图 © OpenStreetMap contributors</small>
 <script>function show(){const compare=location.hash==='#compare';
-document.getElementById('map').src='static/'+(compare?'visitor-compare.html':'modern-map-visitor.html');
+document.getElementById('map').src='static/'+(compare?'visitor-compare.html':'modern-map-visitor.html')+'?v=20261116craft'+(compare?'&hub=1':'');
 document.querySelectorAll('header a').forEach(a=>a.setAttribute('aria-current',a.hash===(compare?'#compare':'#map')));}
 addEventListener('hashchange',show);show();</script></html>

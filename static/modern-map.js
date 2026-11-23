@@ -101,6 +101,17 @@ function resetOverview(){
 }
 $('plus').onclick=()=>changeZoom((zoom+.5)/zoom);$('minus').onclick=()=>changeZoom(Math.max(1,zoom-.5)/zoom);$('reset').onclick=()=>{resetOverview();if(corridorMode&&window.parent!==window)parent.postMessage({type:'atlas-overview-request'},location.origin);};
 if(visitor&&!corridorMode){
+ if(!ugcMode){
+   // Keep the map in its own viewport; the point index stays available on demand.
+   document.body.classList.add('explore-fixed');
+   const info=document.createElement('dialog'), open=document.createElement('button'), close=document.createElement('button');
+   info.id='explore-index';info.setAttribute('aria-label','地点与资料');
+   open.type=close.type='button';open.textContent='地点';open.setAttribute('aria-haspopup','dialog');
+   close.textContent='返回地图';info.append(close,$('points'),$('name').closest('section'),document.querySelector('.credit'));
+   document.body.append(info);$('reset').after(open);
+   open.onclick=()=>info.showModal();close.onclick=()=>info.close();
+   $('points').addEventListener('click',event=>{if(event.target.closest('[data-point]'))info.close();});
+ }
  const help=document.createElement('p');help.className='explore-map-help';help.textContent='拖拽查看地图 · 双指或滚轮缩放 · 全域恢复起点';v.after(help);
  const header=document.querySelector('header');new ResizeObserver(()=>{const height=Math.ceil(header.getBoundingClientRect().height)+'px';if(document.body.style.getPropertyValue('--explore-toolbar-height')!==height)document.body.style.setProperty('--explore-toolbar-height',height);}).observe(header);
  const pointers=new Map();let previous=null;
@@ -108,7 +119,15 @@ if(visitor&&!corridorMode){
  v.addEventListener('pointerdown',e=>{if(e.target.closest('button')||(e.pointerType==='mouse'&&e.button!==0))return;e.preventDefault();v.setPointerCapture(e.pointerId);pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});previous=metrics();v.dataset.dragging='true';});
  v.addEventListener('pointermove',e=>{if(!pointers.has(e.pointerId))return;e.preventDefault();pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});const next=metrics(),rect=v.getBoundingClientRect();if(previous&&next&&stage.offsetWidth&&stage.offsetHeight){const ax=(v.scrollLeft+previous.x-rect.left)/stage.offsetWidth,ay=(v.scrollTop+previous.y-rect.top)/stage.offsetHeight;if(previous.distance>4&&next.distance>4)changeZoom(next.distance/previous.distance);v.scrollLeft=ax*stage.offsetWidth-(next.x-rect.left);v.scrollTop=ay*stage.offsetHeight-(next.y-rect.top);}previous=next;});
  for(const event of ['pointerup','pointercancel','lostpointercapture'])v.addEventListener(event,e=>{pointers.delete(e.pointerId);previous=metrics();v.dataset.dragging=String(pointers.size>0);});
- v.addEventListener('wheel',e=>{e.preventDefault();changeZoom(Math.exp(-Math.max(-200,Math.min(200,e.deltaY))*.002));},{passive:false});
+ v.addEventListener('wheel',e=>{
+   if(!data || !stage.offsetWidth || !e.deltaY)return;
+   e.preventDefault();
+   const rect=v.getBoundingClientRect(), x=e.clientX-rect.left-v.clientLeft, y=e.clientY-rect.top-v.clientTop;
+   const u=(v.scrollLeft+x)/stage.offsetWidth, w=(v.scrollTop+y)/stage.offsetHeight;
+   const pixels=e.deltaY*(e.deltaMode===1?16:e.deltaMode===2?v.clientHeight:1), before=zoom;
+   changeZoom(Math.exp(-Math.max(-200,Math.min(200,pixels))*.002));
+   if(zoom!==before){v.scrollLeft=u*stage.offsetWidth-x;v.scrollTop=w*stage.offsetHeight-y;}
+ },{passive:false});
  v.addEventListener('keydown',e=>{const keys={ArrowLeft:[-60,0],ArrowRight:[60,0],ArrowUp:[0,-60],ArrowDown:[0,60]};if(keys[e.key]){e.preventDefault();v.scrollLeft+=keys[e.key][0];v.scrollTop+=keys[e.key][1];}else if(e.key==='Home'){e.preventDefault();resetOverview();}});
 }else{
  v.addEventListener('pointerdown',e=>{if(e.target.closest('button')||e.pointerType!=='mouse'||e.button!==0)return;drag={x:e.clientX,y:e.clientY,l:v.scrollLeft,t:v.scrollTop};v.setPointerCapture(e.pointerId);e.preventDefault();});v.addEventListener('pointermove',e=>{if(drag){v.scrollLeft=drag.l+drag.x-e.clientX;v.scrollTop=drag.t+drag.y-e.clientY;}});for(const event of ['pointerup','pointercancel','lostpointercapture'])v.addEventListener(event,()=>drag=null);

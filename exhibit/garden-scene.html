@@ -1,0 +1,51 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>耦园 · 平江风景导览</title><link rel="stylesheet" href="bridge-scene.css"><link rel="stylesheet" href="bridge-scene.css"><link rel="stylesheet" href="photo-chapter.css?v=garden4"></head><body class="garden-folio">
+<header><a href="../index.html#home">← 风景导览</a><span>入园 / 耦园</span><button id="about">来源与说明</button></header>
+<main class="photo-chapter garden-edition">
+<section class="garden-spread" aria-labelledby="garden-title">
+<div class="garden-lead"><h1 id="garden-title">一窗入耦园</h1><a class="atlas-link" href="../index.html#map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg>看地图</a></div>
+<div class="garden-triptych" aria-label="耦园摄影：花窗、窗内局部与池畔另景">
+<svg width="0" height="0" class="garden-glyphs" aria-hidden="true"><defs>
+<symbol id="pane-mark" viewBox="0 0 24 24"><path d="M3 20V4h18v16ZM7 20V8h10v12M3 8h4m10 0h4"/></symbol>
+<symbol id="leaf-mark" viewBox="0 0 24 24"><path d="M4 20c1-5 5-9 12-13M7 15C5 7 13 4 20 4c-1 8-4 14-13 11Z"/></symbol>
+<symbol id="pond-mark" viewBox="0 0 24 24"><path d="m3 10 9-6 9 6H3Zm4 1v5m10-5v5M3 18q3-2 6 0t6 0 6 0"/></symbol></defs></svg>
+<div class="print-window window-mount">
+<button type="button" class="garden-print" data-view="window" aria-haspopup="dialog" aria-label="放大耦园园景"><img src="garden.jpg" alt="耦园山水实景" fetchpriority="high"><span class="print-caption"><svg aria-hidden="true"><use href="#pane-mark"/></svg>园景</span></button>
+<button type="button" class="crop-mark" data-view="detail" aria-haspopup="dialog" aria-label="查看框内局部"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5M7 10h6m-3-3v6"/></svg></button>
+</div>
+<button type="button" class="garden-print print-detail" aria-haspopup="dialog" data-view="detail" aria-label="放大园景局部"><img src="garden.jpg" alt="园景照片局部"><span class="print-caption"><svg aria-hidden="true"><use href="#leaf-mark"/></svg>局部</span></button>
+<button type="button" class="garden-print print-pond" aria-haspopup="dialog" data-view="pond" aria-label="放大池畔曲桥"><img src="pond.jpg" alt="耦园水池与曲桥"><span class="print-caption"><svg aria-hidden="true"><use href="#pond-mark"/></svg>池畔</span></button>
+</div></section>
+<dialog class="garden-loupe" aria-label="耦园图集"><form method="dialog"><button aria-label="关闭大图" autofocus>×</button></form><figure><div class="loupe-frame"><img alt=""></div><figcaption><span id="loupe-caption" aria-live="polite"></span><span class="loupe-controls"><button type="button" data-step="-1" aria-label="上一幅">←</button><button type="button" data-step="1" aria-label="下一幅">→</button></span></figcaption></figure></dialog>
+<script src="garden-prints.js?v=garden4" defer></script>
+<details class="chapter-extra"><summary>园中手记</summary>
+<section class="landscape" aria-label="园中探索，原创场景示意">
+<svg viewBox="0 0 1400 760" role="img" aria-label="耦园生活意象，原创插画，非实景复原">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#d7e8d9"/><stop offset="1" stop-color="#fff1d4"/></linearGradient><pattern id="tiles" width="30" height="18" patternUnits="userSpaceOnUse"><path d="M0 18Q15 -10 30 18" fill="none" stroke="#91a293" stroke-width="2"/></pattern></defs>
+<rect width="1400" height="760" fill="url(#sky)"/><circle cx="1050" cy="125" r="60" fill="#fff8d8"/>
+<path d="M0 350Q210 230 470 320T900 280T1400 350V760H0" fill="#bbc8a0"/>
+<path d="M0 510Q420 380 720 530T1400 450V760H0" fill="#7dadaa"/>
+<path d="M80 625Q420 495 720 620T1340 580" stroke="#c6e3d1" fill="none" stroke-width="4"/>
+<path d="M0 470L550 389L930 452L1400 380V470L950 537L540 472L0 555Z" fill="#ddd2b4"/>
+<g fill="#f8eed8" stroke="#c6b99c" stroke-width="3"><path d="M0 252H360V481H0Z"/><path d="M420 290H815V430H420Z"/><path d="M947 238H1310V421H947Z"/></g>
+<g fill="#526b5e"><path d="M0 255L120 135L389 255L350 276H0Z"/><path d="M391 290L611 207L846 290L806 310H428Z"/><path d="M915 239L1128 137L1340 239L1300 260H955Z"/></g>
+<g fill="url(#tiles)"><path d="M0 255L120 135L389 255Z"/><path d="M391 290L611 207L846 290Z"/><path d="M915 239L1128 137L1340 239Z"/></g>
+<g fill="#8c7760"><rect x="50" y="316" width="72" height="140"/><rect x="157" y="316" width="72" height="140"/><rect x="264" y="316" width="60" height="140"/><rect x="1025" y="293" width="198" height="100"/></g>
+<g stroke="#d6c9a2" stroke-width="5"><path d="M65 320V450M86 320V450M107 320V450M53 370H120M53 410H120M1047 295V390M1090 295V390M1132 295V390M1175 295V390M1028 340H1220"/></g>
+<path d="M535 430V359a80 80 0 0 1 160 0V430Z" fill="#b0c3a1"/><path d="M550 430V359a65 65 0 0 1 130 0V430Z" fill="#70978b"/>
+<path d="M575 440Q614 353 660 435" fill="#d0d9b6"/>
+<g fill="#83988a"><path d="M720 551L766 401L803 437L838 338L890 421L923 534Z"/><path d="M762 493L817 392L841 474Z" fill="#b8bda0"/></g>
+<path d="M85 620L293 620L257 659H126Z" fill="#85624b"/><path d="M133 620Q173 511 239 620" fill="#c7ac7d"/><path d="M196 590L300 689" stroke="#604f40" stroke-width="7"/>
+<g transform="translate(1110 460)"><ellipse rx="70" ry="20" fill="#b49170"/><path d="M-40 3V60M40 3V60" stroke="#8c7457" stroke-width="12"/><path d="M-38 -14L0 -20L2 0L-37 5Z M2 -20L40 -10L39 9L2 0Z" fill="#fff2cd" stroke="#ac956f" stroke-width="2"/><ellipse cx="54" cy="-7" rx="9" ry="6" fill="#7c9c82"/></g>
+<g fill="#557b5e"><ellipse cx="1365" cy="235" rx="110" ry="177"/><ellipse cx="1280" cy="115" rx="100" ry="83"/><ellipse cx="38" cy="83" rx="135" ry="97"/></g>
+<g fill="#d9a8ae"><circle cx="1300" cy="105" r="20"/><circle cx="1350" cy="165" r="17"/><circle cx="1270" cy="167" r="14"/><circle cx="58" cy="97" r="17"/></g>
+<g fill="#669775"><ellipse cx="692" cy="688" rx="30" ry="10"/><ellipse cx="760" cy="710" rx="35" ry="11"/><ellipse cx="1230" cy="669" rx="28" ry="11"/></g>
+<path d="M741 698Q759 661 777 698Z" fill="#dea1b1"/>
+</svg>
+<button class="hotspot name" data-clue="name"><i>＋</i><span>与君闲坐</span></button><button class="hotspot map" data-clue="map"><i>＋</i><span>倚窗听橹</span></button><button class="hotspot stone" data-clue="stone"><i>＋</i><span>临窗读书</span></button>
+<div class="scene-footer"><button id="notebook">手记 <b id="count">0/3</b></button></div>
+</section>
+</details></main>
+<dialog id="clue-panel"><button class="close" id="close-clue" aria-label="关闭线索">×</button><p class="eyebrow" id="clue-tag"></p><h2 id="clue-title"></h2><div id="clue-art"></div><p id="clue-text"></p><p id="extra" hidden></p><div class="actions"><button id="more">再看一点</button><button id="collect">记下线索</button></div></dialog>
+<dialog id="notes"><button class="close" id="close-notes" aria-label="关闭手记">×</button><p class="eyebrow">MY LITTLE DISCOVERIES</p><h2>园中拾趣</h2><div id="note-list"></div><p id="conclusion"></p><button id="export">导出手记</button></dialog>
+<dialog id="sources"><button class="close" id="close-about" aria-label="关闭说明">×</button><h2>来源与说明</h2><details><summary>图像来源</summary><ul><li>山水之间：Lamassu Design · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Couple_garden_amidst_hill_and_water.jpg" target="_blank" rel="noopener">图注与出处 ↗</a></div></li><li>水池与曲桥：Tcchang0825 · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> · <a href="https://commons.wikimedia.org/wiki/File:%E8%98%87%E5%B7%9E%E8%80%A6%E5%9C%92%E6%B0%B4%E6%B1%A0%E8%88%87%E6%9B%B2%E6%A9%8B.jpg" target="_blank" rel="noopener">图注与出处 ↗</a></div></li><li>沈丰英《牡丹亭》· 图二：Bohan_伯韩 Shen_沈 from Beijing, China · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Peony_Pavilion_%EF%BC%88%E7%89%A1%E4%B8%B9%E4%BA%AD%EF%BC%892.jpg" target="_blank" rel="noopener">图注与出处 ↗</a></div></li><li>Kevin A. McGill / kevinmcgill · <a href="https://commons.wikimedia.org/wiki/File:A_stone_arch_bridge_in_Pingjiang_Road,_Suzhou.jpg">平江路石拱桥</a> · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></li><li>Kevin A. McGill / kevinmcgill · <a href="https://commons.wikimedia.org/wiki/File:Stone_slab_bridge_in_Pingjiang_Road_(6650481181).jpg">平江路石板桥</a> · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></li></ul><p>照片已缩放，页面局部裁切，沿用各图原许可。水袖插画为本站生成。</p></details></dialog>
+<p id="storage" role="alert"></p><script src="garden-scene.js"></script><script src="notes.js"></script></body></html>

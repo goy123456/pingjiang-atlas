@@ -1,0 +1,78 @@
+/* The garden is a photographic folio; the theatre is a printed playbill. */
+body.garden-folio,body.stage-folio{background:#f6f3eb;color:#293c32;--hair:#d2cdbf;--serif:"Songti SC","Noto Serif CJK SC",SimSun,serif}
+body:is(.garden-folio,.stage-folio)>header{background:transparent;border-color:var(--hair);height:56px}
+body:is(.garden-folio,.stage-folio)>header a{text-decoration:none}
+body:is(.garden-folio,.stage-folio)>header button{background:transparent;padding:5px 13px}
+.photo-chapter{max-width:1280px;margin:auto;padding:clamp(16px,3vw,42px) clamp(16px,4vw,64px) 38px}
+.edition-line,.window-plate figcaption,.pool-plate figcaption,.bill-after{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.edition-line{border-block:1px solid var(--hair);padding:8px 0;color:#565d50;font-size:12px;letter-spacing:.13em}
+.edition-line span:first-child{color:#745245}.kicker,.colophon,.bill-type small{font-size:12px;letter-spacing:.09em}
+.garden-spread{display:grid;grid-template-columns:minmax(155px,.7fr) minmax(0,2.3fr);gap:4%;margin:clamp(20px,4vw,56px) 0 18px;align-items:center}
+.garden-lead h1,.bill h1{font-family:var(--serif);font-weight:500;margin:0}
+.garden-lead h1{font-size:clamp(40px,4.9vw,72px);line-height:1.2;writing-mode:vertical-rl;letter-spacing:.08em;margin:18px 0}
+.garden-lead p{color:#576256;line-height:1.85;margin:0 0 16px}.kicker{color:#685d4c}
+.atlas-link,.colophon a,.bill-after a,.chapter-extra a{color:inherit;text-underline-offset:5px}.atlas-link{min-height:44px;display:inline-flex;align-items:center;gap:12px}
+.garden-viewer{border:0;padding:0;margin:0;min-width:0;position:relative}.garden-viewer legend{position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden}
+.garden-viewer input{position:absolute;clip-path:inset(50%);width:1px;height:1px}
+.garden-viewer label{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;color:#556253;cursor:pointer;border-bottom:2px solid transparent}
+.garden-viewer input:checked+label{color:#203b30;border-color:#35624e;font-weight:600}
+.garden-viewer input:focus-visible+label{outline:2px solid #ae7445}
+.garden-viewer figure,.bill figure{margin:0}.garden-viewer .plate-frame{overflow:hidden;background:#1f2923;aspect-ratio:1.68}
+.plate-frame img{width:100%;height:100%;display:block;object-fit:cover;transform-origin:22% 48%;transition:transform .65s ease}
+#g-rock:checked~.window-plate img{transform:scale(1.62)}
+.garden-viewer figcaption{font-size:12px;padding:9px 0;border-bottom:1px solid var(--hair);color:#586153}
+.garden-viewer figcaption b{font-family:Georgia,serif;font-weight:400;color:#866044}
+.rock-caption,.pool-plate,#g-rock:checked~figure .full-caption,#g-pond:checked~.window-plate{display:none}
+#g-rock:checked~figure .rock-caption,#g-pond:checked~.pool-plate{display:block}
+.colophon{color:#656557;margin:14px 0}.chapter-extra,.bill-after details{border-top:1px solid var(--hair)}
+.chapter-extra>summary,.bill-after summary{cursor:pointer;padding:11px 0;min-height:44px}
+.bill{margin:20px 0 0;display:grid;grid-template-columns:.85fr 1.45fr;background:#311e22;color:#f9ebd3;box-shadow:0 7px 20px #311e2210}
+.bill-type{position:relative;align-self:center;padding:clamp(24px,4vw,60px)}
+.bill .kicker,.bill small{color:#e1c8a4}.bill .play-name{font:500 18px var(--serif);margin:22px 0 3px}
+.bill h1{font-size:clamp(52px,7.2vw,96px);line-height:1.14;letter-spacing:.12em;color:inherit}
+.bill .cue{line-height:1.75;margin:16px 0}.bill .play{display:inline-flex;min-height:44px;align-items:center;background:#f0dfbf;color:#43262a;padding:0 17px;text-decoration:none;border-radius:2px}.bill small{display:block;margin-top:7px}
+.bill figure{position:relative;min-height:300px}.bill figure img{display:block;position:absolute;width:100%;height:100%;object-fit:cover}
+.bill figcaption{position:absolute;bottom:0;right:0;padding:7px 12px;background:#2b2021dc;color:#f4e6ce;font-size:12px}
+.bill-after{padding:10px 0;align-items:start}.bill-after details{border:none}.bill-after p,.chapter-extra>p{max-width:38em;margin:0 0 14px}
+body:is(.garden-folio,.stage-folio)>#pet-toggle{position:static;display:block;margin:0 auto 24px;box-shadow:none;border:1px solid var(--hair);background:transparent}
+.photo-chapter .journey-nav{margin-bottom:0}
+@media(max-width:700px){.garden-spread{grid-template-columns:1fr;gap:6px}.garden-lead h1{writing-mode:horizontal-tb;font-size:39px;margin:6px 0}.garden-lead p{margin:5px 0}.garden-lead br{display:none}.garden-lead .atlas-link{font-size:13px}.garden-viewer .plate-frame{aspect-ratio:1.48}.bill{grid-template-columns:1fr}.bill figure{min-height:0;aspect-ratio:2.25;grid-row:1}.bill-type{padding:18px 22px}.bill .play-name,.bill h1{display:inline-block;vertical-align:baseline}.bill .kicker{display:block}.bill h1{font-size:44px;margin-left:8px}.bill .play-name{margin:8px 0}.bill .cue{margin:8px 0}.cue br{display:none}.bill-after{flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){.plate-frame img{transition:none}}
+
+/* A single photographic spread: overall view, detail and a change of viewpoint. */
+.garden-folio .garden-spread{display:block;margin:20px 0 16px}
+.garden-folio .garden-lead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 15px}
+.garden-folio .garden-lead h1{writing-mode:horizontal-tb;font-size:clamp(30px,3.6vw,51px);letter-spacing:.06em;margin:0}
+.garden-folio .atlas-link{font-size:13px;gap:5px;text-decoration:none}
+.atlas-link svg,.print-caption svg{width:1.35em;height:1.35em;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.garden-triptych{position:relative;display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);grid-template-rows:1fr 1fr;aspect-ratio:2.2;gap:clamp(5px,.8vw,12px)}
+.garden-glyphs{position:absolute}
+.garden-print{position:relative;isolation:isolate;display:block;overflow:hidden;min-width:0;min-height:0;width:100%;border:0;border-radius:0;padding:0;background:#343d32;color:white;cursor:zoom-in}
+.garden-print:focus-visible{outline-offset:-4px;outline:3px solid white;z-index:1}
+.garden-print img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.print-window{grid-row:span 2}
+.print-detail img,.garden-loupe[data-view=detail] img{transform:scale(2.45);transform-origin:6% 39%}
+.print-caption{position:absolute;z-index:1;bottom:0;left:0;right:0;display:flex;align-items:center;gap:7px;padding:26px 14px 10px;background:linear-gradient(transparent,#122218c9);text-shadow:0 1px 3px #15221c;font:500 clamp(14px,1.4vw,19px)/1.35 var(--serif);letter-spacing:.07em}
+.window-mount{position:relative;min-width:0;min-height:0}
+.window-mount>.garden-print{height:100%}
+.crop-mark{position:absolute;left:19%;top:33%;width:14%;height:24%;padding:0;border:1px solid #fffbe4e0;border-radius:1px;background:transparent;box-shadow:0 0 0 1px #2d382b70;cursor:zoom-in}
+.crop-mark svg{position:absolute;right:0;bottom:0;width:25px;height:25px;padding:4px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;background:#284035e8;color:#fffbe4}
+.crop-mark:hover,.crop-mark:focus-visible{background:#fffbe415;border-color:white;outline:2px solid #fffbe4;outline-offset:2px}
+.garden-loupe{width:min(840px,94vw);max-height:92dvh;padding:0;border:0;border-radius:3px;background:#f6f3eb}
+.garden-loupe figure{margin:0}.garden-loupe form button{position:absolute;right:8px;top:8px;z-index:1;width:44px;height:44px;padding:0;font:26px/1 sans-serif;background:#fffaf1f0}
+.loupe-frame{overflow:hidden}.loupe-frame img{display:block;width:100%;height:min(63vw,68dvh);object-fit:contain}
+.garden-loupe[data-view=detail] img{object-fit:cover}.garden-loupe figcaption{padding:10px 16px;font-family:var(--serif)}
+.garden-loupe figcaption,.loupe-controls{display:flex;align-items:center;gap:8px}
+.garden-loupe figcaption{justify-content:space-between}
+.loupe-controls button{width:44px;height:44px;padding:0;background:transparent;color:#293c32;border:1px solid #c4c6b8;border-radius:50%;font:20px/1 system-ui;cursor:pointer}
+@media(max-width:700px){.garden-triptych{aspect-ratio:auto;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:6px}.print-window{grid-row:auto;grid-column:1/-1;aspect-ratio:1.52}.print-detail,.print-pond{aspect-ratio:1.25}.garden-folio .atlas-link{font-size:12px}.garden-folio .garden-lead{margin-bottom:10px}.print-caption{padding:22px 9px 7px}}
+.stage-edition .bill .sleeve-hero {align-self:center;min-height:0;margin:0}
+.stage-edition .bill .sleeve-hero img {position:static;display:block;width:100%;height:auto}
+.stage-edition .sleeve-study {scroll-margin-top:5rem;display:grid;grid-template-columns:minmax(14em,.8fr) minmax(0,1.4fr);align-items:center;gap:clamp(1rem,4vw,3rem);padding:2rem 0 1rem}
+.sleeve-study h2 {font:500 clamp(1.5rem,3vw,2.3rem) var(--serif);margin:.6em 0}
+.sleeve-study p {line-height:1.85;max-width:31em}
+.sleeve-study summary {cursor:pointer;text-decoration:underline;text-underline-offset:.3em}
+.sleeve-study figure {margin:0}
+.sleeve-study img {display:block;width:100%;height:auto}
+.sleeve-study figcaption {font-size:.8rem;color:#58524d;margin-top:.6em}
+@media(max-width:700px){.stage-edition .sleeve-study {grid-template-columns:1fr}.stage-edition .bill .sleeve-hero {aspect-ratio:auto}}

@@ -1,0 +1,38 @@
+.chapter-title{font:500 clamp(30px,4.3vw,58px)/1.25 SimSun,serif;margin:.2em 0 .75em}
+.chapter-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,2vw,28px)}
+.chapter-card{display:block;position:relative;isolation:isolate;overflow:hidden;text-decoration:none;background:#404f43;border-radius:7px;color:white;aspect-ratio:1.7}
+.chapter-card>img{display:block;width:100%;height:100%;object-fit:cover}
+.chapter-card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#0a1715c9,transparent 52%);pointer-events:none}
+.chapter-card h2{position:absolute;z-index:1;left:6%;bottom:8%;margin:0;color:white;font:600 clamp(23px,3vw,39px)/1.2 "Songti SC",SimSun,serif;letter-spacing:.08em;text-shadow:0 1px 4px #182220}
+.chapter-end h2{left:auto;right:6%}
+.chapter-card:focus-visible{outline:3px solid #a65535;outline-offset:3px}
+.chapter-credit{margin:20px 0;font-size:12px;color:#58695f}.chapter-credit summary{cursor:pointer}
+@media(max-width:700px){.chapter-cards{grid-template-columns:1fr}.chapter-card{aspect-ratio:1.95}}
+
+/* Desktop exhibition entrance. All other routes keep the full navigation. */
+@media(min-width:901px){
+  body:has(#home:not([hidden]))>header{height:clamp(64px,8.9dvh,94px);padding:0 3.5vw;background:#f3ecdf;border:0}
+  body:has(#home:not([hidden])) .brand{font:500 clamp(29px,2.65vw,46px)/1.13 "Songti SC",SimSun,serif;letter-spacing:.15em}
+  body:has(#home:not([hidden])) .brand small{font:600 clamp(9px,.7vw,12px)/1.65 sans-serif;letter-spacing:.25em;color:inherit}
+  body:has(#home:not([hidden])) header nav button:not([data-view=compare]){display:none}
+  body:has(#home:not([hidden])) header nav button[data-view=compare]{background:#294c46;color:#fffaf0;border:0;padding:9px 20px;font-family:"Songti SC",SimSun,serif}
+  #home.route-home{max-width:1820px;margin:auto;padding:clamp(26px,5vh,68px) 3.5vw 24px;background:#f7f4ec}
+  #home>.eyebrow{font:600 11px/1.4 system-ui,sans-serif;letter-spacing:.28em;color:#655f4c;margin:0 0 10px}
+  #home>.chapter-title{font:500 clamp(26px,2.45vw,43px)/1.22 "Songti SC",SimSun,serif;color:#253f36;margin:0 0 clamp(18px,3vh,34px)}
+  #home .chapter-cards{gap:clamp(12px,1.5vw,30px)}
+  #home .exhibition-card{--mat:#fffdf6;display:grid;grid-template-rows:auto auto;min-width:0;aspect-ratio:auto;overflow:hidden;border-radius:2px;background:var(--mat);color:#243d35;border:1px solid #d9d4c5;box-shadow:0 3px 8px #3c34270b}
+  #home .exhibition-card>img{width:100%;height:auto;aspect-ratio:1.46;object-fit:cover;align-self:start}
+  #home .exhibition-card:after{grid-area:1/1;inset:0;background:linear-gradient(90deg,#0c15155e,transparent 35%);z-index:0}
+  #home .exhibition-card h2{grid-area:1/1;inset:auto auto 7% 4%;padding:8px 5px;background:#192a24c7;color:#fffcf1;writing-mode:vertical-rl;letter-spacing:.14em;font:500 clamp(20px,1.85vw,34px)/1 "Songti SC",SimSun,serif;text-shadow:none}
+  #home .exhibition-card>img{grid-area:1/1}
+  #home .exhibit-foot{grid-area:2/1;display:flex;align-items:center;gap:clamp(10px,1.1vw,22px);padding:clamp(10px,1.1vw,20px);border-top:3px solid #f6f1e3}
+  .exhibit-number{font:italic 21px/1 Georgia,serif;color:#786650;border-right:1px solid #d7cfbf;padding-right:clamp(9px,1.1vw,20px)}
+  .exhibit-proof{display:flex;align-items:center;gap:10px;color:#485b4f;font:500 14px/1.6 "Songti SC",SimSun,serif;letter-spacing:.12em}
+  .exhibit-proof img{width:clamp(66px,6.7vw,120px);aspect-ratio:1.65;object-fit:cover;border:3px solid white;box-shadow:0 0 0 1px #c6bfac}
+  .exhibit-arrow{margin-left:auto;display:grid;place-items:center;width:34px;height:34px;border:1px solid #bcb6a4;border-radius:50%;font:20px/1 system-ui;color:#3b5145}
+  #home .exhibition-card:focus-visible{outline:3px solid #975333;outline-offset:4px}
+  #home .exhibition-card:is(:hover,:focus-visible) .exhibit-arrow{background:#314d40;color:#fffdf5;border-color:#314d40}
+  @media(hover:hover) and (prefers-reduced-motion:no-preference){#home .exhibition-card{transition:transform .22s ease,box-shadow .22s ease}#home .exhibition-card:hover{transform:translateY(-3px);box-shadow:0 8px 18px #332f251b}}
+  #home .chapter-credit{margin:clamp(22px,4vh,42px) 0 0;padding:12px 0;border:0;border-top:1px solid #d6d2c6;background:transparent;font-size:13px}
+}
+@media(max-width:900px){.exhibit-foot{display:none}}

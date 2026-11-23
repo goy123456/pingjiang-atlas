@@ -78,12 +78,20 @@ function alignMap(){
  stage.style.transform=`rotate(${angle}deg)`;
  stage.style.setProperty('--map-counter-angle',`${-angle}deg`);
 }
-function render(){if(!data)return;const base=corridorMode?Math.max(v.clientWidth*data.width/800,v.clientHeight*data.width/575):Math.max(v.clientWidth,v.clientHeight*data.width/data.height);stage.style.width=base*zoom+'px';stage.style.height=base*zoom*data.height/data.width+'px';v.dataset.zoom=zoom;v.dataset.minZoom=1;v.dataset.maxZoom=4;$('scale').textContent=Math.round(zoom*100)+'%';$('minus').disabled=zoom<=1;$('plus').disabled=zoom>=4;if(corridorMode)$('reset').textContent='八桥全览';drawLabels();alignMap();if(corridorMode&&zoom===1)center(corridorCenter());}
+// Below 100%, stop at the largest centred view containing the entire sheet.
+function minZoom(){
+ if(!visitor||ugcMode||corridorMode||!data||!v.clientWidth||!v.clientHeight)return 1;
+ const a=v.clientWidth/data.width,b=v.clientHeight/data.height;
+ return Math.min(.85,Math.min(a,b)/Math.max(a,b));
+}
+const padX=()=>Math.max(0,(v.clientWidth-stage.offsetWidth)/2);
+const padY=()=>Math.max(0,(v.clientHeight-stage.offsetHeight)/2);
+function render(){if(!data)return;const floor=minZoom();zoom=Math.max(floor,zoom);const base=corridorMode?Math.max(v.clientWidth*data.width/800,v.clientHeight*data.width/575):Math.max(v.clientWidth,v.clientHeight*data.width/data.height);stage.style.width=base*zoom+'px';stage.style.height=base*zoom*data.height/data.width+'px';if(visitor&&!ugcMode&&!corridorMode){stage.style.marginLeft=padX()+'px';stage.style.marginTop=padY()+'px';}v.dataset.zoom=zoom;v.dataset.minZoom=floor;v.dataset.maxZoom=4;$('scale').textContent=Math.round(zoom*100)+'%';$('minus').disabled=zoom<=floor+1e-8;$('plus').disabled=zoom>=4;if(corridorMode)$('reset').textContent='八桥全览';drawLabels();alignMap();if(corridorMode&&zoom===1)center(corridorCenter());}
 function changeZoom(factor,sync=false){
  if(!data||!Number.isFinite(factor)||factor<=0)return;
  if(!sync&&!v.dispatchEvent(new CustomEvent('atlas-zoom-request',{cancelable:true,detail:{factor}})))return;
- const point={xy:[(v.scrollLeft+v.clientWidth/2)/stage.offsetWidth*data.width,(v.scrollTop+v.clientHeight/2)/stage.offsetHeight*data.height]};
- zoom=Math.max(1,Math.min(4,zoom*factor));render();center(corridorMode&&zoom===1?corridorCenter():point);
+ const point={xy:[(v.scrollLeft-padX()+v.clientWidth/2)/stage.offsetWidth*data.width,(v.scrollTop-padY()+v.clientHeight/2)/stage.offsetHeight*data.height]};
+ zoom=Math.max(minZoom(),Math.min(4,zoom*factor));render();center(corridorMode&&zoom===1?corridorCenter():point);
 }
 v.addEventListener('atlas-pinch',e=>changeZoom(e.detail?.factor,e.detail?.sync===true));
 function select(id){if(!data){pending=id;return;}const p=data.points.find(p=>p.id===id);if(!p)return;selected=p;bridgeAlignment=/^H0[1-8]$/.test(p.id);if(p.xy)zoom=3;render();if(p.xy)center(p);showRelationship(p);document.querySelectorAll('[data-point]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.point===id)));$('name').textContent=p.name;$('detail').textContent=p.location_status==='pending'?'位置待核 · 暂不落图':visitor?'':p.evidence;if(p.ugc){$('detail').textContent=p.xy?'游记提及地点 · OSM地图记录':p.lonlat?'地点在当前底图范围外':'暂无可确认位置';relation.append(document.createTextNode('提及来源：'+p.mentions.join('、')));}
@@ -99,7 +107,7 @@ function resetOverview(){
   $('name').textContent='循着水巷，遇见平江。';$('detail').textContent=corridorMode?'八桥全览 · 请选择一座桥':'探索全域 · 拖拽地图或选择地点';$('source').hidden=true;
   render();if(!corridorMode)v.scrollTo(0,0);
 }
-$('plus').onclick=()=>changeZoom((zoom+.5)/zoom);$('minus').onclick=()=>changeZoom(Math.max(1,zoom-.5)/zoom);$('reset').onclick=()=>{resetOverview();if(corridorMode&&window.parent!==window)parent.postMessage({type:'atlas-overview-request'},location.origin);};
+$('plus').onclick=()=>changeZoom((zoom+.5)/zoom);$('minus').onclick=()=>changeZoom(Math.max(minZoom(),zoom<=1?zoom-.15:Math.max(1,zoom-.5))/zoom);$('reset').onclick=()=>{resetOverview();if(corridorMode&&window.parent!==window)parent.postMessage({type:'atlas-overview-request'},location.origin);};
 if(visitor&&!corridorMode){
  if(!ugcMode){
    // Keep the map in its own viewport; the point index stays available on demand.
@@ -117,16 +125,16 @@ if(visitor&&!corridorMode){
  const pointers=new Map();let previous=null;
  const metrics=()=>{const p=[...pointers.values()];return !p.length?null:p.length===1?{x:p[0].x,y:p[0].y,distance:0}:{x:(p[0].x+p[1].x)/2,y:(p[0].y+p[1].y)/2,distance:Math.hypot(p[1].x-p[0].x,p[1].y-p[0].y)};};
  v.addEventListener('pointerdown',e=>{if(e.target.closest('button')||(e.pointerType==='mouse'&&e.button!==0))return;e.preventDefault();v.setPointerCapture(e.pointerId);pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});previous=metrics();v.dataset.dragging='true';});
- v.addEventListener('pointermove',e=>{if(!pointers.has(e.pointerId))return;e.preventDefault();pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});const next=metrics(),rect=v.getBoundingClientRect();if(previous&&next&&stage.offsetWidth&&stage.offsetHeight){const ax=(v.scrollLeft+previous.x-rect.left)/stage.offsetWidth,ay=(v.scrollTop+previous.y-rect.top)/stage.offsetHeight;if(previous.distance>4&&next.distance>4)changeZoom(next.distance/previous.distance);v.scrollLeft=ax*stage.offsetWidth-(next.x-rect.left);v.scrollTop=ay*stage.offsetHeight-(next.y-rect.top);}previous=next;});
+ v.addEventListener('pointermove',e=>{if(!pointers.has(e.pointerId))return;e.preventDefault();pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});const next=metrics(),rect=v.getBoundingClientRect();if(previous&&next&&stage.offsetWidth&&stage.offsetHeight){const ax=(v.scrollLeft-padX()+previous.x-rect.left)/stage.offsetWidth,ay=(v.scrollTop-padY()+previous.y-rect.top)/stage.offsetHeight;if(previous.distance>4&&next.distance>4)changeZoom(next.distance/previous.distance);v.scrollLeft=padX()+ax*stage.offsetWidth-(next.x-rect.left);v.scrollTop=padY()+ay*stage.offsetHeight-(next.y-rect.top);}previous=next;});
  for(const event of ['pointerup','pointercancel','lostpointercapture'])v.addEventListener(event,e=>{pointers.delete(e.pointerId);previous=metrics();v.dataset.dragging=String(pointers.size>0);});
  v.addEventListener('wheel',e=>{
    if(!data || !stage.offsetWidth || !e.deltaY)return;
    e.preventDefault();
    const rect=v.getBoundingClientRect(), x=e.clientX-rect.left-v.clientLeft, y=e.clientY-rect.top-v.clientTop;
-   const u=(v.scrollLeft+x)/stage.offsetWidth, w=(v.scrollTop+y)/stage.offsetHeight;
+   const u=(v.scrollLeft+x-padX())/stage.offsetWidth, w=(v.scrollTop+y-padY())/stage.offsetHeight;
    const pixels=e.deltaY*(e.deltaMode===1?16:e.deltaMode===2?v.clientHeight:1), before=zoom;
    changeZoom(Math.exp(-Math.max(-200,Math.min(200,pixels))*.002));
-   if(zoom!==before){v.scrollLeft=u*stage.offsetWidth-x;v.scrollTop=w*stage.offsetHeight-y;}
+   if(zoom!==before){v.scrollLeft=padX()+u*stage.offsetWidth-x;v.scrollTop=padY()+w*stage.offsetHeight-y;}
  },{passive:false});
  v.addEventListener('keydown',e=>{const keys={ArrowLeft:[-60,0],ArrowRight:[60,0],ArrowUp:[0,-60],ArrowDown:[0,60]};if(keys[e.key]){e.preventDefault();v.scrollLeft+=keys[e.key][0];v.scrollTop+=keys[e.key][1];}else if(e.key==='Home'){e.preventDefault();resetOverview();}});
 }else{

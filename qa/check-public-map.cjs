@@ -35,10 +35,15 @@ const dir='map-evidence';fs.mkdirSync(dir,{recursive:true});
   const before=await record('03-enlarged');assert(before.pct>=145);assert.equal(before.pageY,start.pageY);report.checks.push('wheel in');
   const offset=await v.evaluate(el=>{const d=el.ownerDocument,box=el.getBoundingClientRect();for(const fx of [.42,.52,.6,.34])for(const fy of [.46,.54,.63]){const x=box.x+box.width*fx,y=box.y+box.height*fy;const t=d.elementFromPoint(x,y);if(t&&el.contains(t)&&!t.closest('button,a'))return {dx:x-box.x,dy:y-box.y};}});
   assert(offset);p={x:box.x+offset.dx,y:box.y+offset.dy};
-  const dx=before.x>110?96:-96,dy=before.y>100?80:-80;
+  // Twelve whole-pixel moves avoid cumulative rounding of 80 / 12 fractional scroll deltas.
+  const dx=before.x>110?96:-96,dy=before.y>100?84:-84;
+  await v.evaluate(el=>{const part=e=>({x:e.clientX,y:e.clientY});el.addEventListener('pointerdown',e=>{el.dataset.qaDown=JSON.stringify(part(e))},{once:true});el.addEventListener('pointerup',e=>{el.dataset.qaUp=JSON.stringify(part(e))},{once:true});});
   await page.mouse.move(p.x,p.y);await page.mouse.down();await page.mouse.move(p.x+dx,p.y+dy,{steps:12});await page.mouse.up();
   await waitFor(s=>Math.abs(s.x-before.x)+Math.abs(s.y-before.y)>30,'map drag');
-  const after=await record('04-dragged');assert(Math.abs((after.x-before.x)+dx)<=3&&Math.abs((after.y-before.y)+dy)<=3);assert.equal(after.pct,before.pct);assert.equal(after.pageY,start.pageY);report.checks.push('drag follows pointer on both axes without page scroll');
+  const after=await record('04-dragged');
+  report.pointer=await v.evaluate(el=>({down:JSON.parse(el.dataset.qaDown),up:JSON.parse(el.dataset.qaUp)}));
+  assert(Math.abs(report.pointer.up.x-report.pointer.down.x-dx)<=1&&Math.abs(report.pointer.up.y-report.pointer.down.y-dy)<=1);
+  assert(Math.abs((after.x-before.x)+dx)<=3&&Math.abs((after.y-before.y)+dy)<=3);assert.equal(after.pct,before.pct);assert.equal(after.pageY,start.pageY);report.checks.push('drag follows pointer on both axes without page scroll');
   await map.locator('#reset').click();await waitFor(s=>s.pct===start.pct&&Math.abs(s.x-start.x)<=2&&Math.abs(s.y-start.y)<=2,'overview reset');
   const reset=await record('05-reset');assert.equal(reset.pageY,start.pageY);report.checks.push('reset restores initial scale and position');
   report.result='PASS';

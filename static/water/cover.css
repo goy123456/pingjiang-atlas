@@ -18,3 +18,5 @@ header small{font:15px/1.3 var(--song);color:#bfdbd6}.compare-entry{margin:0 0 0
 .scene span{background:#e4eeeceb;letter-spacing:.02em;color:#183f42}.decks path{stroke:#9d4f3b}
 footer{margin:0 2.6vw;padding:9px 0;color:#355e61;border-color:#a0b9b6}
 @media(max-width:560px){header small{display:none}.scene{width:85px}}
+.scene-peek{position:absolute;inset:0 0 auto;width:100%;height:calc(100% - 1.7em);object-fit:cover;pointer-events:none;z-index:1}.scene-peek[hidden]{display:none}
+.cover-credits{position:relative}.cover-credits summary{cursor:pointer}.cover-credits div{position:absolute;right:0;bottom:100%;z-index:4;background:#eff5f2;color:#173f42;width:min(290px,76vw);padding:12px;font:13px/1.65 system-ui}.cover-credits a{color:inherit}

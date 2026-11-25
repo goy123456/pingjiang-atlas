@@ -14,8 +14,8 @@ const run=()=>{
  q('.editorial-actions')?.setAttribute('hidden','');
  const title=el('strong','八桥全览');title.className='water-selected';cmd.append(title);
  window.addEventListener('comparison-context',e=>{picker.open=false;picker.firstChild.textContent=e.detail?.bridge?.name||'八桥';title.textContent=e.detail?.bridge?.name||'八桥全览'});
- const main=q('header .brand');if(main){main.textContent='平江文化图志';main.href='../index.html'}
- const nav=q('header nav');if(nav){nav.replaceChildren();for(const [label,path] of [['平江街巷','visitor-compare.html'],['耦园','../exhibit/garden-scene.html'],['昆曲','../exhibit/stage-scene.html'],['探索地图','../index.html#map']]){const a=el('a',label);a.href=path;nav.append(a)}}
+ const main=q('header .brand');if(main){main.textContent='← 平江总图';main.href='water/cover.html#bridge'}
+ const nav=q('header nav');if(nav){nav.replaceChildren();for(const [label,path] of [['八桥水巷','visitor-compare.html'],['耦园','../exhibit/garden-scene.html'],['昆曲','../exhibit/stage-scene.html'],['自由浏览','water/browse.html']]){const a=el('a',label);a.href=path;nav.append(a)}}
  // Keep a licensed district view available if the external documentary server refuses a request.
  const images=q('.bridge-photos');if(images){const fallback=()=>{
    images.querySelectorAll('.bridge-photo-image img[hidden]').forEach(img=>{const figure=img.closest('figure');if(figure.dataset.fallback)return;figure.dataset.fallback='1';

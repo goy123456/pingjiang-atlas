@@ -1,6 +1,13 @@
 (() => {
   const nav=document.querySelector('.landscape'),ground=nav.querySelector('.ground');
   const links=[...nav.querySelectorAll('a[data-scene]')];
+  // A small photographic glimpse inside the landmark footprint, never another menu.
+  const photos={bridge:'../../exhibit/arch.jpg',garden:'../../exhibit/garden.jpg',stage:'../../exhibit/opera.jpg'};
+  for(const a of links){const peek=document.createElement('img');peek.className='scene-peek';peek.alt='';peek.hidden=true;a.prepend(peek);
+    const show=()=>{if(!peek.getAttribute('src'))peek.src=photos[a.dataset.scene];peek.hidden=false};
+    peek.onerror=()=>{peek.hidden=true};a.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')show()});a.addEventListener('pointerleave',()=>{peek.hidden=true});
+    a.addEventListener('focus',()=>{if(a.matches(':focus-visible')&&!a.hasAttribute('aria-current'))show()});a.addEventListener('blur',()=>{peek.hidden=true});
+  }
   function restore(){for(const a of links){const chosen=location.hash==='#'+a.dataset.scene;
     if(chosen){a.setAttribute('aria-current','location');a.focus({preventScroll:true});}else a.removeAttribute('aria-current');}}
   links.forEach(a=>a.addEventListener('click',e=>{if(!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&!e.altKey)history.replaceState(null,'','#'+a.dataset.scene);}));

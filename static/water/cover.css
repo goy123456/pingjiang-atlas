@@ -1,0 +1,20 @@
+:root{--paper:#f4f0e2;--ink:#2e4039;--seal:#8e5039;--song:"Songti SC","SimSun",serif;color:var(--ink);background:var(--paper)}
+*{box-sizing:border-box}body{margin:0}main{display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100svh;min-height:420px}
+header,footer{display:flex;align-items:center;justify-content:space-between;padding-inline:clamp(18px,4vw,72px)}
+header{padding-block:clamp(10px,1.8vh,22px);border-bottom:1px solid #c6c5b4}h1{font:500 clamp(28px,3vw,48px)/1.1 var(--song);letter-spacing:.15em;margin:0}header span{background:var(--seal);color:#fff5dc;padding:4px;font:13px/1 var(--song)}
+.landscape{position:relative;isolation:isolate;overflow:hidden;background:#eeeadd}.ground{position:absolute;pointer-events:none;z-index:-1}.ground>*{position:absolute;width:100%;height:100%;inset:0}.ground img{image-rendering:pixelated}.ground .banks{left:32.8%;top:30.49%;width:19.6%;height:auto}.decks path{stroke:#97744a;stroke-width:2.6;fill:none}
+.scene{position:absolute;display:grid;place-items:center;align-content:end;min-height:48px;width:clamp(105px,14vw,210px);transform:translate(-50%,-75%);color:inherit;text-decoration:none;isolation:isolate}
+.scene svg{width:100%;height:auto;display:block;overflow:hidden}.scene span{display:block;white-space:nowrap;font:600 clamp(16px,1.4vw,23px)/1.35 var(--song);letter-spacing:.1em;padding:2px 6px;text-shadow:0 0 3px var(--paper),0 1px 2px var(--paper);background:#f4f0e2e6;border-bottom:2px solid transparent}
+.scene:is(:hover,:focus-visible,[aria-current=location]) span{color:var(--seal);border-color:currentColor}.scene:focus-visible{outline:2px dashed var(--seal);outline-offset:3px}
+.bridge{left:30%;top:38%}.garden{left:72%;top:48%}.stage{left:52%;top:79%}
+footer{padding-block:7px;font:13px/1.4 var(--song);border-top:1px solid #c6c5b4}footer small{font:11px/1.4 system-ui,sans-serif}
+@media(max-width:600px){.scene{width:clamp(84px,25vw,120px)}footer{padding-inline:12px}header{padding-block:14px}}
+.compare-entry{margin-inline:auto 1em;padding:.6em .15em;color:var(--ink);font:600 16px/1.2 var(--song);text-decoration:underline;text-underline-offset:.35em;text-decoration-color:#9b8d72}
+:root{--paper:#e4eeec;--ink:#173f42;--seal:#a54330;--song:"Microsoft YaHei",system-ui,sans-serif}
+header{gap:clamp(16px,5vw,84px);background:#173f42;color:white;padding:0 clamp(16px,2.65vw,48px);min-height:clamp(58px,8.55vh,80px);border:0}
+h1{font:700 clamp(24px,2.36vw,38px)/1.15 var(--song);letter-spacing:0}
+header small{font:15px/1.3 var(--song);color:#bfdbd6}.compare-entry{margin:0 0 0 auto;color:white;text-decoration:none;font-weight:700}
+.landscape{margin:clamp(8px,1.25vw,20px);background:#e3eae8}.scene{width:clamp(84px,8.25vw,132px)}
+.scene span{background:#e4eeeceb;letter-spacing:.02em;color:#183f42}.decks path{stroke:#9d4f3b}
+footer{margin:0 2.6vw;padding:9px 0;color:#355e61;border-color:#a0b9b6}
+@media(max-width:560px){header small{display:none}.scene{width:85px}}

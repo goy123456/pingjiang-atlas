@@ -1,0 +1,40 @@
+/* Palette is scoped to the modern plate. Never filter the historic scan or photographs. */
+body.folio[data-edition=compare],body.water-compare{--ink:#193e40;--paper:#e4eeec;--rule:#a2b8b5;background:#e4eeec!important;color:#193e40;font-family:"Microsoft YaHei",system-ui,sans-serif}
+body.folio[data-edition=compare] .edition-mast,body.water-compare>header{background:#173f42!important;color:#fff!important;border:0!important;padding-inline:2.5vw!important}
+body.folio[data-edition=compare] .edition-mast :is(a,summary,button),body.water-compare>header a{color:inherit!important;font-family:inherit}
+body.folio[data-edition=compare] .edition-mast :is(.folio-resources,.bridge-picker[open] #bridge-list),body.folio[data-edition=compare] .edition-mast details[open] button{color:#173f42!important}
+body.folio[data-edition=compare] .edition-brand,body.water-compare>header .brand{font:700 clamp(23px,2.36vw,35px)/1.15 "Microsoft YaHei",system-ui,sans-serif!important;letter-spacing:0!important}
+body.folio[data-edition=compare] .edition-seal{display:none}
+body.folio[data-edition=compare] .comparison :is(h2,.map-toolbar){font-family:inherit;color:#235557}
+body.folio[data-edition=compare] .screen-photos{border-inline-start:1px solid #a2b8b5}
+@media(min-width:851px){body.folio.map-screen.atlas-journal[data-edition=compare] main>.comparison{--past:.79fr;--present:1.21fr}
+body.folio.map-screen.atlas-journal[data-edition=compare] main>.comparison:has(.screen-photos:not([hidden])){grid-template-columns:minmax(0,var(--past)) minmax(0,var(--present)) clamp(205px,19vw,310px)!important}}
+body.compare-desk #district-pixel-layer .district-print{content:url("media/water-district.webp")}
+body.compare-desk #district-pixel-layer #eight-bridge-plate{content:url("media/water-eight.webp")}
+body.water-compare>header{display:flex;gap:4vw;align-items:center;min-height:65px}
+body.water-compare>header nav{display:flex;gap:1.3em}
+body.water-compare main{max-width:none!important;padding:0 clamp(10px,1.65vw,28px)!important}
+body.water-compare main>.intro,body.water-compare main>.pan-link-hint,body.water-compare #ancient-title{position:absolute!important;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);padding:0;margin:0}
+.water-command{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:9px 0}.water-command details{position:relative}.water-command summary{cursor:pointer;padding:6px 12px;font-weight:650}
+.water-command details>div{position:absolute;top:100%;left:0;z-index:24;background:#f6faf8;min-width:min(310px,90vw);padding:12px;box-shadow:0 4px 14px #193e4030}
+body.water-compare .water-command .bridge-matches p,body.water-compare .water-command .bridge-matches h2{display:none}
+body.water-compare .comparison{gap:clamp(5px,1vw,16px)!important;grid-template-columns:minmax(0,32fr) minmax(0,48fr) minmax(170px,20fr)!important}
+body.water-compare .comparison>section{border:0!important;border-radius:0!important;background:transparent!important}
+body.water-compare .comparison .map-toolbar{background:transparent!important;border:0!important;justify-content:space-between}
+body.water-compare #old-viewport,body.water-compare .modern-panel iframe{height:clamp(300px,calc(100dvh - 223px),990px)!important}
+body.water-compare .water-rail{min-width:0;border-left:1px solid #9db6b2;padding-left:12px;overflow:auto;max-height:calc(100dvh - 151px)}
+body.water-compare .water-rail>summary{cursor:pointer;padding:12px 0;font-weight:700}
+body.water-compare .water-rail .bridge-photos{padding:0;background:none;border:0}
+body.water-compare .water-rail .bridge-photo-pair{display:flex;flex-direction:column;gap:12px}
+body.water-compare .water-rail figure{padding:0;border:0;background:none;margin:0}
+body.water-compare .water-rail h2{color:#963e2e}.water-rail .bridge-photo-image{height:auto!important;aspect-ratio:1.65}
+body.water-compare .water-rail img,body.water-compare .water-rail canvas{width:100%;height:100%;object-fit:contain}
+body.water-compare #bridge-list [aria-pressed=true]{background:#9c432d!important}
+@media(max-width:760px){body.water-compare .comparison{grid-template-columns:minmax(0,42fr) minmax(0,58fr)!important}.water-rail{grid-column:1/-1}.water-command{gap:2px}body.water-compare .water-rail{max-height:none;border-left:0}.water-rail .bridge-photo-pair{display:grid!important;grid-template-columns:1fr 1fr}body.water-compare>header{gap:12px}}
+.water-selected{color:#97422e;margin-inline-start:auto;font:700 clamp(19px,2.1vw,34px)/1.16 "Microsoft YaHei",system-ui,sans-serif}
+body.water-compare main .water-rail.editorial-drawer{margin:0;border:0;border-left:1px solid #a7bcba;border-radius:0;background:transparent;padding:0 0 0 12px}
+body.water-compare main .water-rail .bridge-photo-pair figure:last-child{order:-1}
+body.water-compare .water-rail .bridge-photos h3{font:600 14px/1.4 system-ui}
+body.water-compare #old-marker{font-size:0!important;color:transparent!important}
+body.water-compare #old-marker>*{visibility:hidden}
+body.water-compare main>.editorial-actions[hidden]{display:none!important}

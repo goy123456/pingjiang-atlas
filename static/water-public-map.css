@@ -1,0 +1,9 @@
+/* Only the existing sketch layer changes hue, preserving original-map mode. */
+body.comparison-map #sketch-water rect{fill:#226771}
+body.comparison-map #sketch-water path{stroke:#48838a}
+body.comparison-map #sketch-roofs rect{fill:#8da0a0}
+body.comparison-map #sketch-roofs path{stroke:#697f80}
+body.comparison-map #sketch-greens rect{fill:#bccdc2}
+body.comparison-map #sketch-overlay g rect[fill="#f4edda"]{fill:#e3eae8}
+body.comparison-map #markers .pin.place-symbol{background:transparent;box-shadow:none;border:0;color:#215d63}
+body.comparison-map #markers .pin[aria-pressed=true]{color:#a4442d;outline:2px solid currentColor}

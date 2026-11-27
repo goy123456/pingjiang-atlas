@@ -17,6 +17,10 @@ function ancientCard(record){
  const box=el('div');box.className='bridge-photo-image';card.append(box);
  const old=document.getElementById('old-image'),p=record.ancient_position;
  if(!old||!p||!ancientSpace){box.append(el('p','古图位置暂未加载'));return card;}
+ if(old.dataset.tiles){
+   const crop=el('img');crop.src=old.dataset.tiles+record.id+'.jpg';crop.alt=record.name+'在古平江图中的位置';crop.style.objectFit='contain';box.append(crop);
+   card.append(el('figcaption','古平江图局部 · 地图资料，并非历史照片'));return card;
+ }
  const canvas=el('canvas');canvas.width=1000;canvas.height=640;canvas.style.cssText='display:block;width:100%;height:100%;object-fit:contain';canvas.setAttribute('role','img');canvas.setAttribute('aria-label',record.name+'在古平江图中的位置');box.append(canvas);
  const draw=()=>{if(!old.naturalWidth)return;const sw=Math.min(old.naturalWidth,1300*old.naturalWidth/ancientSpace.width),sh=Math.min(old.naturalHeight,sw*.64),sx=Math.max(0,Math.min(old.naturalWidth-sw,p.x/ancientSpace.width*old.naturalWidth-sw/2)),sy=Math.max(0,Math.min(old.naturalHeight-sh,p.y/ancientSpace.height*old.naturalHeight-sh/2));canvas.getContext('2d').drawImage(old,sx,sy,sw,sh,0,0,1000,640);};
  if(old.complete&&old.naturalWidth)draw();else old.addEventListener('load',draw,{once:true});

@@ -38,3 +38,13 @@ body.water-compare .water-rail .bridge-photos h3{font:600 14px/1.4 system-ui}
 body.water-compare #old-marker{font-size:0!important;color:transparent!important}
 body.water-compare #old-marker>*{visibility:hidden}
 body.water-compare main>.editorial-actions[hidden]{display:none!important}
+.water-command .water-picker>summary{list-style:none;display:flex;align-items:center;gap:.8em;min-height:44px;box-sizing:border-box;background:#204e50;color:white;border-radius:4px}
+.water-picker>summary::-webkit-details-marker{display:none}
+.water-picker>summary::after{content:'';width:.45em;height:.45em;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg)}
+.water-picker[open]>summary::after{transform:translateY(2px) rotate(225deg)}
+.water-command .water-picker>div{box-sizing:border-box;z-index:40}
+body.water-compare.shared-overview :is(#old-reset,#bridge-start){display:none!important}
+.water-place{display:flex;align-items:baseline;flex-wrap:wrap;gap:.2em .8em;margin-inline-start:auto}
+.water-place .water-selected{font-size:clamp(16px,1.3vw,22px);margin:0}
+.water-place span,.water-place a{font:14px/1.5 system-ui;color:#274d4c}.water-place a{text-underline-offset:.2em}
+.water-place :empty,.water-place [hidden]{display:none}

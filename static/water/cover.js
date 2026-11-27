@@ -12,7 +12,10 @@
     if(chosen){a.setAttribute('aria-current','location');a.focus({preventScroll:true});}else a.removeAttribute('aria-current');}}
   links.forEach(a=>a.addEventListener('click',e=>{if(!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&!e.altKey)history.replaceState(null,'','#'+a.dataset.scene);}));
   addEventListener('pageshow',restore);restore();
-  fetch('../data/pingjiang-modern.json').then(r=>{if(!r.ok)throw Error();return r.json()}).then(d=>{
+  const packaged=nav.querySelector('#cover-geometry');
+  const geometry=packaged ? Promise.resolve().then(()=>JSON.parse(packaged.textContent))
+    : fetch('../data/pingjiang-modern.json').then(r=>{if(!r.ok)throw Error();return r.json()});
+  geometry.then(d=>{
     const xy=id=>d.points.find(p=>p.id===id).xy;
     const a=xy('H02'),b=xy('H03'),points=[[(a[0]+b[0])/2,(a[1]+b[1])/2],xy('U03'),xy('C01')];
     for(const p of d.points.filter(p=>/^H0[1-8]$/.test(p.id)&&p.bridge_path)){

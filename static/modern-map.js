@@ -31,9 +31,27 @@ function drawLabels(){
   const side=q===main?-1:1,x=q.xy[0]*scale,y=q.xy[1]*scale;
   const tx=x+side*offset,ty=y+(side<0?-36:34);
   const line=document.createElementNS(NS,'path');line.setAttribute('d',`M${x} ${y} L${tx} ${ty}`);lines.append(line);
-  const dot=document.createElementNS(NS,'circle');dot.setAttribute('cx',x);dot.setAttribute('cy',y);dot.setAttribute('r',4);lines.append(dot);
+  const dot=document.createElementNS(NS,'circle');dot.setAttribute('cx',x);dot.setAttribute('cy',y);dot.setAttribute('r',q===selected?4.5:3);if(q!==selected)dot.style.fill='#fffdf6';dot.style.stroke='#a43e28';lines.append(dot);
   const button=document.createElement('button');button.className='bridge-callout';button.textContent=q.name;button.setAttribute('aria-label','定位'+q.name);button.setAttribute('aria-pressed',String(q===selected));button.style.left=tx+'px';button.style.top=ty+'px';button.onclick=()=>select(q.id);labels.append(button);
   document.querySelector(`#markers [data-point="${q.id}"]`)?.classList.add('pair-replaced');
+ }
+ if(corridorMode && pair && ['H02','H04'].includes(main.id)){
+  // Coordinates in the original 1000-unit SVG, not screen offsets. Water
+  // anchors bisect the mapped banks; street anchors lie on street_paths.
+  const north=main.id==='H02';
+  const features=north?[
+    ['平江河','water',402.80,527,2.58,5],['平江路','street',397.92,464,14.48,65.65],
+    ['曹胡徐巷','street',365,511,-51.65,14.43],['胡厢使河','water',434,495.45,4,-.78]
+  ]:[
+    ['平江河','water',429.27,633,1.12,5],['平江路','street',420.99,572,7.10,36.61],
+    ['菉葭巷','street',379,606.8,75.58,-18.12],['大柳枝河','water',460,600.76,4,-1.14]
+  ];
+  for(const [name,kind,x,y,dx,dy] of features){
+   const vertical=Math.abs(dy)>Math.abs(dx),angle=Math.atan(dy/dx)*180/Math.PI-(vertical?90:0);
+   const label=document.createElement('span');label.className='context-label path-name '+kind+(vertical?' vertical':'');label.textContent=name;
+   Object.assign(label.style,{left:x*scale+'px',top:y*scale+'px',transform:'translate(-50%,-50%) rotate('+angle+'deg)'});labels.append(label);
+  }
+  return;
  }
  const context=[['平江河','water',-offset,-105],['平江路','street',offset,-105],
  [main.relationship.streets.split('、')[0],'street',-offset,92]];

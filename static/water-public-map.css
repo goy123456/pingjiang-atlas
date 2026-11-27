@@ -7,3 +7,6 @@ body.comparison-map #sketch-greens rect{fill:#bccdc2}
 body.comparison-map #sketch-overlay g rect[fill="#f4edda"]{fill:#e3eae8}
 body.comparison-map #markers .pin.place-symbol{background:transparent;box-shadow:none;border:0;color:#215d63}
 body.comparison-map #markers .pin[aria-pressed=true]{color:#a4442d;outline:2px solid currentColor}
+body.comparison-map.shared-overview #reset{display:none!important}
+body.comparison-map #relation-labels .path-name{background:none;border:0;border-radius:0;box-shadow:none;padding:0;pointer-events:none;font:650 13px/1.1 system-ui;text-shadow:-1px -1px 1px #eff4ef,1px 1px 1px #eff4ef,0 0 4px #fff}
+body.comparison-map #relation-labels .path-name.vertical{writing-mode:vertical-rl;letter-spacing:.12em}

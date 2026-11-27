@@ -5,15 +5,42 @@ const run=()=>{
  const el=(tag,txt)=>Object.assign(document.createElement(tag),txt?{textContent:txt}:{});
  const cmd=el('div');cmd.className='water-command';map.before(cmd);
  function menu(label,nodes){const d=el('details'),s=el('summary',label),box=el('div');d.append(s,box);nodes.filter(Boolean).forEach(n=>box.append(n));cmd.append(d);return d}
- const picker=menu('八桥',[q('.bridge-matches')]);
- const controls=q('.compare-controls');if(controls){cmd.append(controls);controls.querySelector('span')?.setAttribute('hidden','')}
+ const picker=menu('选择桥梁',[q('.bridge-matches')]);picker.className='water-picker';
+ const trigger=picker.querySelector('summary');
+ const close=()=>{picker.open=false;trigger.focus({preventScroll:true})};
+ picker.addEventListener('keydown',e=>{if(e.key==='Escape'&&picker.open){e.preventDefault();close()}});
+ document.addEventListener('pointerdown',e=>{if(picker.open&&!picker.contains(e.target))picker.open=false});
+ const controls=q('.compare-controls');if(controls){cmd.append(controls);controls.querySelector('span')?.setAttribute('hidden','');
+   const reset=[...controls.querySelectorAll('button')].find(b=>b.textContent==='回到起点');
+   if(reset){reset.textContent='八桥全览';reset.title='重置选桥和两张地图';document.body.classList.add('shared-overview')}
+ }
  menu('工具',[q('.map-legend'),q('#bridge-experience'),q('#sync-status')]);
  const old=q('#old-viewport');
  old.addEventListener('wheel',ev=>{ev.preventDefault();old.dispatchEvent(new CustomEvent('atlas-pinch',{detail:{factor:Math.exp(-Math.sign(ev.deltaY)*.16)}}));},{passive:false});
  const rail=q('.editorial-drawer');if(rail&&rail.querySelector('.bridge-photos')){rail.classList.add('water-rail');map.append(rail);rail.open=true}
  q('.editorial-actions')?.setAttribute('hidden','');
  const title=el('strong','八桥全览');title.className='water-selected';cmd.append(title);
- window.addEventListener('comparison-context',e=>{picker.open=false;picker.firstChild.textContent=e.detail?.bridge?.name||'八桥';title.textContent=e.detail?.bridge?.name||'八桥全览'});
+ const detail=el('div');detail.className='water-place';detail.setAttribute('aria-live','polite');cmd.append(detail);detail.append(title);
+ const relation=el('span'),proof=el('a','查出处 ↗');proof.href='#bridge-library';proof.hidden=true;detail.append(relation,proof);
+ let selected=null,kb;
+ function update(){
+   const name=selected?.name,id=selected?.id;
+   trigger.textContent=name||'选择桥梁';trigger.setAttribute('aria-label',name?'选择桥梁，当前：'+name:'选择桥梁');
+   title.textContent=name||'八桥全览';relation.textContent='';proof.hidden=true;
+   const record=kb?.passages.find(p=>p.status==='verified'&&p.topic==='connection'&&p.entity_ids.length===1&&p.entity_ids[0]===id);
+   if(!record)return;
+   const text=record.text.startsWith(name)?record.text.slice(name.length):record.text;
+   relation.textContent=text.replace(/。$/,'').replace(/[，；]/g,' · ');
+   proof.hidden=false;
+ }
+ proof.addEventListener('click',e=>{
+   const card=()=>q('#library-results [data-entity="'+selected?.id+'"]');
+   if(!card()&&selected)q('#bridge-list [data-bridge="'+selected.id+'"]')?.click();
+   const evidence=card()?.querySelector('details');
+   if(evidence){e.preventDefault();evidence.open=true;evidence.querySelector('summary')?.focus();evidence.scrollIntoView({block:'center'})}
+ });
+ window.addEventListener('comparison-context',e=>{if(picker.open&&picker.contains(document.activeElement))close();else picker.open=false;selected=e.detail?.bridge;update()});
+ fetch('data/pingjiang-bridge-kb.json?v=20261111rag1').then(r=>{if(!r.ok)throw Error();return r.json()}).then(data=>{kb=data;update()}).catch(()=>{});
  const main=q('header .brand');if(main){main.textContent='← 平江总图';main.href='water/cover.html#bridge'}
  const nav=q('header nav');if(nav){nav.replaceChildren();for(const [label,path] of [['八桥水巷','visitor-compare.html'],['耦园','../exhibit/garden-scene.html'],['昆曲','../exhibit/stage-scene.html'],['自由浏览','water/browse.html']]){const a=el('a',label);a.href=path;nav.append(a)}}
  // Keep a licensed district view available if the external documentary server refuses a request.

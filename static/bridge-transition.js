@@ -31,7 +31,8 @@ async function play(id){
  if(!bridge?.ancient_position||!photo)return;
  const modern=new Image();modern.alt=bridge.name+'实景资料照片';modern.referrerPolicy='no-referrer';modern.src=photo.url;
  const old=document.getElementById('old-image');if(!old)return;
- try{await Promise.all([loaded(modern),loaded(old)]);}catch{return;}if(token!==sequence)return;
+ const crop=old.dataset.tiles?new Image():null;if(crop)crop.src=old.dataset.tiles+id+'.jpg';
+ try{await Promise.all([loaded(modern),loaded(crop||old)]);}catch{return;}if(token!==sequence)return;
  const overlay=document.createElement('aside');overlay.className='bridge-time-transition';overlay.setAttribute('aria-label',bridge.name+'：实景渐变至古图');
  const card=document.createElement('div');card.className='bridge-time-card';
  const title=document.createElement('h2');title.textContent=bridge.name+' · 循桥入宋';
@@ -40,7 +41,8 @@ async function play(id){
  const ancient=document.createElement('canvas');ancient.width=1000;ancient.height=640;ancient.setAttribute('role','img');ancient.setAttribute('aria-label','古平江图中'+bridge.ancient_name+'附近');
  const space=catalog.ancient_coordinate_space,p=bridge.ancient_position,scale=old.naturalWidth/space.width;
  const sw=1300*scale,sh=832*scale,sx=Math.max(0,Math.min(old.naturalWidth-sw,p.x*scale-sw/2)),sy=Math.max(0,Math.min(old.naturalHeight-sh,p.y/space.height*old.naturalHeight-sh/2));
- ancient.getContext('2d').drawImage(old,sx,sy,sw,sh,0,0,1000,640);
+ if(crop)ancient.getContext('2d').drawImage(crop,0,0,1000,640);
+ else ancient.getContext('2d').drawImage(old,sx,sy,sw,sh,0,0,1000,640);
  modern.className='bridge-time-modern';ancient.className='bridge-time-ancient';scene.append(modern,ancient);
  const labels=document.createElement('div');labels.className='bridge-time-labels';
  const present=document.createElement('span');present.className='time-present';present.textContent='今 · 实景资料照片';

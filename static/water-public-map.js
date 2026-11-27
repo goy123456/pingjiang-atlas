@@ -1,5 +1,6 @@
 /* Keep the native sketch switch, bridge anchors, routes and pointer handlers. */
 (()=>{if(new URLSearchParams(location.search).get('view')!=='bridges')return;
+ if(window.frameElement?.closest('.water-compare'))document.body.classList.add('shared-overview');
  const stage=document.getElementById('stage'),ns='http://www.w3.org/2000/svg';
  const mount=()=>{const root=stage.querySelector('#sketch-overlay');if(!root)return false;
   const paper=root.querySelector('g[clip-path]'),base=paper?.querySelector('rect');if(!base)return false;

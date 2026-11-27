@@ -1,0 +1,24 @@
+name: Prepare verified historical map tiles
+on:
+  push:
+    branches: ['release/ancient-tiles-20261127']
+    paths: ['.github/workflows/prepare-historic-tiles.yml']
+permissions:
+  contents: write
+jobs:
+  tiles:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install image codec
+        run: |
+          python -m venv "$RUNNER_TEMP/atlas-image"
+          "$RUNNER_TEMP/atlas-image/bin/pip" install --only-binary=:all: 'Pillow==13.0.0' || "$RUNNER_TEMP/atlas-image/bin/pip" install --only-binary=:all: Pillow
+      - name: Prepare tiles from the checked-in map
+        run: |
+          test "$(git rev-parse HEAD:static/media/pingjiang-user-original.jpg)" = '2f1061bbfc002c20f70b72c0b3815e5d514f3b14'
+          "$RUNNER_TEMP/atlas-image/bin/python" .github/prepare_ancient_tiles.py
+          git add static/media/ancient-tiles-v1
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Build four historical map tile levels from the published scan'
+          git push origin 'HEAD:refs/heads/release/ancient-tiles-20261127'
